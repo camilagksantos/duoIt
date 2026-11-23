@@ -32,6 +32,7 @@ Projeto pessoal, de uso exclusivo de um usuário. Sem deploy e sem login.
 - Exercício concluído continua disponível para revisão.
 - Concluído (todos os cards avaliados pelo menos uma vez) aparece como dica no menu. O dashboard mostra os cards avaliados. Não há mais o conceito de dominado.
 - Tipos de exercício ainda não disponíveis não bloqueiam a sequência.
+- Termos do Grupo (`/termos/:slug`): lista as palavras para estudo, sem avaliação. O botão "Concluir termos" inclui todas as palavras no Cards Review de uma vez. Depois de concluído, não há como desfazer.
 - Estados no menu: liberado, concluído, bloqueado, "Em breve" (grupo sem palavras) e "Sem API".
 
 Fora de escopo por enquanto: autenticação, áudio, pronúncia, deploy.

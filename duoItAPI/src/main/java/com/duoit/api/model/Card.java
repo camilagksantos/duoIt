@@ -18,8 +18,8 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 /**
- * Card de uma palavra marcada como aprendida. Guarda o estado do agendamento FSRS.
- * {@code paused} tira a palavra do Review sem apagar o histórico.
+ * Card de uma palavra de um grupo concluído. Guarda o estado do agendamento FSRS.
+ * O card é criado quando o grupo é concluído e não é pausado nem removido.
  */
 @Entity
 @Table(name = "cards")
@@ -60,15 +60,11 @@ public class Card {
 	/** Dia da primeira avaliação. Usado para o limite de novos cards por dia. */
 	private LocalDate introducedOn;
 
-	@Column(nullable = false)
-	private boolean paused;
-
 	protected Card() {
 	}
 
 	public Card(Word word, Instant now) {
 		this.word = word;
-		this.paused = false;
 		applyMemory(FsrsScheduler.Memory.newCard(now), null);
 	}
 
@@ -90,14 +86,6 @@ public class Card {
 		}
 	}
 
-	public void pause() {
-		this.paused = true;
-	}
-
-	public void resume() {
-		this.paused = false;
-	}
-
 	public Long getId() {
 		return id;
 	}
@@ -116,9 +104,5 @@ public class Card {
 
 	public LocalDate getIntroducedOn() {
 		return introducedOn;
-	}
-
-	public boolean isPaused() {
-		return paused;
 	}
 }

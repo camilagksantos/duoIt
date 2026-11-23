@@ -38,19 +38,20 @@ Modelo mínimo do MVP, com 3 entidades (tabelas em snake_case, com IDs gerados p
 - `Submodule` (`submodules`): grupo de palavras. Tem título, posição, `slug` (identificador estável, igual ao id no front) e o módulo ao qual pertence.
 - `Word` (`words`): termo, significado em português, frase de exemplo e submódulo.
 
-- `Card` (`cards`): uma palavra marcada como aprendida (`Word`, única), com o estado FSRS: estado (NEW, LEARNING, REVIEW ou RELEARNING), passo de aprendizado, estabilidade, dificuldade, revisões, erros, data da última revisão, data do próximo vencimento, data da primeira avaliação e se está pausado.
+- `Card` (`cards`): uma palavra (`Word`, única) incluída no Review quando o grupo é concluído. Tem o estado FSRS: estado (NEW, LEARNING, REVIEW ou RELEARNING), passo de aprendizado, estabilidade, dificuldade, revisões, erros, data da última revisão, data do próximo vencimento e data da primeira avaliação.
+- `Submodule` ganha `completed_at`: data em que o aluno concluiu os Termos do Grupo. Nulo enquanto não concluiu.
 
 Agendamento: FSRS-5 com os pesos padrão e retenção de 90%, em `scheduling/Fsrs.java` (fórmulas) e `scheduling/FsrsScheduler.java` (estados e passos: aprendizado em 1 min e 10 min, reaprendizado em 10 min). Função pura, coberta por testes. Todas as avaliações passam por `study/CardService`, então nenhum fluxo recalcula o agendamento.
 
-Entrada no Review: checkbox "aprendi" na tela de Termos do Grupo. Marcar cria o card em estado NEW; desmarcar pausa (mantém o histórico).
+Entrada no Review: o aluno estuda os Termos do Grupo e clica em "Concluir". Concluir cria os cards de todas as palavras do grupo em estado NEW e marca o grupo como concluído. Não há como desfazer. Repetir a conclusão não muda nada. Palavras adicionadas ao JSON depois da conclusão entram no Review automaticamente.
 
 Sessões: vencidos até o momento da sessão, mais até 10 novos por dia. Sem teto total. Cards não respondidos continuam na fila.
 
 Endpoints:
 - `GET /api/study/session?submodule={slug}`: sessão de um grupo, com os minutos até a próxima revisão para cada avaliação. O parâmetro `submodule` é obrigatório.
 - `GET /api/review/session`: sessão do Cards Review, de todos os grupos.
-- `GET /api/terms?submodule={slug}`: termos do grupo com o estado do checkbox.
-- `PUT /api/terms/{wordId}/learned`: body `{"learned": true|false}`.
+- `GET /api/terms?submodule={slug}`: termos do grupo e se o grupo está concluído (`{"completed": bool, "terms": [...]}`).
+- `POST /api/terms/complete?submodule={slug}`: conclui os Termos do Grupo e inclui as palavras no Review.
 - `GET /api/progress`: por grupo, o total de cards marcados e quantos já foram avaliados pelo menos uma vez. Grupos sem cards não aparecem.
 - `POST /api/study/cards/{id}/answer`: body `{"rating": "AGAIN|HARD|GOOD|EASY"}`. Retorna 204, 404 se o card não existir, 400 se a nota for inválida.
 

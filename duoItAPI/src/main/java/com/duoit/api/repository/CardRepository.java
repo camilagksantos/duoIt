@@ -17,24 +17,24 @@ public interface CardRepository extends JpaRepository<Card, Long> {
 
 	Optional<Card> findByWord(Word word);
 
-	/** Cards já avaliados pelo menos uma vez, não pausados e com vencimento até {@code now}. */
+	/** Cards já avaliados pelo menos uma vez, com vencimento até {@code now}. */
 	@Query("""
 			select c from Card c
 			join fetch c.word w
 			join fetch w.submodule s
 			join fetch s.module
-			where c.state <> :newState and c.paused = false and c.dueAt <= :now
+			where c.state <> :newState and c.dueAt <= :now
 			order by c.dueAt
 			""")
 	List<Card> findDue(@Param("newState") CardState newState, @Param("now") Instant now);
 
-	/** Cards marcados e ainda não avaliados, não pausados. */
+	/** Cards ainda não avaliados, na ordem das palavras. */
 	@Query("""
 			select c from Card c
 			join fetch c.word w
 			join fetch w.submodule s
 			join fetch s.module
-			where c.state = :newState and c.paused = false
+			where c.state = :newState
 			order by w.id
 			""")
 	List<Card> findNew(@Param("newState") CardState newState);

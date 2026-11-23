@@ -8,57 +8,60 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.duoit.api.model.Card;
+import com.duoit.api.model.Submodule;
 import com.duoit.api.model.Word;
 import com.duoit.api.repository.CardRepository;
+import com.duoit.api.repository.SubmoduleRepository;
 import com.duoit.api.repository.WordRepository;
 
-/** Termos de um grupo e o checkbox "aprendi". Marcar cria o card; desmarcar só pausa. */
+/**
+ * Termos do Grupo. Os termos são só para estudo até o grupo ser concluído.
+ * Concluir inclui todas as palavras do grupo no Review, de uma vez, e não pode ser desfeito.
+ */
 @Service
 public class TermsService {
 
+	private final SubmoduleRepository submodules;
 	private final WordRepository words;
 	private final CardRepository cards;
 
-	public TermsService(WordRepository words, CardRepository cards) {
+	public TermsService(SubmoduleRepository submodules, WordRepository words, CardRepository cards) {
+		this.submodules = submodules;
 		this.words = words;
 		this.cards = cards;
 	}
 
 	@Transactional(readOnly = true)
-	public List<TermView> terms(String slug) {
-		return words.findBySubmoduleSlugOrderByIdAsc(slug).stream()
-				.map(word -> TermView.from(word, learned(word)))
-				.toList();
+	public Optional<TermsResponse> terms(String slug) {
+		return submodules.findBySlug(slug).map(submodule -> new TermsResponse(
+				submodule.isCompleted(),
+				words.findBySubmoduleSlugOrderByIdAsc(slug).stream().map(TermView::from).toList()));
 	}
 
-	/** Retorna false se a palavra não existir. */
+	/** Conclui o grupo e inclui suas palavras no Review. Retorna false se o grupo não existir. */
 	@Transactional
-	public boolean setLearned(Long wordId, boolean learned, Instant now) {
-		Optional<Word> word = words.findById(wordId);
-		if (word.isEmpty()) {
+	public boolean complete(String slug, Instant now) {
+		Optional<Submodule> found = submodules.findBySlug(slug);
+		if (found.isEmpty()) {
 			return false;
 		}
-		Optional<Card> card = cards.findByWord(word.get());
-		if (learned) {
-			if (card.isPresent()) {
-				card.get().resume();
-			} else {
-				cards.save(new Card(word.get(), now));
+		Submodule submodule = found.get();
+		submodule.complete(now);
+		for (Word word : words.findBySubmoduleSlugOrderByIdAsc(slug)) {
+			if (cards.findByWord(word).isEmpty()) {
+				cards.save(new Card(word, now));
 			}
-		} else {
-			card.ifPresent(Card::pause);
 		}
 		return true;
 	}
 
-	private boolean learned(Word word) {
-		return cards.findByWord(word).map(c -> !c.isPaused()).orElse(false);
+	public record TermsResponse(boolean completed, List<TermView> terms) {
 	}
 
-	public record TermView(Long id, String term, String meaning, String example, boolean learned) {
+	public record TermView(Long id, String term, String meaning, String example) {
 
-		static TermView from(Word word, boolean learned) {
-			return new TermView(word.getId(), word.getTerm(), word.getMeaning(), word.getExample(), learned);
+		static TermView from(Word word) {
+			return new TermView(word.getId(), word.getTerm(), word.getMeaning(), word.getExample());
 		}
 	}
 }

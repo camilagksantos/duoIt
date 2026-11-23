@@ -1,38 +1,50 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
 import { TermView } from '../../../core/models/study.model';
+import { ProgressService } from '../../../core/services/progress.service';
 import { TermsApiService } from '../../../core/services/terms-api.service';
 
 /**
- * Termos do Grupo: lista as palavras do grupo sem avaliação. O checkbox "aprendi" marca
- * a palavra para o Cards Review. Desmarcar só pausa a palavra.
+ * Termos do Grupo: lista as palavras para estudo, sem avaliação.
+ * Concluir inclui todas as palavras do grupo no Cards Review, de uma vez.
  */
 @Component({
   selector: 'app-terms',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [MatCheckboxModule],
+  imports: [MatButtonModule],
   template: `
     <h1>Termos do Grupo</h1>
-    <p class="intro">Marque as palavras que você já aprendeu. Elas entram no Cards Review.</p>
+    <p class="intro">
+      Estude as palavras abaixo. Ao concluir, todas entram no Cards Review. A conclusão não pode ser desfeita.
+    </p>
 
     @if (loading()) {
       <p>Carregando termos...</p>
     } @else if (error()) {
       <p>Não foi possível carregar os termos.</p>
+      <button mat-flat-button type="button" (click)="load()">Tentar de novo</button>
     } @else {
       <ul class="terms">
         @for (term of terms(); track term.id) {
           <li class="term-row">
-            <mat-checkbox [checked]="term.learned" (change)="toggle(term, $event.checked)">
-              <span class="word">{{ term.term }}</span>
-            </mat-checkbox>
+            <span class="word">{{ term.term }}</span>
             <span class="meaning">{{ term.meaning }}</span>
             <span class="example">{{ term.example }}</span>
           </li>
         }
       </ul>
+
+      <div class="actions">
+        @if (completed()) {
+          <p class="done">Grupo concluído. As palavras estão no Cards Review.</p>
+        } @else {
+          <button mat-flat-button type="button" class="btn-primary" [disabled]="concluding()" (click)="complete()">
+            Concluir termos
+          </button>
+        }
+      </div>
     }
   `,
   styles: `
@@ -68,25 +80,45 @@ import { TermsApiService } from '../../../core/services/terms-api.service';
       font-style: italic;
       color: var(--mat-sys-on-surface-variant);
     }
+
+    .actions {
+      margin-top: 24px;
+    }
+
+    .done {
+      color: var(--accent-yellow);
+      font-weight: 600;
+    }
   `,
 })
 export class TermsComponent {
   private readonly api = inject(TermsApiService);
+  private readonly progress = inject(ProgressService);
   private readonly route = inject(ActivatedRoute);
   private readonly destroyRef = inject(DestroyRef);
 
+  private readonly slug = this.route.snapshot.paramMap.get('slug') ?? '';
+
   protected readonly terms = signal<TermView[]>([]);
+  protected readonly completed = signal(false);
   protected readonly loading = signal(true);
+  protected readonly concluding = signal(false);
   protected readonly error = signal(false);
 
   constructor() {
-    const slug = this.route.snapshot.paramMap.get('slug') ?? '';
+    this.load();
+  }
+
+  protected load(): void {
+    this.loading.set(true);
+    this.error.set(false);
     this.api
-      .getTerms(slug)
+      .getTerms(this.slug)
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe({
-        next: (terms) => {
-          this.terms.set(terms);
+        next: (response) => {
+          this.terms.set(response.terms);
+          this.completed.set(response.completed);
           this.loading.set(false);
         },
         error: () => {
@@ -96,13 +128,21 @@ export class TermsComponent {
       });
   }
 
-  protected toggle(term: TermView, learned: boolean): void {
+  protected complete(): void {
+    this.concluding.set(true);
     this.api
-      .setLearned(term.id, learned)
+      .complete(this.slug)
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe({
-        next: () => this.terms.update((list) => list.map((t) => (t.id === term.id ? { ...t, learned } : t))),
-        error: () => this.error.set(true),
+        next: () => {
+          this.completed.set(true);
+          this.concluding.set(false);
+          this.progress.load();
+        },
+        error: () => {
+          this.concluding.set(false);
+          this.error.set(true);
+        },
       });
   }
 }

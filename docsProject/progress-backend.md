@@ -14,7 +14,7 @@ Atualizado em: 2026-11-05
 | PostgreSQL no Docker (`duoItAPI/docker-compose.yml`) | feito |
 | Conexão com PostgreSQL | feito |
 | Entidade `Card` e agendamento FSRS-5 (`Fsrs`, `FsrsScheduler`, com testes) | feito |
-| Entrada no Review por checkbox (`/api/terms`) e sessão do Review (`/api/review/session`) | feito |
+| Entrada no Review por conclusão dos Termos (`POST /api/terms/complete`) e sessão do Review (`/api/review/session`) | feito |
 | Endpoints de sessão e de resposta (`/api/study`) | feito |
 | Carga de dados real (módulos, submódulos e palavras) | pendente (hoje só dados de exemplo) |
 | Progresso por submódulo (`GET /api/progress`) | feito |
@@ -32,6 +32,7 @@ Atualizado em: 2026-11-05
 - 2026-11-23: todos os 18 módulos carregados no banco: 59 grupos e 1.370 palavras, sem termos repetidos. `ContentSeeder` lê cada `content/*.json` e pula os módulos que já existem. Os identificadores dos grupos batem com o front.
 - 2026-11-23: conteúdo de todos os 18 módulos escrito em `docsProject/content-*.md`, para revisão. Nada disso foi carregado no banco ainda. Verificação feita: nenhuma palavra repetida entre módulos.
 - 2026-11-23: conteúdo do 5.1 carregado no banco (87 palavras, 2 grupos) a partir de `resources/content/basic-review.json`. O seeder de exemplo foi substituído por `ContentSeeder`. Testado: sessão do grupo A traz 10 cards (limite diário), o card respondido avança e o grupo B aparece como bloqueado.
+- 2026-11-23: conclusão dos Termos do Grupo substitui o checkbox por palavra. Concluir cria os cards do grupo de uma vez; repetir não muda nada; palavras novas de grupos concluídos entram no Review no próximo start. Coluna `paused` removida.
 - 2026-11-09: progresso passa a informar também os cards dominados (intervalo de 21 dias ou mais).
 - 2026-11-09: banco resetado (dados de teste zerados e 5 palavras de exemplo recriadas). Cards passam a ser criados também na consulta de progresso (`CardProvisioner`), senão grupos sem sessão aparecem como "Em breve".
 - 2026-11-09: submódulos ganharam o campo `slug` (mesmo id do front). Sessão agora é por submódulo. `GET /api/progress` retorna total e respondidos por submódulo, para liberar exercícios em ordem.

@@ -12,13 +12,18 @@ export interface CardView {
   intervals: Record<Rating, number>;
 }
 
-/** Termo de um grupo, com o estado do checkbox "aprendi". */
+/** Termo de um grupo. Os termos são para estudo até o grupo ser concluído. */
 export interface TermView {
   id: number;
   term: string;
   meaning: string;
   example: string;
-  learned: boolean;
+}
+
+/** Termos do grupo e se o aluno já concluiu o grupo (o que inclui as palavras no Review). */
+export interface TermsResponse {
+  completed: boolean;
+  terms: TermView[];
 }
 
 /** Formata minutos para o texto dos botões: "1 min", "2 h", "3 dias". */

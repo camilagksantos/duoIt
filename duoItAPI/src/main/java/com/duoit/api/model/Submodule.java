@@ -1,5 +1,7 @@
 package com.duoit.api.model;
 
+import java.time.Instant;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -32,6 +34,9 @@ public class Submodule {
 	@JoinColumn(name = "module_id", nullable = false)
 	private LearningModule module;
 
+	/** Momento em que o aluno concluiu os Termos do Grupo. Nulo enquanto não concluiu. */
+	private Instant completedAt;
+
 	protected Submodule() {
 	}
 
@@ -46,6 +51,17 @@ public class Submodule {
 	public void update(String title, int position) {
 		this.title = title;
 		this.position = position;
+	}
+
+	/** Marca como concluído. Repetir não altera a data original. */
+	public void complete(Instant now) {
+		if (this.completedAt == null) {
+			this.completedAt = now;
+		}
+	}
+
+	public boolean isCompleted() {
+		return completedAt != null;
 	}
 
 	public Long getId() {

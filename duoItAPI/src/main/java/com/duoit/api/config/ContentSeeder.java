@@ -2,6 +2,7 @@ package com.duoit.api.config;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.Instant;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -13,9 +14,11 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionTemplate;
 
+import com.duoit.api.model.Card;
 import com.duoit.api.model.LearningModule;
 import com.duoit.api.model.Submodule;
 import com.duoit.api.model.Word;
+import com.duoit.api.repository.CardRepository;
 import com.duoit.api.repository.LearningModuleRepository;
 import com.duoit.api.repository.SubmoduleRepository;
 import com.duoit.api.repository.WordRepository;
@@ -38,14 +41,16 @@ public class ContentSeeder implements ApplicationRunner {
 	private final WordRepository words;
 	private final ObjectMapper mapper;
 	private final TransactionTemplate tx;
+	private final CardRepository cards;
 
 	public ContentSeeder(LearningModuleRepository modules, SubmoduleRepository submodules,
-			WordRepository words, ObjectMapper mapper, TransactionTemplate tx) {
+			WordRepository words, ObjectMapper mapper, TransactionTemplate tx, CardRepository cards) {
 		this.modules = modules;
 		this.submodules = submodules;
 		this.words = words;
 		this.mapper = mapper;
 		this.tx = tx;
+		this.cards = cards;
 	}
 
 	@Override
@@ -77,6 +82,15 @@ public class ContentSeeder implements ApplicationRunner {
 						.ifPresentOrElse(
 								existing -> existing.update(word.meaning(), word.example()),
 								() -> words.save(new Word(word.term(), word.meaning(), word.example(), submodule)));
+			}
+
+			// Grupo já concluído: palavras novas do JSON entram no Review automaticamente.
+			if (submodule.isCompleted()) {
+				for (Word word : words.findBySubmoduleSlugOrderByIdAsc(sub.slug())) {
+					if (cards.findByWord(word).isEmpty()) {
+						cards.save(new Card(word, Instant.now()));
+					}
+				}
 			}
 		}
 	}
