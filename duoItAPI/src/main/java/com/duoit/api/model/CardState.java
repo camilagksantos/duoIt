@@ -1,8 +1,12 @@
 package com.duoit.api.model;
 
 public enum CardState {
-	/** Ainda não respondido. */
+	/** Marcado como aprendido, ainda sem nenhuma avaliação. */
 	NEW,
-	/** Já respondido; agendado por SM-2. */
-	REVIEW
+	/** Em passos curtos de aprendizado. */
+	LEARNING,
+	/** Em revisão, agendado pelo FSRS. */
+	REVIEW,
+	/** Esquecido: em passos curtos de reaprendizado. */
+	RELEARNING
 }

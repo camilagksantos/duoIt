@@ -37,10 +37,7 @@ import { SegmentedBarComponent } from '../../../share/components/segmented-bar/s
           <app-segmented-bar [statuses]="segments()" />
         }
         <p class="numbers">
-          <strong>{{ progress.totals().answered }}</strong> de {{ progress.totals().total }} cards concluídos
-        </p>
-        <p class="numbers">
-          <strong>{{ progress.totals().mastered }}</strong> dominados (intervalo de 21 dias ou mais)
+          <strong>{{ progress.totals().answered }}</strong> de {{ progress.totals().total }} cards avaliados
         </p>
       </div>
     </section>

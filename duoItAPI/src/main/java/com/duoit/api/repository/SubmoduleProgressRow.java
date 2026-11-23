@@ -1,6 +1,6 @@
 package com.duoit.api.repository;
 
-/** Projeção: por submódulo, total de cards, respondidos pelo menos uma vez e dominados. */
+/** Projeção: por grupo, total de cards marcados e quantos já foram avaliados pelo menos uma vez. */
 public interface SubmoduleProgressRow {
 
 	String getSlug();
@@ -8,6 +8,4 @@ public interface SubmoduleProgressRow {
 	long getTotal();
 
 	Long getAnswered();
-
-	Long getMastered();
 }

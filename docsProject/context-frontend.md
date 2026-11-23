@@ -24,13 +24,13 @@ Projeto pessoal, de uso exclusivo de um usuário. Sem deploy e sem login.
 
 ## 4. Escopo
 
-- Navegação: barra de abas abaixo da toolbar com "Dashboard" (`/`, conteúdo provisório) e "Cards Review" (`/treino`, ainda sem conteúdo). O exercício Cards abre em `/estudo`, aberto pelo menu lateral.
+- Navegação: barra de abas abaixo da toolbar com "Dashboard" (`/`, conteúdo provisório) e "Cards Review" (`/treino`). O exercício Cards abre em `/estudo`, pelo menu lateral. Termos do Grupo abre em `/termos/:slug`, também pelo menu lateral.
 - Menu em três níveis: módulo (estrutura gramatical) → grupo de palavras (submódulo) → exercícios do grupo. Todos os níveis aparecem; só os exercícios liberados podem ser abertos.
 - Liberação em ordem de estudo, conforme a seção 8 do `learning-plan.md`: o primeiro grupo com palavras começa liberado. Dentro do grupo, o tipo seguinte só abre depois do anterior. O grupo seguinte abre quando todos os exercícios do atual forem concluídos.
-- Exercício Cards: a frente mostra o termo em inglês. "Mostrar resposta" revela o significado em português e a frase de exemplo. Depois, o usuário avalia com quatro botões, Errei, Difícil, Médio e Fácil, cada um com o intervalo em dias.
+- Exercício Cards: a frente mostra o termo em inglês. "Mostrar resposta" revela o significado em português e a frase de exemplo. Depois, o usuário avalia com quatro botões, Errei, Difícil, Médio e Fácil, cada um com o tempo até a próxima revisão (minutos, horas ou dias).
 - O exercício de digitação (resposta escrita com validação) é outro tipo, previsto para depois. Não faz parte do Cards.
 - Exercício concluído continua disponível para revisão.
-- Concluído (todos os cards respondidos pelo menos uma vez) e dominado (todos com intervalo de 21 dias ou mais) aparecem como dicas diferentes no menu. O dashboard mostra os dois números.
+- Concluído (todos os cards avaliados pelo menos uma vez) aparece como dica no menu. O dashboard mostra os cards avaliados. Não há mais o conceito de dominado.
 - Tipos de exercício ainda não disponíveis não bloqueiam a sequência.
 - Estados no menu: liberado, concluído, bloqueado, "Em breve" (grupo sem palavras) e "Sem API".
 
@@ -56,6 +56,6 @@ O id do grupo no front é o mesmo `slug` do banco.
 ## 6. Pendências
 
 - Versão do Angular e do Angular Material no projeto (a definir ao criar o projeto).
-- Estrutura de pastas e rotas: definida (ver seção 4, Navegação). Rotas: `/` (Dashboard), `/treino` (Cards Review, ainda sem conteúdo) e `/estudo` (Cards).
+- Estrutura de pastas e rotas: definida (ver seção 4, Navegação). Rotas: `/` (Dashboard), `/treino` (Cards Review), `/termos/:slug` (Termos do Grupo) e `/estudo` (Cards).
 - Layout: definido no padrão de referência (cabeçalho, menu lateral, dashboard e tema escuro).
 - Navegação por teclado: os submenus abrem com o foco (Tab), além do mouse.

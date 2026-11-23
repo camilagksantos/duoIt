@@ -215,7 +215,7 @@ Estrutura de três níveis:
 
 - **Módulo:** estrutura gramatical (seção 5), na ordem da seção 7.
 - **Grupo de palavras:** cada submódulo da seção 5 é um grupo de palavras, com a meta indicada. Cada grupo tem seus próprios exercícios.
-- **Exercícios:** cada grupo tem até 4 tipos. O primeiro é **Cards** (flashcards com repetição espaçada, SM-2). Os outros 3 tipos entram depois.
+- **Exercícios:** cada grupo tem até 4 tipos. O primeiro é **Cards** (flashcards com repetição espaçada, FSRS). Os outros 3 tipos entram depois.
 
 Regras de liberação:
 

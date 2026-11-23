@@ -13,7 +13,9 @@ Atualizado em: 2026-11-05
 | Layout com toolbar e sidebar | feito |
 | Menu de módulos, submódulos e exercícios (hover) | feito |
 | Tela inicial de estudo | feito (conteúdo do exercício ainda é placeholder) |
-| Flashcards (Anki/SM-2) ligados à API | feito |
+| Flashcards (FSRS) ligados à API | feito |
+| Termos do Grupo com checkbox "aprendi" | feito |
+| Cards Review ligado à API | feito |
 | Exercícios do menu ligados às sessões de cards (clique em "Cards") | feito |
 | Liberação em ordem de estudo (exercício bloqueado, "Em breve" e concluído) | feito |
 | Progressão testada com mais de um submódulo com conteúdo | pendente (hoje só existe um com palavras) |
@@ -26,6 +28,7 @@ Atualizado em: 2026-11-05
 - 2026-11-05: projeto Angular standalone criado em `duoItFront/`, com Angular Material. Build e teste passando.
 - 2026-11-23: card "Estudar" do dashboard agora abre o menu lateral. O estado do menu foi para `core/services/sidebar.service.ts`, usado pelo layout e pelo dashboard.
 - 2026-11-23: menu com os 59 grupos e todos os exercícios Cards. Testado: só o primeiro está liberado, os outros 58 aparecem como "Bloqueado".
+- 2026-11-23: implementado o FSRS, o checkbox "aprendi" em Termos do Grupo e o Cards Review com sessão própria. Dominado foi removido do progresso e do menu.
 - 2026-11-09: sugestões aplicadas. Grupos com mais de 50 entradas foram divididos (planejamento e agile; comunicação informal). Dominado (intervalo de 21 dias ou mais) separado de concluído. Significados mostram o sentido no contexto. Plano atualizado nas seções 3, 5 e 8.
 - 2026-11-09: imagem de fundo em `public/background.png` aplicada ao body, cobrindo a tela inteira. Toolbar, abas, menu e submenus ficaram semitransparentes para a imagem aparecer atrás deles.
 - 2026-11-09: layout no padrão de referência. Cabeçalho preto com logo centralizado e detalhes vermelhos, usuário à direita. Menu grafite com ícones por módulo e item "Dashboard". Submenus flutuantes escuros com destaque azul. Dashboard com três cartões (Estudar em vermelho, Cards Review em azul, Meu Progresso em amarelo) e progresso segmentado com número de cards. Cards de vocabulário com frente azul e verso grafite, resposta em amarelo. Conquistas (grupo concluído) em amarelo.

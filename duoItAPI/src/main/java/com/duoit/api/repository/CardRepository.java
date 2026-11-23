@@ -1,48 +1,53 @@
 package com.duoit.api.repository;
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.duoit.api.model.Card;
 import com.duoit.api.model.CardState;
+import com.duoit.api.model.Word;
 
 public interface CardRepository extends JpaRepository<Card, Long> {
 
-	@Query("""
-			select c from Card c
-			join c.word w
-			join w.submodule s
-			where c.state = :state and c.dueDate <= :today and s.slug = :slug
-			order by c.dueDate
-			""")
-	List<Card> findDueInSubmodule(@Param("state") CardState state, @Param("today") LocalDate today,
-			@Param("slug") String slug);
+	Optional<Card> findByWord(Word word);
 
+	/** Cards já avaliados pelo menos uma vez, não pausados e com vencimento até {@code now}. */
 	@Query("""
 			select c from Card c
-			join c.word w
-			join w.submodule s
-			where c.state = :state and s.slug = :slug
+			join fetch c.word w
+			join fetch w.submodule s
+			join fetch s.module
+			where c.state <> :newState and c.paused = false and c.dueAt <= :now
+			order by c.dueAt
+			""")
+	List<Card> findDue(@Param("newState") CardState newState, @Param("now") Instant now);
+
+	/** Cards marcados e ainda não avaliados, não pausados. */
+	@Query("""
+			select c from Card c
+			join fetch c.word w
+			join fetch w.submodule s
+			join fetch s.module
+			where c.state = :newState and c.paused = false
 			order by w.id
 			""")
-	List<Card> findNewInSubmodule(@Param("state") CardState state, @Param("slug") String slug, Pageable pageable);
+	List<Card> findNew(@Param("newState") CardState newState);
 
 	long countByIntroducedOn(LocalDate day);
 
 	@Query("""
 			select s.slug as slug, count(c) as total,
-			       sum(case when c.state = :answered then 1 else 0 end) as answered,
-			       sum(case when c.state = :answered and c.intervalDays >= :masteredDays then 1 else 0 end) as mastered
+			       sum(case when c.introducedOn is not null then 1 else 0 end) as answered
 			from Card c
 			join c.word w
 			join w.submodule s
 			group by s.slug
 			""")
-	List<SubmoduleProgressRow> progressBySubmodule(@Param("answered") CardState answered,
-			@Param("masteredDays") int masteredDays);
+	List<SubmoduleProgressRow> progressBySubmodule();
 }

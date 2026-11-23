@@ -5,10 +5,8 @@ import { LEARNING_PLAN } from '../data/learning-plan.data';
 export interface SubmoduleProgress {
   slug: string;
   total: number;
-  /** Respondidos pelo menos uma vez (concluído). */
+  /** Avaliados pelo menos uma vez. */
   answered: number;
-  /** Com intervalo de 21 dias ou mais (dominado). */
-  mastered: number;
 }
 
 export type ExerciseStatus = 'done' | 'open' | 'locked' | 'soon' | 'unavailable';
@@ -52,20 +50,12 @@ export class ProgressService {
   readonly totals = computed(() => {
     let total = 0;
     let answered = 0;
-    let mastered = 0;
     for (const p of this.bySlug().values()) {
       total += p.total;
       answered += p.answered;
-      mastered += p.mastered;
     }
-    return { total, answered, mastered };
+    return { total, answered };
   });
-
-  /** Concluído e todos os cards com intervalo de 21 dias ou mais. */
-  isMastered(submoduleId: string): boolean {
-    const p = this.bySlug().get(submoduleId);
-    return !!p && p.total > 0 && p.mastered >= p.total;
-  }
 
   constructor() {
     this.load();

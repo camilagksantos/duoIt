@@ -13,7 +13,8 @@ Atualizado em: 2026-11-05
 | Entidades do MVP (`LearningModule`, `Submodule`, `Word`) | feito |
 | PostgreSQL no Docker (`duoItAPI/docker-compose.yml`) | feito |
 | Conexão com PostgreSQL | feito |
-| Entidade `Card` e agendamento SM-2 (`Sm2Scheduler`, com testes) | feito |
+| Entidade `Card` e agendamento FSRS-5 (`Fsrs`, `FsrsScheduler`, com testes) | feito |
+| Entrada no Review por checkbox (`/api/terms`) e sessão do Review (`/api/review/session`) | feito |
 | Endpoints de sessão e de resposta (`/api/study`) | feito |
 | Carga de dados real (módulos, submódulos e palavras) | pendente (hoje só dados de exemplo) |
 | Progresso por submódulo (`GET /api/progress`) | feito |

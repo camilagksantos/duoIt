@@ -18,6 +18,7 @@ const HINTS: Record<ExerciseStatus, string> = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NavItemComponent],
   template: `
+    <app-nav-item label="Termos" (activate)="openTerms()" />
     @for (exercise of submodule().exercises; track exercise.id) {
       <app-nav-item
         [label]="exercise.title"
@@ -49,11 +50,12 @@ export class ExerciseMenuComponent {
   }
 
   protected hintFor(_exercise: Exercise): string {
-    const id = this.submodule().id;
-    if (this.progress.status(id) === 'done' && this.progress.isMastered(id)) {
-      return 'Dominado';
-    }
-    return HINTS[this.progress.status(id)];
+    return HINTS[this.progress.status(this.submodule().id)];
+  }
+
+  /** Termos do Grupo: sempre disponível, não depende da liberação. */
+  protected openTerms(): void {
+    this.router.navigate(['/termos', this.submodule().id]);
   }
 
   protected isSelected(exercise: Exercise): boolean {

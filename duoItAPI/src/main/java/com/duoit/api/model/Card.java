@@ -1,8 +1,9 @@
 package com.duoit.api.model;
 
+import java.time.Instant;
 import java.time.LocalDate;
 
-import com.duoit.api.scheduling.Sm2Scheduler;
+import com.duoit.api.scheduling.FsrsScheduler;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -16,6 +17,10 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
+/**
+ * Card de uma palavra marcada como aprendida. Guarda o estado do agendamento FSRS.
+ * {@code paused} tira a palavra do Review sem apagar o histórico.
+ */
 @Entity
 @Table(name = "cards")
 public class Card {
@@ -33,49 +38,64 @@ public class Card {
 	private CardState state;
 
 	@Column(nullable = false)
-	private int repetitions;
+	private int step;
 
 	@Column(nullable = false)
-	private double easeFactor;
+	private double stability;
 
 	@Column(nullable = false)
-	private int intervalDays;
+	private double difficulty;
+
+	@Column(nullable = false)
+	private int reps;
 
 	@Column(nullable = false)
 	private int lapses;
 
-	private LocalDate dueDate;
+	private Instant lastReview;
 
-	/** Dia em que o card foi respondido pela primeira vez. Usado para o limite de novos por dia. */
+	@Column(nullable = false)
+	private Instant dueAt;
+
+	/** Dia da primeira avaliação. Usado para o limite de novos cards por dia. */
 	private LocalDate introducedOn;
+
+	@Column(nullable = false)
+	private boolean paused;
 
 	protected Card() {
 	}
 
-	public Card(Word word) {
+	public Card(Word word, Instant now) {
 		this.word = word;
-		this.state = CardState.NEW;
-		this.repetitions = 0;
-		this.easeFactor = Sm2Scheduler.INITIAL_EASE;
-		this.intervalDays = 0;
-		this.lapses = 0;
+		this.paused = false;
+		applyMemory(FsrsScheduler.Memory.newCard(now), null);
 	}
 
-	public Sm2Scheduler.State sm2State() {
-		return new Sm2Scheduler.State(repetitions, easeFactor, intervalDays, lapses);
+	public FsrsScheduler.Memory memory() {
+		return new FsrsScheduler.Memory(state, step, stability, difficulty, reps, lapses, lastReview, dueAt);
 	}
 
-	public void applyOutcome(Sm2Scheduler.Outcome outcome, LocalDate today) {
-		Sm2Scheduler.State s = outcome.state();
-		this.state = CardState.REVIEW;
-		this.repetitions = s.repetitions();
-		this.easeFactor = s.ease();
-		this.intervalDays = s.intervalDays();
-		this.lapses = s.lapses();
-		this.dueDate = outcome.dueDate();
-		if (this.introducedOn == null) {
+	public void applyMemory(FsrsScheduler.Memory m, LocalDate today) {
+		this.state = m.state();
+		this.step = m.step();
+		this.stability = m.stability();
+		this.difficulty = m.difficulty();
+		this.reps = m.reps();
+		this.lapses = m.lapses();
+		this.lastReview = m.lastReview();
+		this.dueAt = m.dueAt();
+		if (today != null && this.introducedOn == null) {
 			this.introducedOn = today;
 		}
+	}
+
+	public void pause() {
+		this.paused = true;
+	}
+
+	public void resume() {
+		this.paused = false;
 	}
 
 	public Long getId() {
@@ -90,11 +110,15 @@ public class Card {
 		return state;
 	}
 
-	public LocalDate getDueDate() {
-		return dueDate;
+	public Instant getDueAt() {
+		return dueAt;
 	}
 
 	public LocalDate getIntroducedOn() {
 		return introducedOn;
+	}
+
+	public boolean isPaused() {
+		return paused;
 	}
 }

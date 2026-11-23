@@ -48,7 +48,7 @@ Front-end (dentro de `duoItFront/`):
 - O front chama a API direto em `http://localhost:8080/api`. A URL está fixa nos serviços em `core/services/`.
 - A API libera CORS só para `http://localhost:4200` (`config/WebConfig.java`).
 - O id do submódulo no front é o mesmo `slug` do submódulo no banco. Se um for alterado, o outro também precisa.
-- O agendamento SM-2 fica em `scheduling/Sm2Scheduler.java`, uma função pura, sem acesso ao banco.
+- O agendamento FSRS fica em `scheduling/` (`Fsrs.java` e `FsrsScheduler.java`), uma função pura, sem acesso ao banco. Toda avaliação passa por `study/CardService`.
 - A liberação dos exercícios é calculada no front (`core/services/progress.service.ts`), com base em `GET /api/progress`.
 - O conteúdo das palavras fica em `duoItAPI/src/main/resources/content/*.json` (um arquivo por módulo, 18 no total, 1.370 palavras). `config/ContentSeeder.java` sincroniza esses arquivos com o banco a cada início da API. Cria o que é novo e atualiza significado, exemplo e título quando mudam. Não apaga palavras nem cards, então o progresso fica preservado. Os rascunhos para revisão ficam em `docsProject/content-*.md`, e a conversão para JSON é feita a partir deles.
 - A estrutura de módulos, grupos e exercícios para o menu fica em `core/data/learning-plan.data.ts` (front). Precisa bater com os slugs do back.
