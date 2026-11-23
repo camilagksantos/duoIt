@@ -24,6 +24,7 @@ Atualizado em: 2026-11-05
 
 - 2026-11-05: documento criado. Contexto do front-end definido.
 - 2026-11-05: projeto Angular standalone criado em `duoItFront/`, com Angular Material. Build e teste passando.
+- 2026-11-23: card "Estudar" do dashboard agora abre o menu lateral. O estado do menu foi para `core/services/sidebar.service.ts`, usado pelo layout e pelo dashboard.
 - 2026-11-23: menu com os 59 grupos e todos os exercícios Cards. Testado: só o primeiro está liberado, os outros 58 aparecem como "Bloqueado".
 - 2026-11-09: sugestões aplicadas. Grupos com mais de 50 entradas foram divididos (planejamento e agile; comunicação informal). Dominado (intervalo de 21 dias ou mais) separado de concluído. Significados mostram o sentido no contexto. Plano atualizado nas seções 3, 5 e 8.
 - 2026-11-09: imagem de fundo em `public/background.png` aplicada ao body, cobrindo a tela inteira. Toolbar, abas, menu e submenus ficaram semitransparentes para a imagem aparecer atrás deles.

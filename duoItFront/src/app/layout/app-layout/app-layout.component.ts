@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { SidebarService } from '../../core/services/sidebar.service';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -14,14 +15,14 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
       <mat-sidenav
         class="sidebar-drawer"
         mode="over"
-        [opened]="sidebarOpen()"
-        (mouseleave)="closeSidebar()"
+        [opened]="sidebar.open()"
+        (mouseleave)="sidebar.close()"
       >
         <app-sidebar />
       </mat-sidenav>
 
       <mat-sidenav-content>
-        <app-toolbar (menuClick)="toggleSidebar()" />
+        <app-toolbar (menuClick)="sidebar.toggle()" />
 
         <nav mat-tab-nav-bar class="tabs" [tabPanel]="tabPanel">
           <a mat-tab-link routerLink="/" routerLinkActive #introTab="routerLinkActive"
@@ -58,13 +59,5 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 })
 export class AppLayoutComponent {
   // Fechada por padrão. Abre sobre o conteúdo (sem empurrar a tela) e fecha quando o mouse sai dela.
-  protected readonly sidebarOpen = signal(false);
-
-  toggleSidebar(): void {
-    this.sidebarOpen.update((open) => !open);
-  }
-
-  closeSidebar(): void {
-    this.sidebarOpen.set(false);
-  }
+  protected readonly sidebar = inject(SidebarService);
 }

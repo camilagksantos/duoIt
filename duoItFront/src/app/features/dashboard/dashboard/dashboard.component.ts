@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProgressService } from '../../../core/services/progress.service';
+import { SidebarService } from '../../../core/services/sidebar.service';
 import { SegmentedBarComponent } from '../../../share/components/segmented-bar/segmented-bar.component';
 
 @Component({
@@ -12,12 +13,12 @@ import { SegmentedBarComponent } from '../../../share/components/segmented-bar/s
     <p class="intro">Bem-vindo ao Duo IT. Abra o menu lateral para escolher um módulo e um grupo de palavras.</p>
 
     <section class="actions">
-      <div class="dashboard-card action study">
+      <button type="button" class="dashboard-card action study" (click)="sidebar.show()">
         <span class="material-symbols-outlined action-icon">menu_book</span>
         <h2>Estudar</h2>
         <p>Abra o menu lateral e escolha um exercício liberado.</p>
         <span class="material-symbols-outlined arrow">chevron_right</span>
-      </div>
+      </button>
 
       <a class="dashboard-card action review" routerLink="/treino">
         <span class="material-symbols-outlined action-icon">style</span>
@@ -64,6 +65,13 @@ import { SegmentedBarComponent } from '../../../share/components/segmented-bar/s
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
+    }
+
+    button.action {
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+      background: var(--bg-card);
     }
 
     .action {
@@ -135,6 +143,7 @@ import { SegmentedBarComponent } from '../../../share/components/segmented-bar/s
 })
 export class DashboardComponent {
   protected readonly progress = inject(ProgressService);
+  protected readonly sidebar = inject(SidebarService);
 
   constructor() {
     // Tenta de novo sempre que o dashboard abre, caso a API tenha falhado antes.
