@@ -32,7 +32,7 @@ O conteúdo é um plano de estudo de inglês técnico. A hierarquia é módulo �
 
 Back-end (dentro de `duoItAPI/`):
 
-- `docker compose up -d`: sobe o PostgreSQL 16 (porta 5432, banco `duoit`). Precisa estar rodando antes da API.
+- `docker compose up -d`: sobe o PostgreSQL 16 (porta 5432, banco `duoit`). Precisa estar rodando antes da API. Exige o arquivo `duoItAPI/.env` com `DB_PASSWORD=...`, que não vai para o git.
 - `./mvnw spring-boot:run`: sobe a API na porta 8080.
 - `./mvnw test`: roda os testes. O teste de contexto precisa do PostgreSQL ligado.
 - `./mvnw -q -DskipTests package`: gera o jar em `target/`.

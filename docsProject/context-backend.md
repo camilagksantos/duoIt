@@ -15,7 +15,7 @@ Projeto pessoal, de uso exclusivo de um usuário. Sem deploy e sem login.
 - Build: Maven 3.8.6
 - Framework: Spring Boot 4.1.2 (exige Java 17+ e é compatível até Java 27, segundo a documentação oficial)
 - Banco de dados: PostgreSQL 16 (imagem `postgres:16`, em Docker)
-- Infraestrutura local: `duoItAPI/docker-compose.yml` sobe o PostgreSQL na porta 5432. Banco `duoit`, usuário e senha `duoit` (somente desenvolvimento local).
+- Infraestrutura local: `duoItAPI/docker-compose.yml` sobe o PostgreSQL na porta 5432. Banco `duoit`, usuário `duoit`. A senha fica no arquivo `duoItAPI/.env` (variável `DB_PASSWORD`), que não vai para o git. Sem esse arquivo, o Docker e a API não sobem.
 
 ## 3. Pasta
 

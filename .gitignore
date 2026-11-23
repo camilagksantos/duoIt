@@ -15,3 +15,6 @@ duoItAPI/*.iml
 # Editores
 .idea/
 *.swp
+
+# Segredos locais (senha do banco). Nunca versionar.
+.env
