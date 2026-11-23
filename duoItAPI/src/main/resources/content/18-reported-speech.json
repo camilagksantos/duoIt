@@ -1,0 +1,456 @@
+{
+  "module": {
+    "title": "Discurso indireto e conectores",
+    "position": 18
+  },
+  "submodules": [
+    {
+      "slug": "rs-reporting-verbs",
+      "title": "Verbos de relato",
+      "position": 1,
+      "words": [
+        {
+          "term": "said",
+          "meaning": "disse",
+          "example": "The lead said the release is on Friday."
+        },
+        {
+          "term": "asked",
+          "meaning": "perguntou",
+          "example": "The client asked for a demo."
+        },
+        {
+          "term": "mentioned",
+          "meaning": "mencionou",
+          "example": "She mentioned a bug in the login."
+        },
+        {
+          "term": "confirmed",
+          "meaning": "confirmou",
+          "example": "He confirmed the meeting at ten."
+        },
+        {
+          "term": "replied",
+          "meaning": "respondeu",
+          "example": "The team replied within an hour."
+        },
+        {
+          "term": "claimed",
+          "meaning": "afirmou",
+          "example": "The vendor claimed the fix was ready."
+        },
+        {
+          "term": "insisted",
+          "meaning": "insistiu",
+          "example": "The client insisted on a demo today."
+        },
+        {
+          "term": "warned",
+          "meaning": "avisou",
+          "example": "The lead warned us about the deadline."
+        },
+        {
+          "term": "wondered",
+          "meaning": "se perguntou",
+          "example": "I wondered if the API was down."
+        },
+        {
+          "term": "noted",
+          "meaning": "observou",
+          "example": "The reviewer noted a missing test."
+        },
+        {
+          "term": "said that",
+          "meaning": "disse que",
+          "example": "She said that the build was green."
+        },
+        {
+          "term": "asked if",
+          "meaning": "perguntou se",
+          "example": "He asked if the tests passed."
+        },
+        {
+          "term": "asked whether",
+          "meaning": "perguntou se",
+          "example": "The client asked whether we could move the date."
+        },
+        {
+          "term": "mentioned that",
+          "meaning": "mencionou que",
+          "example": "He mentioned that the server was slow."
+        },
+        {
+          "term": "confirmed that",
+          "meaning": "confirmou que",
+          "example": "She confirmed that the release is on track."
+        },
+        {
+          "term": "replied that",
+          "meaning": "respondeu que",
+          "example": "The team replied that they need more time."
+        },
+        {
+          "term": "claimed that",
+          "meaning": "afirmou que",
+          "example": "The vendor claimed that the API is fast."
+        },
+        {
+          "term": "warned that",
+          "meaning": "avisou que",
+          "example": "The lead warned that the release is risky."
+        },
+        {
+          "term": "insisted that",
+          "meaning": "insistiu que",
+          "example": "The client insisted that the demo is needed."
+        },
+        {
+          "term": "wondered if",
+          "meaning": "se perguntou se",
+          "example": "I wondered if the cache was stale."
+        }
+      ]
+    },
+    {
+      "slug": "rs-cause-connectors",
+      "title": "Conectores de causa",
+      "position": 2,
+      "words": [
+        {
+          "term": "because",
+          "meaning": "porque",
+          "example": "We delayed the release because of a bug."
+        },
+        {
+          "term": "since",
+          "meaning": "já que, como",
+          "example": "Since the tests failed, we stopped the deploy."
+        },
+        {
+          "term": "due to",
+          "meaning": "por causa de",
+          "example": "The release was late due to a bug."
+        },
+        {
+          "term": "because of",
+          "meaning": "por causa de",
+          "example": "We're late because of the outage."
+        },
+        {
+          "term": "as",
+          "meaning": "como (causa)",
+          "example": "As the server was down, the page failed."
+        },
+        {
+          "term": "owing to",
+          "meaning": "devido a",
+          "example": "Owing to the delay, the demo moved."
+        },
+        {
+          "term": "thanks to",
+          "meaning": "graças a",
+          "example": "Thanks to the team, we shipped on time."
+        },
+        {
+          "term": "as a result of",
+          "meaning": "como resultado de",
+          "example": "The bug was fixed as a result of the review."
+        },
+        {
+          "term": "given that",
+          "meaning": "considerando que",
+          "example": "Given that the tests pass, we can merge."
+        },
+        {
+          "term": "since it",
+          "meaning": "já que isso",
+          "example": "Since it's late, we'll review tomorrow."
+        },
+        {
+          "term": "because it",
+          "meaning": "porque isso",
+          "example": "Because it's broken, I rolled back."
+        },
+        {
+          "term": "due to the bug",
+          "meaning": "por causa do bug",
+          "example": "The release was delayed due to the bug."
+        },
+        {
+          "term": "because of the deadline",
+          "meaning": "por causa do prazo",
+          "example": "We worked late because of the deadline."
+        },
+        {
+          "term": "since we",
+          "meaning": "já que nós",
+          "example": "Since we're short on time, we'll cut the scope."
+        },
+        {
+          "term": "because we",
+          "meaning": "porque nós",
+          "example": "Because we didn't test it, it broke."
+        },
+        {
+          "term": "as they",
+          "meaning": "como eles",
+          "example": "As they were offline, we used the email."
+        },
+        {
+          "term": "on account of",
+          "meaning": "por causa de",
+          "example": "The demo was canceled on account of the outage."
+        },
+        {
+          "term": "because you",
+          "meaning": "porque você",
+          "example": "Because you reviewed it, we merged quickly."
+        },
+        {
+          "term": "as a consequence",
+          "meaning": "como consequência",
+          "example": "As a consequence, the sprint was longer."
+        },
+        {
+          "term": "so that the",
+          "meaning": "de forma que",
+          "example": "We cached it so that the page loads faster."
+        }
+      ]
+    },
+    {
+      "slug": "rs-contrast-connectors",
+      "title": "Conectores de contraste",
+      "position": 3,
+      "words": [
+        {
+          "term": "although",
+          "meaning": "embora",
+          "example": "Although the tests pass, the bug is still there."
+        },
+        {
+          "term": "however",
+          "meaning": "porém",
+          "example": "The code works. However, it's slow."
+        },
+        {
+          "term": "but",
+          "meaning": "mas",
+          "example": "The feature works, but it's slow."
+        },
+        {
+          "term": "though",
+          "meaning": "embora",
+          "example": "It works, though it's slow."
+        },
+        {
+          "term": "even though",
+          "meaning": "mesmo que",
+          "example": "Even though it's late, the team is happy."
+        },
+        {
+          "term": "despite",
+          "meaning": "apesar de",
+          "example": "Despite the bug, we shipped on time."
+        },
+        {
+          "term": "in spite of",
+          "meaning": "apesar de",
+          "example": "In spite of the delay, the client is happy."
+        },
+        {
+          "term": "nevertheless",
+          "meaning": "mesmo assim",
+          "example": "The test failed; nevertheless, we deployed."
+        },
+        {
+          "term": "nonetheless",
+          "meaning": "mesmo assim",
+          "example": "It's risky; nonetheless, we'll try it."
+        },
+        {
+          "term": "whereas",
+          "meaning": "enquanto (contraste)",
+          "example": "The frontend is fast, whereas the API is slow."
+        },
+        {
+          "term": "while",
+          "meaning": "enquanto (contraste)",
+          "example": "While the tests pass, the UI is broken."
+        },
+        {
+          "term": "on the contrary",
+          "meaning": "pelo contrário",
+          "example": "On the contrary, the bug is getting worse."
+        },
+        {
+          "term": "instead",
+          "meaning": "em vez disso",
+          "example": "Instead of coding, I read the docs."
+        },
+        {
+          "term": "even if",
+          "meaning": "mesmo se",
+          "example": "Even if it fails, we learn something."
+        },
+        {
+          "term": "despite the bug",
+          "meaning": "apesar do bug",
+          "example": "Despite the bug, the demo went well."
+        },
+        {
+          "term": "in spite of the bug",
+          "meaning": "apesar do bug",
+          "example": "In spite of the bug, the client was happy."
+        },
+        {
+          "term": "although it works",
+          "meaning": "embora funcione",
+          "example": "Although it works, I'd refactor it."
+        },
+        {
+          "term": "however it's slow",
+          "meaning": "mas está lento",
+          "example": "It works; however, it's slow."
+        },
+        {
+          "term": "but it works",
+          "meaning": "mas funciona",
+          "example": "It's ugly, but it works."
+        },
+        {
+          "term": "whereas the API is slow",
+          "meaning": "enquanto a API está lenta",
+          "example": "The app is fast, whereas the API is slow."
+        },
+        {
+          "term": "while the tests pass",
+          "meaning": "enquanto os testes passam",
+          "example": "While the tests pass, the UI is off."
+        },
+        {
+          "term": "even so",
+          "meaning": "mesmo assim",
+          "example": "The docs are old; even so, they help."
+        }
+      ]
+    },
+    {
+      "slug": "rs-sequence-connectors",
+      "title": "Conectores de sequência",
+      "position": 4,
+      "words": [
+        {
+          "term": "so",
+          "meaning": "então",
+          "example": "The tests failed, so I rolled back."
+        },
+        {
+          "term": "then",
+          "meaning": "então, depois",
+          "example": "First I test, then I deploy."
+        },
+        {
+          "term": "after that",
+          "meaning": "depois disso",
+          "example": "After that, we check the logs."
+        },
+        {
+          "term": "finally",
+          "meaning": "finalmente",
+          "example": "Finally, we shipped the release."
+        },
+        {
+          "term": "first",
+          "meaning": "primeiro",
+          "example": "First, I read the requirements."
+        },
+        {
+          "term": "first of all",
+          "meaning": "antes de tudo",
+          "example": "First of all, let's check the logs."
+        },
+        {
+          "term": "to begin with",
+          "meaning": "para começar",
+          "example": "To begin with, we need the docs."
+        },
+        {
+          "term": "next",
+          "meaning": "depois",
+          "example": "Next, I'll update the tests."
+        },
+        {
+          "term": "afterwards",
+          "meaning": "depois",
+          "example": "Afterwards, we reviewed the PR."
+        },
+        {
+          "term": "eventually",
+          "meaning": "com o tempo",
+          "example": "Eventually, the team agreed."
+        },
+        {
+          "term": "meanwhile",
+          "meaning": "enquanto isso",
+          "example": "Meanwhile, I'll fix the bug."
+        },
+        {
+          "term": "in the end",
+          "meaning": "no fim",
+          "example": "In the end, we kept the old design."
+        },
+        {
+          "term": "at the end",
+          "meaning": "no fim",
+          "example": "At the end of the day, I write notes."
+        },
+        {
+          "term": "lastly",
+          "meaning": "por último",
+          "example": "Lastly, we send the report."
+        },
+        {
+          "term": "subsequently",
+          "meaning": "posteriormente",
+          "example": "Subsequently, the bug was fixed."
+        },
+        {
+          "term": "after which",
+          "meaning": "depois do que",
+          "example": "We deployed, after which we monitored."
+        },
+        {
+          "term": "before that",
+          "meaning": "antes disso",
+          "example": "Before that, we ran the tests."
+        },
+        {
+          "term": "following that",
+          "meaning": "em seguida",
+          "example": "Following that, we updated the docs."
+        },
+        {
+          "term": "and then",
+          "meaning": "e depois",
+          "example": "I fixed the bug and then I wrote the test."
+        },
+        {
+          "term": "once",
+          "meaning": "assim que",
+          "example": "Once the tests pass, we deploy."
+        },
+        {
+          "term": "as soon as",
+          "meaning": "assim que",
+          "example": "As soon as the build is done, I'll tell you."
+        },
+        {
+          "term": "right after",
+          "meaning": "logo depois",
+          "example": "Right after the call, I'll send the notes."
+        }
+      ]
+    }
+  ]
+}

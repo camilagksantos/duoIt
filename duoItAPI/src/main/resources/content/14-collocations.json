@@ -1,0 +1,446 @@
+{
+  "module": {
+    "title": "Collocações de TI",
+    "position": 14
+  },
+  "submodules": [
+    {
+      "slug": "coll-prs-branches",
+      "title": "Verbos com PR e branches",
+      "position": 1,
+      "words": [
+        {
+          "term": "open a PR",
+          "meaning": "abrir um pedido de integração",
+          "example": "I open a PR every afternoon."
+        },
+        {
+          "term": "create a branch",
+          "meaning": "criar uma ramificação",
+          "example": "I create a branch for each task."
+        },
+        {
+          "term": "rebase a branch",
+          "meaning": "reaplicar a branch sobre outra",
+          "example": "I rebase my branch on main every morning."
+        },
+        {
+          "term": "delete a branch",
+          "meaning": "apagar uma branch",
+          "example": "We delete the old branches after the merge."
+        },
+        {
+          "term": "push a commit",
+          "meaning": "enviar um commit",
+          "example": "I push a commit every hour."
+        },
+        {
+          "term": "amend a commit",
+          "meaning": "corrigir o último commit",
+          "example": "I amend the commit before sending."
+        },
+        {
+          "term": "squash a commit",
+          "meaning": "juntar commits",
+          "example": "We squash the commits before merging."
+        },
+        {
+          "term": "revert a commit",
+          "meaning": "desfazer um commit",
+          "example": "I reverted the commit yesterday."
+        },
+        {
+          "term": "cherry-pick a commit",
+          "meaning": "copiar um commit para outra branch",
+          "example": "I cherry-pick the fix to the release branch."
+        },
+        {
+          "term": "update a PR",
+          "meaning": "atualizar um PR",
+          "example": "I update the PR after each review."
+        },
+        {
+          "term": "close a PR",
+          "meaning": "fechar um PR",
+          "example": "I closed the PR because it's not needed."
+        },
+        {
+          "term": "reopen a PR",
+          "meaning": "reabrir um PR",
+          "example": "I reopened the PR to add tests."
+        },
+        {
+          "term": "request a review",
+          "meaning": "pedir uma revisão",
+          "example": "I request a review from Ana."
+        },
+        {
+          "term": "assign a PR",
+          "meaning": "atribuir um PR",
+          "example": "I assign the PR to the reviewer."
+        },
+        {
+          "term": "link a PR to a ticket",
+          "meaning": "ligar o PR a uma tarefa",
+          "example": "I link every PR to a ticket."
+        },
+        {
+          "term": "split a PR",
+          "meaning": "dividir um PR",
+          "example": "We split the PR into two smaller ones."
+        },
+        {
+          "term": "keep a PR small",
+          "meaning": "manter um PR pequeno",
+          "example": "I keep the PRs small on purpose."
+        },
+        {
+          "term": "rebase onto main",
+          "meaning": "reaplicar sobre a main",
+          "example": "I rebase onto main before the review."
+        },
+        {
+          "term": "fetch the latest changes",
+          "meaning": "buscar as últimas mudanças",
+          "example": "I fetch the latest changes each morning."
+        },
+        {
+          "term": "pull the changes",
+          "meaning": "puxar as mudanças",
+          "example": "I pull the changes before I start."
+        },
+        {
+          "term": "commit the changes",
+          "meaning": "salvar as mudanças no git",
+          "example": "I commit the changes with a clear message."
+        },
+        {
+          "term": "stage the changes",
+          "meaning": "preparar as mudanças para o commit",
+          "example": "I stage only the needed files."
+        }
+      ]
+    },
+    {
+      "slug": "coll-bugs-tickets",
+      "title": "Verbos com bugs e tickets",
+      "position": 2,
+      "words": [
+        {
+          "term": "log a bug",
+          "meaning": "registrar um bug",
+          "example": "I log a bug when I find one."
+        },
+        {
+          "term": "file a bug",
+          "meaning": "abrir um relato de bug",
+          "example": "I filed a bug about the login."
+        },
+        {
+          "term": "triage a bug",
+          "meaning": "classificar um bug",
+          "example": "We triage the bugs on Monday."
+        },
+        {
+          "term": "prioritize a bug",
+          "meaning": "definir a prioridade de um bug",
+          "example": "We prioritize the bugs by impact."
+        },
+        {
+          "term": "reproduce a bug",
+          "meaning": "reproduzir um bug",
+          "example": "I can reproduce the bug locally."
+        },
+        {
+          "term": "verify a fix",
+          "meaning": "confirmar uma correção",
+          "example": "QA verified the fix yesterday."
+        },
+        {
+          "term": "close a ticket",
+          "meaning": "fechar uma tarefa",
+          "example": "I closed the ticket after the release."
+        },
+        {
+          "term": "file a ticket",
+          "meaning": "abrir uma tarefa",
+          "example": "I file a ticket for every request."
+        },
+        {
+          "term": "reopen a ticket",
+          "meaning": "reabrir uma tarefa",
+          "example": "I reopened the ticket because it failed."
+        },
+        {
+          "term": "escalate a bug",
+          "meaning": "levar um bug para outra equipe",
+          "example": "We escalated the bug to the infra team."
+        },
+        {
+          "term": "track a bug",
+          "meaning": "acompanhar um bug",
+          "example": "I track the bug in the board."
+        },
+        {
+          "term": "write a bug report",
+          "meaning": "escrever um relato de bug",
+          "example": "I wrote a bug report with the steps."
+        },
+        {
+          "term": "add a test",
+          "meaning": "adicionar um teste",
+          "example": "I add a test for every bug."
+        },
+        {
+          "term": "fix a regression",
+          "meaning": "corrigir uma regressão",
+          "example": "We fixed a regression in the login."
+        },
+        {
+          "term": "cover an edge case",
+          "meaning": "cobrir um caso limite",
+          "example": "The test covers the edge case."
+        },
+        {
+          "term": "confirm a bug",
+          "meaning": "confirmar um bug",
+          "example": "QA confirmed the bug on mobile."
+        },
+        {
+          "term": "duplicate a ticket",
+          "meaning": "marcar como duplicada",
+          "example": "I duplicated the ticket by mistake."
+        },
+        {
+          "term": "retest a fix",
+          "meaning": "testar a correção de novo",
+          "example": "We retested the fix on staging."
+        },
+        {
+          "term": "set a priority",
+          "meaning": "definir uma prioridade",
+          "example": "I set the priority to high."
+        },
+        {
+          "term": "label a ticket",
+          "meaning": "etiquetar uma tarefa",
+          "example": "I label every ticket by area."
+        }
+      ]
+    },
+    {
+      "slug": "coll-review-decision",
+      "title": "Verbos com revisão e decisão",
+      "position": 3,
+      "words": [
+        {
+          "term": "leave a comment",
+          "meaning": "deixar um comentário",
+          "example": "I left a comment on line 10."
+        },
+        {
+          "term": "reach a decision",
+          "meaning": "chegar a uma decisão",
+          "example": "We reached a decision on Monday."
+        },
+        {
+          "term": "request a change",
+          "meaning": "pedir uma mudança",
+          "example": "I requested a change in the naming."
+        },
+        {
+          "term": "approve a change",
+          "meaning": "aprovar uma mudança",
+          "example": "The lead approved the change."
+        },
+        {
+          "term": "defend a choice",
+          "meaning": "defender uma escolha",
+          "example": "I defended the choice of the library."
+        },
+        {
+          "term": "challenge a decision",
+          "meaning": "questionar uma decisão",
+          "example": "I challenged the decision with data."
+        },
+        {
+          "term": "weigh the options",
+          "meaning": "avaliar as opções",
+          "example": "We weighed the options carefully."
+        },
+        {
+          "term": "give feedback",
+          "meaning": "dar um retorno",
+          "example": "I give feedback in every review."
+        },
+        {
+          "term": "ask for feedback",
+          "meaning": "pedir um retorno",
+          "example": "I asked for feedback from the team."
+        },
+        {
+          "term": "accept a suggestion",
+          "meaning": "aceitar uma sugestão",
+          "example": "I accepted the suggestion."
+        },
+        {
+          "term": "reject a suggestion",
+          "meaning": "recusar uma sugestão",
+          "example": "I rejected the suggestion with a reason."
+        },
+        {
+          "term": "discuss the trade-offs",
+          "meaning": "discutir os prós e contras",
+          "example": "We discussed the trade-offs."
+        },
+        {
+          "term": "resolve a comment",
+          "meaning": "marcar um comentário como resolvido",
+          "example": "I resolved the comment after the change."
+        },
+        {
+          "term": "reply to a comment",
+          "meaning": "responder a um comentário",
+          "example": "I replied to the comment."
+        },
+        {
+          "term": "push back on",
+          "meaning": "discordar de",
+          "example": "I pushed back on the timeline."
+        },
+        {
+          "term": "support a proposal",
+          "meaning": "apoiar uma proposta",
+          "example": "I support the proposal."
+        },
+        {
+          "term": "vote on a proposal",
+          "meaning": "votar em uma proposta",
+          "example": "The team voted on the proposal."
+        },
+        {
+          "term": "make a call",
+          "meaning": "tomar uma decisão rápida",
+          "example": "I make the call on the design."
+        },
+        {
+          "term": "take a decision",
+          "meaning": "tomar uma decisão",
+          "example": "We took a decision on the stack."
+        },
+        {
+          "term": "review a design",
+          "meaning": "revisar um design",
+          "example": "I reviewed the design with the team."
+        }
+      ]
+    },
+    {
+      "slug": "coll-deliveries",
+      "title": "Verbos com entregas",
+      "position": 4,
+      "words": [
+        {
+          "term": "cut a release",
+          "meaning": "criar uma versão",
+          "example": "We cut a release every two weeks."
+        },
+        {
+          "term": "untangle a conflict",
+          "meaning": "desfazer um conflito",
+          "example": "I untangled the conflict in the config."
+        },
+        {
+          "term": "resolve a conflict",
+          "meaning": "resolver um conflito",
+          "example": "I resolve the conflict before the merge."
+        },
+        {
+          "term": "bump a version",
+          "meaning": "aumentar o número da versão",
+          "example": "We bump the version after each release."
+        },
+        {
+          "term": "tag a release",
+          "meaning": "marcar uma versão",
+          "example": "We tag every release in git."
+        },
+        {
+          "term": "ship a feature",
+          "meaning": "entregar uma funcionalidade",
+          "example": "We shipped the feature on Friday."
+        },
+        {
+          "term": "deliver a feature",
+          "meaning": "entregar uma funcionalidade",
+          "example": "We deliver a feature every sprint."
+        },
+        {
+          "term": "roll back a release",
+          "meaning": "voltar uma versão",
+          "example": "We rolled back the release at night."
+        },
+        {
+          "term": "schedule a release",
+          "meaning": "agendar uma versão",
+          "example": "We schedule the release for Friday."
+        },
+        {
+          "term": "freeze the code",
+          "meaning": "travar o código",
+          "example": "We freeze the code before the demo."
+        },
+        {
+          "term": "plan a release",
+          "meaning": "planejar uma versão",
+          "example": "I plan the release with the PM."
+        },
+        {
+          "term": "hotfix a bug",
+          "meaning": "corrigir um bug urgente",
+          "example": "We hotfixed the bug in production."
+        },
+        {
+          "term": "deploy a build",
+          "meaning": "publicar um build",
+          "example": "I deploy the build to staging."
+        },
+        {
+          "term": "monitor a release",
+          "meaning": "acompanhar uma versão",
+          "example": "I monitor the release for an hour."
+        },
+        {
+          "term": "announce a release",
+          "meaning": "anunciar uma versão",
+          "example": "We announce the release on Monday."
+        },
+        {
+          "term": "test a release",
+          "meaning": "testar uma versão",
+          "example": "QA tests every release."
+        },
+        {
+          "term": "back up the database",
+          "meaning": "fazer backup do banco",
+          "example": "We back up the database before each release."
+        },
+        {
+          "term": "meet a deadline",
+          "meaning": "cumprir um prazo",
+          "example": "We met the deadline."
+        },
+        {
+          "term": "hit a milestone",
+          "meaning": "atingir um marco",
+          "example": "We hit the first milestone."
+        },
+        {
+          "term": "document a release",
+          "meaning": "documentar uma versão",
+          "example": "I document every release in the changelog."
+        }
+      ]
+    }
+  ]
+}

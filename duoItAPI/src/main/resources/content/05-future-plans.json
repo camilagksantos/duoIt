@@ -1,0 +1,394 @@
+{
+  "module": {
+    "title": "Futuro para planos",
+    "position": 5
+  },
+  "submodules": [
+    {
+      "slug": "future-decisions",
+      "title": "Decisões na hora e promessas",
+      "position": 1,
+      "words": [
+        {
+          "term": "will",
+          "meaning": "vai (decisão na hora)",
+          "example": "I will send the report by Monday."
+        },
+        {
+          "term": "I'll",
+          "meaning": "eu vou",
+          "example": "I'll check the logs now."
+        },
+        {
+          "term": "we'll",
+          "meaning": "nós vamos",
+          "example": "We'll deploy after the review."
+        },
+        {
+          "term": "you'll",
+          "meaning": "você vai",
+          "example": "You'll like the new layout."
+        },
+        {
+          "term": "they'll",
+          "meaning": "eles vão",
+          "example": "They'll answer soon."
+        },
+        {
+          "term": "won't",
+          "meaning": "não vai",
+          "example": "I won't push to production today."
+        },
+        {
+          "term": "it'll",
+          "meaning": "vai",
+          "example": "It'll be fine."
+        },
+        {
+          "term": "that'll be",
+          "meaning": "isso vai ser",
+          "example": "That'll be enough."
+        },
+        {
+          "term": "will be ready",
+          "meaning": "vai estar pronto",
+          "example": "The docs will be ready on Monday."
+        },
+        {
+          "term": "it will work",
+          "meaning": "vai funcionar",
+          "example": "It will work after the restart."
+        },
+        {
+          "term": "will probably",
+          "meaning": "provavelmente vai",
+          "example": "It will probably take a day."
+        },
+        {
+          "term": "I'll help",
+          "meaning": "eu vou ajudar",
+          "example": "I'll help you with the tests."
+        },
+        {
+          "term": "I'll reply",
+          "meaning": "eu respondo",
+          "example": "I'll reply to the email tonight."
+        },
+        {
+          "term": "I'll do it",
+          "meaning": "eu faço",
+          "example": "I'll do it after lunch."
+        },
+        {
+          "term": "I'll fix it",
+          "meaning": "eu corrijo",
+          "example": "I'll fix it this afternoon."
+        },
+        {
+          "term": "I'll send it",
+          "meaning": "eu envio",
+          "example": "I'll send it to you later."
+        },
+        {
+          "term": "I'll let them know",
+          "meaning": "eu aviso eles",
+          "example": "I'll let them know about the change."
+        },
+        {
+          "term": "I'll let you know",
+          "meaning": "eu aviso você",
+          "example": "I'll let you know when it's done."
+        },
+        {
+          "term": "I'll get back to you",
+          "meaning": "eu retorno para você",
+          "example": "I'll get back to you tomorrow."
+        },
+        {
+          "term": "I'll handle it",
+          "meaning": "eu cuido disso",
+          "example": "No worries, I'll handle it."
+        },
+        {
+          "term": "I'll take it",
+          "meaning": "eu fico com isso",
+          "example": "They'll send it over, I'll take it."
+        },
+        {
+          "term": "we'll see",
+          "meaning": "veremos",
+          "example": "We'll see what happens."
+        },
+        {
+          "term": "I will",
+          "meaning": "eu vou (forma formal)",
+          "example": "I will update you on the progress tomorrow."
+        }
+      ]
+    },
+    {
+      "slug": "future-plans-intentions",
+      "title": "Planos e intenções",
+      "position": 2,
+      "words": [
+        {
+          "term": "going to",
+          "meaning": "vai (plano já decidido)",
+          "example": "We're going to release on Friday."
+        },
+        {
+          "term": "I'm going to",
+          "meaning": "eu vou",
+          "example": "I'm going to refactor the login."
+        },
+        {
+          "term": "they're going to",
+          "meaning": "eles vão",
+          "example": "They're going to test it tomorrow."
+        },
+        {
+          "term": "is going to",
+          "meaning": "vai",
+          "example": "The meeting is going to start late."
+        },
+        {
+          "term": "are going to",
+          "meaning": "vão",
+          "example": "We are going to change the database."
+        },
+        {
+          "term": "be about to",
+          "meaning": "estar prestes a",
+          "example": "The build is about to finish."
+        },
+        {
+          "term": "is about to",
+          "meaning": "está prestes a",
+          "example": "The server is about to restart."
+        },
+        {
+          "term": "be set to",
+          "meaning": "estar programado para",
+          "example": "The release is set to go out Friday."
+        },
+        {
+          "term": "be scheduled to",
+          "meaning": "estar agendado para",
+          "example": "The demo is scheduled to start at ten."
+        },
+        {
+          "term": "be expected to",
+          "meaning": "deve",
+          "example": "We're expected to finish on Friday."
+        },
+        {
+          "term": "be ready to",
+          "meaning": "estar pronto para",
+          "example": "I'm ready to start."
+        },
+        {
+          "term": "be going to be",
+          "meaning": "vai ser",
+          "example": "It's going to be a long day."
+        },
+        {
+          "term": "be likely to",
+          "meaning": "provavelmente vai",
+          "example": "It's likely to be ready on Monday."
+        },
+        {
+          "term": "be unlikely to",
+          "meaning": "provavelmente não vai",
+          "example": "It's unlikely to change."
+        },
+        {
+          "term": "be due on",
+          "meaning": "ter prazo em",
+          "example": "The task is due on Friday."
+        },
+        {
+          "term": "be coming out",
+          "meaning": "vai sair",
+          "example": "The new version is coming out next week."
+        },
+        {
+          "term": "be launching",
+          "meaning": "estar lançando",
+          "example": "We're launching the app in May."
+        },
+        {
+          "term": "be migrating",
+          "meaning": "estar migrando",
+          "example": "We're migrating to the new server."
+        },
+        {
+          "term": "be moving",
+          "meaning": "estar mudando",
+          "example": "We're moving the data tonight."
+        },
+        {
+          "term": "be heading to",
+          "meaning": "estar indo para",
+          "example": "I'm heading to the office now."
+        },
+        {
+          "term": "be leaving",
+          "meaning": "estar saindo",
+          "example": "I'm leaving at six."
+        },
+        {
+          "term": "be starting",
+          "meaning": "estar começando",
+          "example": "We're starting the review now."
+        },
+        {
+          "term": "be getting",
+          "meaning": "estar ficando",
+          "example": "It's getting late."
+        },
+        {
+          "term": "be running",
+          "meaning": "estar rodando",
+          "example": "The tests are running."
+        },
+        {
+          "term": "be going out",
+          "meaning": "vai sair (uma versão)",
+          "example": "The version is going out on Friday."
+        }
+      ]
+    },
+    {
+      "slug": "future-agenda",
+      "title": "Agenda com present continuous",
+      "position": 3,
+      "words": [
+        {
+          "term": "I'm meeting",
+          "meaning": "eu tenho reunião",
+          "example": "I'm meeting the client at two."
+        },
+        {
+          "term": "we're meeting",
+          "meaning": "nós temos reunião",
+          "example": "We're meeting the team on Thursday."
+        },
+        {
+          "term": "we're releasing",
+          "meaning": "estamos publicando",
+          "example": "We're releasing the new version tonight."
+        },
+        {
+          "term": "we're deploying",
+          "meaning": "estamos publicando",
+          "example": "We're deploying after lunch."
+        },
+        {
+          "term": "the call starts at",
+          "meaning": "a chamada começa às",
+          "example": "The call starts at three."
+        },
+        {
+          "term": "the meeting starts",
+          "meaning": "a reunião começa",
+          "example": "The meeting starts in ten minutes."
+        },
+        {
+          "term": "she's leaving",
+          "meaning": "ela está saindo",
+          "example": "She's leaving early today."
+        },
+        {
+          "term": "I'm leaving at",
+          "meaning": "eu saio às",
+          "example": "I'm leaving at six."
+        },
+        {
+          "term": "I'm flying to",
+          "meaning": "eu vou de avião para",
+          "example": "I'm flying to Lisbon on Monday."
+        },
+        {
+          "term": "I'm presenting",
+          "meaning": "eu vou apresentar",
+          "example": "I'm presenting the demo at noon."
+        },
+        {
+          "term": "they're visiting",
+          "meaning": "eles vão visitar",
+          "example": "They're visiting the office next week."
+        },
+        {
+          "term": "the training starts",
+          "meaning": "o treinamento começa",
+          "example": "The training starts on Tuesday."
+        },
+        {
+          "term": "the workshop is on",
+          "meaning": "o workshop acontece",
+          "example": "The workshop is on Wednesday."
+        },
+        {
+          "term": "I'm working late",
+          "meaning": "estou trabalhando até tarde",
+          "example": "I'm working late tonight."
+        },
+        {
+          "term": "we're having lunch",
+          "meaning": "estamos almoçando",
+          "example": "We're having lunch at one."
+        },
+        {
+          "term": "I'm starting",
+          "meaning": "eu começo",
+          "example": "I'm starting the new project on Monday."
+        },
+        {
+          "term": "the release is going out",
+          "meaning": "a versão vai sair",
+          "example": "The release is going out on Friday."
+        },
+        {
+          "term": "the client is calling",
+          "meaning": "o cliente vai ligar",
+          "example": "The client is calling at ten."
+        },
+        {
+          "term": "we're testing",
+          "meaning": "estamos testando",
+          "example": "We're testing the new login tomorrow."
+        },
+        {
+          "term": "I'm taking the day off",
+          "meaning": "eu vou tirar folga",
+          "example": "I'm taking the day off on Friday."
+        },
+        {
+          "term": "she's joining the team",
+          "meaning": "ela vai entrar no time",
+          "example": "She's joining the team next month."
+        },
+        {
+          "term": "the demo is running",
+          "meaning": "a demo está acontecendo",
+          "example": "The demo is running at noon."
+        },
+        {
+          "term": "the interview is at",
+          "meaning": "a entrevista é às",
+          "example": "The interview is at two."
+        },
+        {
+          "term": "we're launching on",
+          "meaning": "lançamos em",
+          "example": "We're launching on Monday."
+        },
+        {
+          "term": "the review starts at",
+          "meaning": "a revisão começa às",
+          "example": "The review starts at four."
+        }
+      ]
+    }
+  ]
+}

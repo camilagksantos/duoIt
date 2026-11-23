@@ -1,0 +1,127 @@
+// Estilos globais de navegação em árvore (módulo > submódulo > exercício).
+// Importado em src/styles.scss.
+
+// A barra lateral precisa deixar os painéis aparecerem para fora dela e ficar acima do conteúdo.
+mat-sidenav.sidebar-drawer {
+  overflow: visible;
+  z-index: 5;
+  background: rgba(21, 27, 37, 0.72);
+  backdrop-filter: blur(6px);
+  border-right: 1px solid var(--border-color);
+}
+
+.sidebar-drawer .mat-drawer-inner-container {
+  overflow: visible;
+}
+
+.nav-item {
+  position: relative;
+}
+
+// Item selecionado (exercício aberto ou dashboard): vermelho com borda amarela.
+.nav-item.is-selected > .nav-item-label,
+.nav-item-label.active {
+  background: linear-gradient(90deg, var(--accent-red), #65141e);
+  border-left: 3px solid var(--accent-yellow);
+}
+
+.nav-item-icon {
+  font-size: 20px;
+  color: var(--text-secondary);
+}
+
+// Texto ocupa o espaço e alinha à esquerda; seta e dica vão para a direita.
+.nav-item-text {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-item-arrow {
+  margin-left: auto;
+}
+
+.nav-item-label.active .nav-item-icon,
+.nav-item.is-selected > .nav-item-label .nav-item-icon {
+  color: #fff;
+}
+
+// Submenus flutuantes escuros, com destaque azul ao passar o mouse.
+.nav-flyout {
+  background: rgba(21, 27, 37, 0.9);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border-color);
+}
+
+.nav-flyout .nav-item-label:hover {
+  background: rgba(22, 119, 255, 0.2);
+}
+
+.nav-item-hint {
+  margin-left: auto;
+}
+
+.nav-item-hint.is-success {
+  color: var(--accent-yellow);
+  font-weight: 700;
+}
+
+.nav-item-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  text-decoration: none;
+  color: var(--text-primary);
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-large);
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--mat-sys-surface-container-highest);
+  }
+}
+
+.nav-item-arrow {
+  font-size: 18px;
+  color: var(--mat-sys-on-surface-variant);
+}
+
+.nav-item-hint {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--mat-sys-on-surface-variant);
+}
+
+.nav-item.is-disabled .nav-item-label {
+  cursor: not-allowed;
+  opacity: 0.55;
+
+  &:hover {
+    background: transparent;
+  }
+}
+
+.nav-flyout {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  min-width: 260px;
+  padding: 6px;
+  border-radius: 12px;
+  background: var(--mat-sys-surface-container-high);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+// Abre com o mouse (hover) e também com o foco do teclado ou toque (focus-within).
+.nav-item:hover > .nav-flyout,
+.nav-item:focus-within > .nav-flyout {
+  display: block;
+}

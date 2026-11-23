@@ -1,0 +1,419 @@
+{
+  "module": {
+    "title": "Vocabulário de documentação e comunicação",
+    "position": 17
+  },
+  "submodules": [
+    {
+      "slug": "doc-documentation",
+      "title": "Documentação",
+      "position": 1,
+      "words": [
+        {
+          "term": "README",
+          "meaning": "arquivo de apresentação do projeto",
+          "example": "The README explains how to run the app."
+        },
+        {
+          "term": "guide",
+          "meaning": "guia",
+          "example": "The guide shows the steps to deploy."
+        },
+        {
+          "term": "architecture",
+          "meaning": "arquitetura",
+          "example": "The architecture has three layers."
+        },
+        {
+          "term": "example",
+          "meaning": "exemplo",
+          "example": "The example shows how to call the API."
+        },
+        {
+          "term": "tutorial",
+          "meaning": "tutorial",
+          "example": "I wrote a tutorial for the new dev."
+        },
+        {
+          "term": "FAQ",
+          "meaning": "perguntas frequentes",
+          "example": "The FAQ answers the common questions."
+        },
+        {
+          "term": "API reference",
+          "meaning": "referência da API",
+          "example": "The API reference lists every endpoint."
+        },
+        {
+          "term": "glossary",
+          "meaning": "glossário",
+          "example": "The glossary explains the terms."
+        },
+        {
+          "term": "diagram",
+          "meaning": "diagrama",
+          "example": "The diagram shows the data flow."
+        },
+        {
+          "term": "onboarding doc",
+          "meaning": "documento de integração",
+          "example": "The onboarding doc helps new devs."
+        },
+        {
+          "term": "runbook",
+          "meaning": "manual de operação",
+          "example": "The runbook explains how to restart the server."
+        },
+        {
+          "term": "user manual",
+          "meaning": "manual do usuário",
+          "example": "The user manual is in Portuguese."
+        },
+        {
+          "term": "specification",
+          "meaning": "especificação",
+          "example": "The specification is in the docs folder."
+        },
+        {
+          "term": "API docs",
+          "meaning": "documentação da API",
+          "example": "The API docs are auto-generated."
+        },
+        {
+          "term": "code comment",
+          "meaning": "comentário no código",
+          "example": "The code comment explains the trick."
+        },
+        {
+          "term": "docstring",
+          "meaning": "documentação dentro da função",
+          "example": "The docstring describes the parameters."
+        },
+        {
+          "term": "table of contents",
+          "meaning": "índice",
+          "example": "The table of contents is at the top."
+        },
+        {
+          "term": "section",
+          "meaning": "seção",
+          "example": "This section covers the login flow."
+        },
+        {
+          "term": "appendix",
+          "meaning": "apêndice",
+          "example": "The appendix has the full list of errors."
+        },
+        {
+          "term": "release notes",
+          "meaning": "notas da versão",
+          "example": "The release notes list the new features."
+        },
+        {
+          "term": "how-to",
+          "meaning": "passo a passo",
+          "example": "The how-to shows how to add a field."
+        },
+        {
+          "term": "step-by-step",
+          "meaning": "passo a passo",
+          "example": "The step-by-step guide is in the wiki."
+        },
+        {
+          "term": "troubleshooting guide",
+          "meaning": "guia de solução de problemas",
+          "example": "The troubleshooting guide covers the common errors."
+        },
+        {
+          "term": "knowledge base",
+          "meaning": "base de conhecimento",
+          "example": "The knowledge base has the FAQ."
+        },
+        {
+          "term": "wiki page",
+          "meaning": "página da wiki",
+          "example": "The wiki page is outdated."
+        },
+        {
+          "term": "outdated",
+          "meaning": "desatualizado",
+          "example": "The docs are outdated."
+        },
+        {
+          "term": "up to date",
+          "meaning": "atualizado",
+          "example": "The docs are up to date."
+        }
+      ]
+    },
+    {
+      "slug": "doc-requests-notices",
+      "title": "Pedidos e avisos",
+      "position": 2,
+      "words": [
+        {
+          "term": "heads up",
+          "meaning": "aviso antecipado",
+          "example": "Heads up: the server restarts tonight."
+        },
+        {
+          "term": "FYI",
+          "meaning": "para sua informação",
+          "example": "FYI, the deadline moved to Friday."
+        },
+        {
+          "term": "just so you know",
+          "meaning": "só para você saber",
+          "example": "Just so you know, the demo is at noon."
+        },
+        {
+          "term": "just letting you know",
+          "meaning": "só avisando",
+          "example": "Just letting you know the deploy is late."
+        },
+        {
+          "term": "a quick favor",
+          "meaning": "um favor rápido",
+          "example": "I need a quick favor from you."
+        },
+        {
+          "term": "a reminder",
+          "meaning": "um lembrete",
+          "example": "Here's a reminder about the call."
+        },
+        {
+          "term": "a notice",
+          "meaning": "um aviso",
+          "example": "There's a notice about the maintenance."
+        },
+        {
+          "term": "a request",
+          "meaning": "um pedido",
+          "example": "I have a request for the design team."
+        },
+        {
+          "term": "let the team know",
+          "meaning": "avisar o time",
+          "example": "I'll let the team know about the change."
+        },
+        {
+          "term": "update the team",
+          "meaning": "atualizar o time",
+          "example": "I'll update the team after the call."
+        },
+        {
+          "term": "I'd like to ask",
+          "meaning": "eu gostaria de pedir",
+          "example": "I'd like to ask for access to the server."
+        },
+        {
+          "term": "I have a question",
+          "meaning": "eu tenho uma pergunta",
+          "example": "I have a question about the API."
+        },
+        {
+          "term": "I need your input",
+          "meaning": "preciso da sua opinião",
+          "example": "I need your input on the design."
+        },
+        {
+          "term": "I need your approval",
+          "meaning": "preciso da sua aprovação",
+          "example": "I need your approval before the release."
+        },
+        {
+          "term": "thanks for the heads-up",
+          "meaning": "obrigado pelo aviso",
+          "example": "Thanks for the heads-up about the outage."
+        },
+        {
+          "term": "I'll get to it",
+          "meaning": "eu vejo isso",
+          "example": "I'll get to it after lunch."
+        },
+        {
+          "term": "I'll look into it",
+          "meaning": "eu vou verificar",
+          "example": "I'll look into it this afternoon."
+        },
+        {
+          "term": "I'm on it",
+          "meaning": "estou cuidando disso",
+          "example": "I'm on it, give me an hour."
+        },
+        {
+          "term": "no rush",
+          "meaning": "sem pressa",
+          "example": "No rush, we can talk tomorrow."
+        },
+        {
+          "term": "when you have a moment",
+          "meaning": "quando você tiver um momento",
+          "example": "When you have a moment, check the PR."
+        },
+        {
+          "term": "sorry for the delay",
+          "meaning": "desculpe o atraso",
+          "example": "Sorry for the delay in my reply."
+        },
+        {
+          "term": "just checking in",
+          "meaning": "só verificando",
+          "example": "Just checking in on the status."
+        },
+        {
+          "term": "let me know",
+          "meaning": "me avise",
+          "example": "I'll let you know when it's ready."
+        },
+        {
+          "term": "keep me posted",
+          "meaning": "me mantenha informado",
+          "example": "Keep me posted on the progress."
+        },
+        {
+          "term": "I'm following up",
+          "meaning": "estou dando seguimento",
+          "example": "I'm following up on the email."
+        },
+        {
+          "term": "got it",
+          "meaning": "entendi",
+          "example": "Got it, I'll fix it."
+        }
+      ]
+    },
+    {
+      "slug": "doc-channels-calls",
+      "title": "Canais e chamadas",
+      "position": 3,
+      "words": [
+        {
+          "term": "Slack",
+          "meaning": "ferramenta de mensagens do time",
+          "example": "I'm active on Slack all day."
+        },
+        {
+          "term": "channel",
+          "meaning": "canal de conversa",
+          "example": "I posted the logs in the channel."
+        },
+        {
+          "term": "thread",
+          "meaning": "conversa em tópico",
+          "example": "I replied in the thread."
+        },
+        {
+          "term": "DM",
+          "meaning": "mensagem direta",
+          "example": "I sent the link in a DM."
+        },
+        {
+          "term": "mention",
+          "meaning": "menção (@)",
+          "example": "I got a mention in the team chat."
+        },
+        {
+          "term": "quick call",
+          "meaning": "chamada rápida",
+          "example": "Let's have a quick call at four."
+        },
+        {
+          "term": "video call",
+          "meaning": "chamada de vídeo",
+          "example": "The video call starts at ten."
+        },
+        {
+          "term": "voice call",
+          "meaning": "chamada de voz",
+          "example": "We had a voice call with the client."
+        },
+        {
+          "term": "huddle",
+          "meaning": "reunião rápida informal",
+          "example": "We had a huddle about the bug."
+        },
+        {
+          "term": "conference call",
+          "meaning": "chamada de conferência",
+          "example": "The conference call has five people."
+        },
+        {
+          "term": "screen share",
+          "meaning": "compartilhamento de tela",
+          "example": "I'll do a screen share in the demo."
+        },
+        {
+          "term": "group chat",
+          "meaning": "conversa em grupo",
+          "example": "The group chat is busy today."
+        },
+        {
+          "term": "email thread",
+          "meaning": "conversa de e-mail",
+          "example": "The email thread is long."
+        },
+        {
+          "term": "Teams",
+          "meaning": "ferramenta de chamadas da empresa",
+          "example": "The Teams call is in ten minutes."
+        },
+        {
+          "term": "Google Meet",
+          "meaning": "ferramenta de chamadas",
+          "example": "We use Google Meet for the demo."
+        },
+        {
+          "term": "Zoom",
+          "meaning": "ferramenta de chamadas",
+          "example": "The client uses Zoom."
+        },
+        {
+          "term": "status channel",
+          "meaning": "canal de status",
+          "example": "I posted the status in the channel."
+        },
+        {
+          "term": "shared document",
+          "meaning": "documento compartilhado",
+          "example": "We edited the shared document together."
+        },
+        {
+          "term": "notification",
+          "meaning": "notificação",
+          "example": "I turned off the notifications."
+        },
+        {
+          "term": "I'll ping you",
+          "meaning": "eu te chamo",
+          "example": "I'll ping you when I'm free."
+        },
+        {
+          "term": "I dropped a message",
+          "meaning": "eu mandei uma mensagem",
+          "example": "I dropped a message in the channel."
+        },
+        {
+          "term": "I'll send you a link",
+          "meaning": "eu te mando um link",
+          "example": "I'll send you a link to the doc."
+        },
+        {
+          "term": "I'll share my screen",
+          "meaning": "eu compartilho a tela",
+          "example": "I'll share my screen during the demo."
+        },
+        {
+          "term": "I'm in a call",
+          "meaning": "estou em uma chamada",
+          "example": "I'm in a call right now."
+        },
+        {
+          "term": "I'm on mute",
+          "meaning": "estou no mudo",
+          "example": "I'm on mute, sorry."
+        }
+      ]
+    }
+  ]
+}

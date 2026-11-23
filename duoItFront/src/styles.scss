@@ -1,0 +1,93 @@
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+@use 'app/share/styles/navigation';
+
+// Paleta do Duo IT. Preto como base, vermelho para ação, azul e amarelo em proporções menores.
+:root {
+  --bg-primary: #0B0F16;
+  --bg-secondary: #151B25;
+  --bg-card: #20242C;
+
+  --accent-red: #E52232;
+  --accent-blue: #1677FF;
+  --accent-yellow: #FFD22E;
+
+  --text-primary: #F5F7FA;
+  --text-secondary: #AEB6C4;
+
+  --border-color: #303744;
+  --radius-card: 12px;
+  --radius-button: 6px;
+
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+html {
+  height: 100%;
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$red-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Inter,
+      density: 0,
+    )
+  );
+
+  // Superfícies do Material ligadas à paleta do Duo IT.
+  --mat-sys-surface: var(--bg-primary);
+  --mat-sys-surface-container: var(--bg-secondary);
+  --mat-sys-surface-container-high: var(--bg-card);
+  --mat-sys-on-surface: var(--text-primary);
+  --mat-sys-on-surface-variant: var(--text-secondary);
+  --mat-sys-outline-variant: var(--border-color);
+  --mat-toolbar-container-background-color: var(--bg-secondary);
+}
+
+body {
+  color-scheme: dark;
+  background: var(--bg-primary) url('/background.png') center / cover fixed no-repeat;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+// Cartões
+.dashboard-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s, border-color 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-blue);
+  }
+}
+
+// Fundo da aplicação: containers do layout transparentes, para a imagem aparecer atrás de tudo.
+.mat-drawer-container,
+.mat-drawer-content {
+  background: transparent !important;
+}
+
+// Abas: indicador amarelo na aba ativa.
+.tabs .mdc-tab-indicator__content--underline {
+  border-color: var(--accent-yellow) !important;
+}
+
+// Botão principal (ação dominante)
+.btn-primary {
+  --mdc-filled-button-container-color: var(--accent-red);
+  --mdc-filled-button-label-text-color: #fff;
+  border-radius: var(--radius-button);
+  font-weight: 700;
+  text-transform: uppercase;
+}

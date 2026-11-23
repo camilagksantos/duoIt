@@ -1,0 +1,17 @@
+# Sistema
+.DS_Store
+
+# Front (Angular)
+duoItFront/node_modules/
+duoItFront/dist/
+duoItFront/.angular/
+duoItFront/.vscode/
+
+# Back (Spring / Maven)
+duoItAPI/target/
+duoItAPI/.idea/
+duoItAPI/*.iml
+
+# Editores
+.idea/
+*.swp

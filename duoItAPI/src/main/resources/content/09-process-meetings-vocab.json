@@ -1,0 +1,526 @@
+{
+  "module": {
+    "title": "Vocabulário de processo e reuniões",
+    "position": 9
+  },
+  "submodules": [
+    {
+      "slug": "proc-daily-routine",
+      "title": "Rotina de daily",
+      "position": 1,
+      "words": [
+        {
+          "term": "daily",
+          "meaning": "reunião diária rápida",
+          "example": "The daily is at nine."
+        },
+        {
+          "term": "stand-up",
+          "meaning": "a daily (outro nome)",
+          "example": "The stand-up starts at nine."
+        },
+        {
+          "term": "blocker",
+          "meaning": "impedimento",
+          "example": "I have a blocker with the API."
+        },
+        {
+          "term": "impediment",
+          "meaning": "impedimento",
+          "example": "There's an impediment on the release."
+        },
+        {
+          "term": "roadblock",
+          "meaning": "obstáculo",
+          "example": "The database is a roadblock."
+        },
+        {
+          "term": "update",
+          "meaning": "atualização de status",
+          "example": "My update is short today."
+        },
+        {
+          "term": "status update",
+          "meaning": "atualização de status",
+          "example": "I'll give a status update in the stand-up."
+        },
+        {
+          "term": "I'm blocked",
+          "meaning": "estou bloqueado",
+          "example": "I'm blocked by the API."
+        },
+        {
+          "term": "no blockers",
+          "meaning": "sem impedimentos",
+          "example": "No blockers from my side."
+        },
+        {
+          "term": "my plan for today",
+          "meaning": "meu plano para hoje",
+          "example": "My plan for today is the login page."
+        },
+        {
+          "term": "I worked on",
+          "meaning": "trabalhei em",
+          "example": "I worked on the login page yesterday."
+        },
+        {
+          "term": "I'm on track",
+          "meaning": "estou no prazo",
+          "example": "I'm on track with the sprint."
+        },
+        {
+          "term": "I'm stuck",
+          "meaning": "estou travado",
+          "example": "I'm stuck on the cache issue."
+        },
+        {
+          "term": "I need help",
+          "meaning": "preciso de ajuda",
+          "example": "I need help with the tests."
+        },
+        {
+          "term": "quick question",
+          "meaning": "pergunta rápida",
+          "example": "I have a quick question about the API."
+        },
+        {
+          "term": "all good",
+          "meaning": "tudo certo",
+          "example": "All good on my side."
+        },
+        {
+          "term": "nothing new",
+          "meaning": "nada novo",
+          "example": "Nothing new since the morning."
+        },
+        {
+          "term": "just a small update",
+          "meaning": "só uma pequena atualização",
+          "example": "Just a small update: the fix is ready."
+        },
+        {
+          "term": "I've been blocked",
+          "meaning": "eu estou bloqueado há um tempo",
+          "example": "I've been blocked since Monday."
+        },
+        {
+          "term": "I've made progress",
+          "meaning": "eu avancei",
+          "example": "I've made progress on the login page."
+        },
+        {
+          "term": "I've been working on",
+          "meaning": "venho trabalhando em",
+          "example": "I've been working on the API all week."
+        },
+        {
+          "term": "we've made progress",
+          "meaning": "avançamos",
+          "example": "We've made progress on the migration."
+        },
+        {
+          "term": "I'll update the board",
+          "meaning": "eu atualizo o quadro",
+          "example": "I'll update the board after the call."
+        }
+      ]
+    },
+    {
+      "slug": "proc-planning",
+      "title": "Planejamento",
+      "position": 2,
+      "words": [
+        {
+          "term": "planning",
+          "meaning": "planejamento",
+          "example": "The planning is on Monday."
+        },
+        {
+          "term": "refinement",
+          "meaning": "refinamento (das tarefas)",
+          "example": "We do refinement every Thursday."
+        },
+        {
+          "term": "backlog",
+          "meaning": "lista de tarefas pendentes",
+          "example": "The backlog has forty items."
+        },
+        {
+          "term": "roadmap",
+          "meaning": "roteiro de entregas",
+          "example": "The roadmap goes to June."
+        },
+        {
+          "term": "milestone",
+          "meaning": "marco do projeto",
+          "example": "The first milestone is the login."
+        },
+        {
+          "term": "scope",
+          "meaning": "escopo",
+          "example": "The scope is too big for one sprint."
+        },
+        {
+          "term": "priority",
+          "meaning": "prioridade",
+          "example": "The login is our top priority."
+        },
+        {
+          "term": "story",
+          "meaning": "história de usuário",
+          "example": "The story is ready for planning."
+        },
+        {
+          "term": "epic",
+          "meaning": "grande funcionalidade",
+          "example": "The payments epic has five stories."
+        },
+        {
+          "term": "acceptance criteria",
+          "meaning": "critérios de aceitação",
+          "example": "The acceptance criteria are clear."
+        },
+        {
+          "term": "definition of done",
+          "meaning": "definição de pronto",
+          "example": "The definition of done includes tests."
+        },
+        {
+          "term": "goal",
+          "meaning": "objetivo",
+          "example": "Our goal is to ship the beta."
+        },
+        {
+          "term": "deliverable",
+          "meaning": "entrega",
+          "example": "The main deliverable is the API."
+        },
+        {
+          "term": "capacity",
+          "meaning": "capacidade do time",
+          "example": "Our capacity is low this week."
+        },
+        {
+          "term": "velocity",
+          "meaning": "ritmo de entregas",
+          "example": "Our velocity was higher last month."
+        },
+        {
+          "term": "timebox",
+          "meaning": "tempo máximo",
+          "example": "The spike has a one-day timebox."
+        },
+        {
+          "term": "spike",
+          "meaning": "estudo técnico curto",
+          "example": "We have a spike on caching."
+        },
+        {
+          "term": "requirement",
+          "meaning": "requisito",
+          "example": "This requirement is unclear."
+        },
+        {
+          "term": "estimate",
+          "meaning": "estimativa",
+          "example": "The estimate is five points."
+        },
+        {
+          "term": "prioritized",
+          "meaning": "priorizamos",
+          "example": "We prioritized the login."
+        },
+        {
+          "term": "we've refined",
+          "meaning": "já refinamos",
+          "example": "We've refined the backlog this week."
+        },
+        {
+          "term": "we've planned",
+          "meaning": "já planejamos",
+          "example": "We've planned the next two sprints."
+        }
+      ]
+    },
+    {
+      "slug": "proc-agile-ceremonies",
+      "title": "Agile e cerimônias",
+      "position": 3,
+      "words": [
+        {
+          "term": "retro",
+          "meaning": "retrospectiva",
+          "example": "The retro is on Friday."
+        },
+        {
+          "term": "retrospective",
+          "meaning": "retrospectiva",
+          "example": "The retrospective went well."
+        },
+        {
+          "term": "sprint",
+          "meaning": "ciclo de trabalho (geralmente 2 semanas)",
+          "example": "The sprint ends on Friday."
+        },
+        {
+          "term": "sprint review",
+          "meaning": "revisão da sprint",
+          "example": "The sprint review is with the client."
+        },
+        {
+          "term": "sprint planning",
+          "meaning": "planejamento da sprint",
+          "example": "Sprint planning is on Monday."
+        },
+        {
+          "term": "ceremony",
+          "meaning": "cerimônia (reunião ágil)",
+          "example": "Every ceremony has a clear goal."
+        },
+        {
+          "term": "scrum",
+          "meaning": "framework ágil",
+          "example": "Our team uses Scrum."
+        },
+        {
+          "term": "scrum master",
+          "meaning": "facilitador do time ágil",
+          "example": "The scrum master leads the stand-up."
+        },
+        {
+          "term": "product owner",
+          "meaning": "dono do produto",
+          "example": "The product owner prioritizes the backlog."
+        },
+        {
+          "term": "stakeholder",
+          "meaning": "parte interessada",
+          "example": "The stakeholders want a demo."
+        },
+        {
+          "term": "board",
+          "meaning": "quadro de tarefas",
+          "example": "The board has three columns."
+        },
+        {
+          "term": "column",
+          "meaning": "coluna (do quadro)",
+          "example": "The task is in the In Progress column."
+        },
+        {
+          "term": "workflow",
+          "meaning": "fluxo de trabalho",
+          "example": "Our workflow has four steps."
+        },
+        {
+          "term": "iteration",
+          "meaning": "iteração",
+          "example": "Each iteration takes two weeks."
+        },
+        {
+          "term": "work in progress",
+          "meaning": "trabalho em andamento",
+          "example": "Our work in progress is too high."
+        },
+        {
+          "term": "grooming",
+          "meaning": "refinamento (outro nome)",
+          "example": "We do grooming on Thursday."
+        },
+        {
+          "term": "Kanban",
+          "meaning": "fluxo contínuo de tarefas",
+          "example": "We use Kanban for support."
+        },
+        {
+          "term": "velocity chart",
+          "meaning": "gráfico de entregas",
+          "example": "The velocity chart goes up."
+        },
+        {
+          "term": "burndown",
+          "meaning": "gráfico de tarefas restantes",
+          "example": "The burndown is flat today."
+        },
+        {
+          "term": "demo day",
+          "meaning": "dia de demonstração",
+          "example": "Demo day is every other Friday."
+        },
+        {
+          "term": "we've reviewed",
+          "meaning": "já revisamos",
+          "example": "We've reviewed the board this week."
+        },
+        {
+          "term": "we've retrospected",
+          "meaning": "já fizemos a retro",
+          "example": "We've held the retro already."
+        },
+        {
+          "term": "we've held",
+          "meaning": "já fizemos",
+          "example": "We've held three sprints this year."
+        },
+        {
+          "term": "we've ended",
+          "meaning": "já terminamos",
+          "example": "We've ended the sprint early."
+        },
+        {
+          "term": "we've set",
+          "meaning": "já definimos",
+          "example": "We've set the goals for June."
+        }
+      ]
+    },
+    {
+      "slug": "proc-meetings-follow-up",
+      "title": "Reuniões e acompanhamento",
+      "position": 4,
+      "words": [
+        {
+          "term": "meeting",
+          "meaning": "reunião",
+          "example": "The meeting starts at ten."
+        },
+        {
+          "term": "agenda",
+          "meaning": "pauta",
+          "example": "The agenda is in the invite."
+        },
+        {
+          "term": "action item",
+          "meaning": "tarefa decidida na reunião",
+          "example": "Each action item has an owner."
+        },
+        {
+          "term": "next steps",
+          "meaning": "próximos passos",
+          "example": "Our next steps are the tests."
+        },
+        {
+          "term": "minutes",
+          "meaning": "ata da reunião",
+          "example": "The minutes are in the wiki."
+        },
+        {
+          "term": "attendee",
+          "meaning": "participante",
+          "example": "The attendees are the team and the client."
+        },
+        {
+          "term": "participant",
+          "meaning": "participante",
+          "example": "Every participant can speak."
+        },
+        {
+          "term": "owner",
+          "meaning": "responsável",
+          "example": "The owner of the task is Ana."
+        },
+        {
+          "term": "decision",
+          "meaning": "decisão",
+          "example": "The decision was made on Monday."
+        },
+        {
+          "term": "recap",
+          "meaning": "resumo rápido",
+          "example": "Here's a quick recap of the meeting."
+        },
+        {
+          "term": "reminder",
+          "meaning": "lembrete",
+          "example": "I'll send a reminder about the call."
+        },
+        {
+          "term": "schedule",
+          "meaning": "agenda, cronograma",
+          "example": "The schedule is tight this week."
+        },
+        {
+          "term": "kickoff",
+          "meaning": "início de projeto",
+          "example": "The kickoff is on Monday."
+        },
+        {
+          "term": "one-on-one",
+          "meaning": "reunião individual",
+          "example": "I have a one-on-one with my manager."
+        },
+        {
+          "term": "status meeting",
+          "meaning": "reunião de status",
+          "example": "The status meeting is at four."
+        },
+        {
+          "term": "catch-up call",
+          "meaning": "chamada rápida de alinhamento",
+          "example": "The catch-up call is at two."
+        },
+        {
+          "term": "conference room",
+          "meaning": "sala de reunião",
+          "example": "The conference room is free."
+        },
+        {
+          "term": "time slot",
+          "meaning": "horário disponível",
+          "example": "I have a time slot at three."
+        },
+        {
+          "term": "reschedule",
+          "meaning": "remarcar",
+          "example": "We need to reschedule the call."
+        },
+        {
+          "term": "in person",
+          "meaning": "presencial",
+          "example": "The workshop is in person."
+        },
+        {
+          "term": "remote",
+          "meaning": "remoto",
+          "example": "The meeting is remote."
+        },
+        {
+          "term": "hybrid",
+          "meaning": "híbrido",
+          "example": "Our meetings are hybrid."
+        },
+        {
+          "term": "we've scheduled",
+          "meaning": "já agendamos",
+          "example": "We've scheduled a call for Monday."
+        },
+        {
+          "term": "we've met",
+          "meaning": "já nos reunimos",
+          "example": "We've met the client twice."
+        },
+        {
+          "term": "we've covered",
+          "meaning": "já cobrimos (um assunto)",
+          "example": "We've covered the main points."
+        },
+        {
+          "term": "I've shared",
+          "meaning": "eu já compartilhei",
+          "example": "I've shared the agenda."
+        },
+        {
+          "term": "we've agreed on the agenda",
+          "meaning": "já combinamos a pauta",
+          "example": "We've agreed on the agenda."
+        },
+        {
+          "term": "I've sent the minutes",
+          "meaning": "eu já enviei a ata",
+          "example": "I've sent the minutes to the team."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "module": {
+    "title": "Present perfect continuous",
+    "position": 8
+  },
+  "submodules": [
+    {
+      "slug": "ppc-duration",
+      "title": "Duração de trabalho",
+      "position": 1,
+      "words": [
+        {
+          "term": "for",
+          "meaning": "há (duração)",
+          "example": "I've been working for two hours."
+        },
+        {
+          "term": "since when",
+          "meaning": "desde quando",
+          "example": "Since when have you been debugging?"
+        },
+        {
+          "term": "all day",
+          "meaning": "o dia todo",
+          "example": "I've been debugging all day."
+        },
+        {
+          "term": "all morning",
+          "meaning": "a manhã toda",
+          "example": "I've been reviewing logs all morning."
+        },
+        {
+          "term": "all afternoon",
+          "meaning": "a tarde toda",
+          "example": "I've been on the call all afternoon."
+        },
+        {
+          "term": "all week",
+          "meaning": "a semana toda",
+          "example": "I've been fixing bugs all week."
+        },
+        {
+          "term": "for hours",
+          "meaning": "há horas",
+          "example": "I've been coding for hours."
+        },
+        {
+          "term": "for days",
+          "meaning": "há dias",
+          "example": "We've been waiting for days."
+        },
+        {
+          "term": "for weeks",
+          "meaning": "há semanas",
+          "example": "I've been reading docs for weeks."
+        },
+        {
+          "term": "for a while",
+          "meaning": "há um tempo",
+          "example": "I've been working on this for a while."
+        },
+        {
+          "term": "for a long time",
+          "meaning": "há muito tempo",
+          "example": "I've been waiting for a long time."
+        },
+        {
+          "term": "for ages",
+          "meaning": "há séculos",
+          "example": "I've been stuck on this for ages."
+        },
+        {
+          "term": "so far",
+          "meaning": "até agora",
+          "example": "I've been testing so far."
+        },
+        {
+          "term": "lately",
+          "meaning": "ultimamente",
+          "example": "I've been busy lately."
+        },
+        {
+          "term": "in a row",
+          "meaning": "seguidos",
+          "example": "I've been coding three days in a row."
+        },
+        {
+          "term": "I've been",
+          "meaning": "eu venho",
+          "example": "I've been studying English."
+        },
+        {
+          "term": "you've been",
+          "meaning": "você tem estado",
+          "example": "You've been doing great."
+        },
+        {
+          "term": "it's been",
+          "meaning": "faz",
+          "example": "It's been two hours."
+        },
+        {
+          "term": "all day long",
+          "meaning": "o dia inteiro",
+          "example": "I've been on calls all day long."
+        },
+        {
+          "term": "how long have you been",
+          "meaning": "há quanto tempo você está",
+          "example": "How long have you been on this task?"
+        },
+        {
+          "term": "we've been",
+          "meaning": "nós temos estado",
+          "example": "We've been testing for a while."
+        }
+      ]
+    },
+    {
+      "slug": "ppc-continuous-activities",
+      "title": "Atividades contínuas",
+      "position": 2,
+      "words": [
+        {
+          "term": "investigating",
+          "meaning": "investigando",
+          "example": "I've been investigating the crash."
+        },
+        {
+          "term": "building",
+          "meaning": "construindo",
+          "example": "I've been building the new screen."
+        },
+        {
+          "term": "designing",
+          "meaning": "desenhando",
+          "example": "I've been designing the layout."
+        },
+        {
+          "term": "documenting",
+          "meaning": "documentando",
+          "example": "I've been documenting the API."
+        },
+        {
+          "term": "analyzing",
+          "meaning": "analisando",
+          "example": "I've been analyzing the data."
+        },
+        {
+          "term": "chatting",
+          "meaning": "conversando",
+          "example": "I've been chatting with the client."
+        },
+        {
+          "term": "coding",
+          "meaning": "programando",
+          "example": "I've been coding all week."
+        },
+        {
+          "term": "scanning",
+          "meaning": "examinando rapidamente",
+          "example": "I've been scanning the logs."
+        },
+        {
+          "term": "troubleshooting",
+          "meaning": "solucionando problemas",
+          "example": "I've been troubleshooting the server."
+        },
+        {
+          "term": "monitoring",
+          "meaning": "monitorando",
+          "example": "I've been monitoring the errors."
+        },
+        {
+          "term": "studying",
+          "meaning": "estudando",
+          "example": "I've been studying English."
+        },
+        {
+          "term": "researching",
+          "meaning": "pesquisando",
+          "example": "I've been researching caching."
+        },
+        {
+          "term": "prototyping",
+          "meaning": "prototipando",
+          "example": "I've been prototyping the new flow."
+        },
+        {
+          "term": "optimizing",
+          "meaning": "otimizando",
+          "example": "I've been optimizing the queries."
+        },
+        {
+          "term": "exploring",
+          "meaning": "explorando",
+          "example": "I've been exploring new libraries."
+        },
+        {
+          "term": "connecting",
+          "meaning": "conectando",
+          "example": "The app has been connecting slowly."
+        },
+        {
+          "term": "cleaning",
+          "meaning": "limpando",
+          "example": "I've been cleaning the codebase."
+        },
+        {
+          "term": "mapping",
+          "meaning": "mapeando",
+          "example": "I've been mapping the dependencies."
+        },
+        {
+          "term": "integrating",
+          "meaning": "integrando",
+          "example": "I've been integrating the payment API."
+        },
+        {
+          "term": "auditing",
+          "meaning": "auditando",
+          "example": "I've been auditing the access logs."
+        }
+      ]
+    }
+  ]
+}

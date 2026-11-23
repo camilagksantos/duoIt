@@ -1,0 +1,543 @@
+{
+  "module": {
+    "title": "Present perfect e past simple",
+    "position": 7
+  },
+  "submodules": [
+    {
+      "slug": "pp-completed-deliveries",
+      "title": "Entregas concluídas",
+      "position": 1,
+      "words": [
+        {
+          "term": "finished",
+          "meaning": "terminei",
+          "example": "I've finished the PR."
+        },
+        {
+          "term": "merged",
+          "meaning": "integrei (um código)",
+          "example": "I've merged the branch."
+        },
+        {
+          "term": "shipped",
+          "meaning": "entregamos (uma versão)",
+          "example": "We've shipped the first version."
+        },
+        {
+          "term": "released",
+          "meaning": "publicamos",
+          "example": "We released the update yesterday."
+        },
+        {
+          "term": "completed",
+          "meaning": "concluí",
+          "example": "I've completed the course."
+        },
+        {
+          "term": "delivered",
+          "meaning": "entregamos",
+          "example": "We've delivered on time."
+        },
+        {
+          "term": "went live",
+          "meaning": "entrou no ar",
+          "example": "The feature went live this morning."
+        },
+        {
+          "term": "launched",
+          "meaning": "lançamos",
+          "example": "We launched the beta last week."
+        },
+        {
+          "term": "done",
+          "meaning": "feito, pronto",
+          "example": "I'm done with the task."
+        },
+        {
+          "term": "I've done it",
+          "meaning": "eu já fiz isso",
+          "example": "I've done it already."
+        },
+        {
+          "term": "we've shipped",
+          "meaning": "já entregamos",
+          "example": "We've shipped the new login."
+        },
+        {
+          "term": "it's gone live",
+          "meaning": "já entrou no ar",
+          "example": "It's gone live."
+        },
+        {
+          "term": "I've launched",
+          "meaning": "eu lancei",
+          "example": "I've launched the beta."
+        },
+        {
+          "term": "I've merged",
+          "meaning": "eu integrei",
+          "example": "I've merged the changes."
+        },
+        {
+          "term": "we've delivered",
+          "meaning": "entregamos",
+          "example": "We've delivered the report."
+        },
+        {
+          "term": "already",
+          "meaning": "já",
+          "example": "We already shipped it."
+        },
+        {
+          "term": "just",
+          "meaning": "acabei de",
+          "example": "I just finished the task."
+        },
+        {
+          "term": "yet",
+          "meaning": "ainda (em perguntas)",
+          "example": "Has it shipped yet?"
+        },
+        {
+          "term": "ever",
+          "meaning": "alguma vez",
+          "example": "Have you ever deployed on Friday?"
+        },
+        {
+          "term": "I've completed",
+          "meaning": "eu concluí",
+          "example": "I've completed the review of the docs."
+        }
+      ]
+    },
+    {
+      "slug": "pp-code-verbs",
+      "title": "Verbos de código (passado)",
+      "position": 2,
+      "words": [
+        {
+          "term": "refactored",
+          "meaning": "refatorei",
+          "example": "I refactored the login function yesterday."
+        },
+        {
+          "term": "deleted",
+          "meaning": "apaguei",
+          "example": "I deleted the old files."
+        },
+        {
+          "term": "created",
+          "meaning": "criei",
+          "example": "I created a new endpoint yesterday."
+        },
+        {
+          "term": "changed",
+          "meaning": "mudei",
+          "example": "I changed the layout on Monday."
+        },
+        {
+          "term": "added",
+          "meaning": "adicionei",
+          "example": "I added a new test."
+        },
+        {
+          "term": "removed",
+          "meaning": "removi",
+          "example": "I removed the unused code."
+        },
+        {
+          "term": "renamed",
+          "meaning": "renomeei",
+          "example": "I renamed the variables."
+        },
+        {
+          "term": "modified",
+          "meaning": "modifiquei",
+          "example": "I modified the query yesterday."
+        },
+        {
+          "term": "rewrote",
+          "meaning": "reescrevi",
+          "example": "I rewrote the function from scratch."
+        },
+        {
+          "term": "pushed",
+          "meaning": "enviei o código",
+          "example": "I pushed my changes after lunch."
+        },
+        {
+          "term": "reset",
+          "meaning": "resetei",
+          "example": "I reset the local database."
+        },
+        {
+          "term": "simplified",
+          "meaning": "simplifiquei",
+          "example": "I simplified the query yesterday."
+        },
+        {
+          "term": "optimized",
+          "meaning": "otimizei",
+          "example": "I optimized the query yesterday."
+        },
+        {
+          "term": "I've refactored",
+          "meaning": "eu refatorei",
+          "example": "I've refactored the login module."
+        },
+        {
+          "term": "I've added",
+          "meaning": "eu adicionei",
+          "example": "I've added a new test."
+        },
+        {
+          "term": "I've removed",
+          "meaning": "eu removi",
+          "example": "I've removed the old code."
+        },
+        {
+          "term": "I've changed",
+          "meaning": "eu mudei",
+          "example": "I've changed the layout."
+        },
+        {
+          "term": "I've renamed",
+          "meaning": "eu renomeei",
+          "example": "I've renamed the variables."
+        },
+        {
+          "term": "I've optimized",
+          "meaning": "eu otimizei",
+          "example": "I've optimized the query."
+        },
+        {
+          "term": "I've deleted",
+          "meaning": "eu apaguei",
+          "example": "I've deleted the old files."
+        }
+      ]
+    },
+    {
+      "slug": "pp-meeting-verbs",
+      "title": "Verbos de reunião (passado)",
+      "position": 3,
+      "words": [
+        {
+          "term": "discussed",
+          "meaning": "discutimos",
+          "example": "We discussed the scope yesterday."
+        },
+        {
+          "term": "agreed",
+          "meaning": "concordamos",
+          "example": "We agreed on the deadline."
+        },
+        {
+          "term": "decided",
+          "meaning": "decidimos",
+          "example": "We decided to wait."
+        },
+        {
+          "term": "proposed",
+          "meaning": "propusemos",
+          "example": "I proposed a new approach."
+        },
+        {
+          "term": "explained",
+          "meaning": "expliquei",
+          "example": "I explained the problem to the client."
+        },
+        {
+          "term": "presented",
+          "meaning": "apresentei",
+          "example": "I presented the demo at noon."
+        },
+        {
+          "term": "answered",
+          "meaning": "respondi",
+          "example": "I answered the question in the chat."
+        },
+        {
+          "term": "clarified",
+          "meaning": "esclareci",
+          "example": "I clarified the requirements."
+        },
+        {
+          "term": "postponed",
+          "meaning": "adiamos",
+          "example": "We postponed the demo."
+        },
+        {
+          "term": "rescheduled",
+          "meaning": "remarcamos",
+          "example": "We rescheduled the call."
+        },
+        {
+          "term": "cancelled",
+          "meaning": "cancelei",
+          "example": "I cancelled the meeting."
+        },
+        {
+          "term": "concluded",
+          "meaning": "concluímos",
+          "example": "We concluded the discussion."
+        },
+        {
+          "term": "summarized",
+          "meaning": "resumi",
+          "example": "I summarized the meeting notes."
+        },
+        {
+          "term": "recorded",
+          "meaning": "gravei",
+          "example": "I recorded the demo."
+        },
+        {
+          "term": "invited",
+          "meaning": "convidei",
+          "example": "I invited the client to the review."
+        },
+        {
+          "term": "we've discussed",
+          "meaning": "nós já discutimos",
+          "example": "We've discussed this twice."
+        },
+        {
+          "term": "we've agreed",
+          "meaning": "nós concordamos",
+          "example": "We've agreed on the scope."
+        },
+        {
+          "term": "we've decided",
+          "meaning": "nós decidimos",
+          "example": "We've decided to wait."
+        },
+        {
+          "term": "we've postponed",
+          "meaning": "nós adiamos",
+          "example": "We've postponed the demo."
+        },
+        {
+          "term": "I've explained",
+          "meaning": "eu já expliquei",
+          "example": "I've explained this twice."
+        }
+      ]
+    },
+    {
+      "slug": "pp-bugs-incidents",
+      "title": "Bugs e incidentes (passado)",
+      "position": 4,
+      "words": [
+        {
+          "term": "broke",
+          "meaning": "quebrou",
+          "example": "The build broke after my change."
+        },
+        {
+          "term": "crashed",
+          "meaning": "travou (o app caiu)",
+          "example": "The app crashed on login."
+        },
+        {
+          "term": "rolled back",
+          "meaning": "voltou para a versão anterior",
+          "example": "We rolled back the release."
+        },
+        {
+          "term": "reproduced",
+          "meaning": "reproduzi",
+          "example": "I reproduced the bug locally."
+        },
+        {
+          "term": "froze",
+          "meaning": "travou (ficou parado)",
+          "example": "The app froze on the login page."
+        },
+        {
+          "term": "leaked",
+          "meaning": "vazou (memória)",
+          "example": "The app leaked memory."
+        },
+        {
+          "term": "overloaded",
+          "meaning": "sobrecarregou",
+          "example": "The server overloaded at noon."
+        },
+        {
+          "term": "spiked",
+          "meaning": "disparou",
+          "example": "The errors spiked at noon."
+        },
+        {
+          "term": "dropped",
+          "meaning": "caiu (a conexão)",
+          "example": "The connection dropped twice."
+        },
+        {
+          "term": "hung",
+          "meaning": "travou (sem responder)",
+          "example": "The build hung for an hour."
+        },
+        {
+          "term": "blocked",
+          "meaning": "bloqueou",
+          "example": "The firewall blocked the request."
+        },
+        {
+          "term": "recovered",
+          "meaning": "recuperou",
+          "example": "We recovered the data."
+        },
+        {
+          "term": "restarted",
+          "meaning": "reiniciou",
+          "example": "We restarted the server."
+        },
+        {
+          "term": "went down",
+          "meaning": "caiu (o sistema)",
+          "example": "The API went down at noon."
+        },
+        {
+          "term": "lagged",
+          "meaning": "travou (ficou lento)",
+          "example": "The app lagged during the demo."
+        },
+        {
+          "term": "overheated",
+          "meaning": "superaqueceu",
+          "example": "The server overheated."
+        },
+        {
+          "term": "stalled",
+          "meaning": "parou",
+          "example": "The deploy stalled."
+        },
+        {
+          "term": "glitched",
+          "meaning": "apresentou falha",
+          "example": "The page glitched on mobile."
+        },
+        {
+          "term": "I've reproduced",
+          "meaning": "eu já reproduzi",
+          "example": "I've reproduced the bug."
+        },
+        {
+          "term": "we've rolled back",
+          "meaning": "nós já voltamos",
+          "example": "We've rolled back twice this week."
+        }
+      ]
+    },
+    {
+      "slug": "pp-irregular-work-verbs",
+      "title": "Verbos irregulares de trabalho (passado)",
+      "position": 5,
+      "words": [
+        {
+          "term": "built",
+          "meaning": "construí",
+          "example": "We built a new dashboard last month."
+        },
+        {
+          "term": "sent",
+          "meaning": "enviei",
+          "example": "I sent the file two hours ago."
+        },
+        {
+          "term": "found",
+          "meaning": "encontrei",
+          "example": "I found the cause of the bug."
+        },
+        {
+          "term": "chose",
+          "meaning": "escolhi",
+          "example": "We chose a new database."
+        },
+        {
+          "term": "got",
+          "meaning": "recebi, consegui",
+          "example": "I got the feedback yesterday."
+        },
+        {
+          "term": "held",
+          "meaning": "fiz (uma reunião)",
+          "example": "We held a review on Monday."
+        },
+        {
+          "term": "left",
+          "meaning": "saí, deixei",
+          "example": "I left the office at six."
+        },
+        {
+          "term": "knew",
+          "meaning": "sabia",
+          "example": "I knew the answer."
+        },
+        {
+          "term": "began",
+          "meaning": "comecei",
+          "example": "I began the project last week."
+        },
+        {
+          "term": "bought",
+          "meaning": "comprei",
+          "example": "We bought a new license."
+        },
+        {
+          "term": "caught",
+          "meaning": "peguei (um erro)",
+          "example": "I caught the error in review."
+        },
+        {
+          "term": "spent",
+          "meaning": "gastei (tempo)",
+          "example": "I spent two hours on this bug."
+        },
+        {
+          "term": "lost",
+          "meaning": "perdi",
+          "example": "I lost the changes by mistake."
+        },
+        {
+          "term": "put",
+          "meaning": "coloquei",
+          "example": "I put the config in a separate file."
+        },
+        {
+          "term": "told",
+          "meaning": "contei, avisei",
+          "example": "I told the team about the change."
+        },
+        {
+          "term": "gave",
+          "meaning": "dei",
+          "example": "I gave the client a demo."
+        },
+        {
+          "term": "saw",
+          "meaning": "vi",
+          "example": "I saw the warning in the logs."
+        },
+        {
+          "term": "understood",
+          "meaning": "entendi",
+          "example": "I understood the problem."
+        },
+        {
+          "term": "forgot",
+          "meaning": "esqueci",
+          "example": "I forgot the password."
+        },
+        {
+          "term": "did",
+          "meaning": "fiz",
+          "example": "I did the tests before lunch."
+        }
+      ]
+    }
+  ]
+}

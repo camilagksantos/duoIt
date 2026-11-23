@@ -1,0 +1,374 @@
+{
+  "module": {
+    "title": "Hedging e polidez",
+    "position": 6
+  },
+  "submodules": [
+    {
+      "slug": "hedge-soften-opinion",
+      "title": "Suavizar uma opinião",
+      "position": 1,
+      "words": [
+        {
+          "term": "I think",
+          "meaning": "acho que",
+          "example": "I think we should wait."
+        },
+        {
+          "term": "I bet",
+          "meaning": "eu aposto",
+          "example": "I bet it's the cache."
+        },
+        {
+          "term": "I guess",
+          "meaning": "acho",
+          "example": "I guess the server is slow."
+        },
+        {
+          "term": "I'm not sure",
+          "meaning": "não tenho certeza",
+          "example": "I'm not sure about this approach."
+        },
+        {
+          "term": "I'm not sure if",
+          "meaning": "não tenho certeza se",
+          "example": "I'm not sure if the fix works."
+        },
+        {
+          "term": "I don't think",
+          "meaning": "acho que não",
+          "example": "I don't think it's a bug."
+        },
+        {
+          "term": "I suppose",
+          "meaning": "suponho que",
+          "example": "I suppose it's ready."
+        },
+        {
+          "term": "apparently",
+          "meaning": "aparentemente",
+          "example": "Apparently, the cache is stale."
+        },
+        {
+          "term": "it looks like",
+          "meaning": "parece que",
+          "example": "It looks like a timing issue."
+        },
+        {
+          "term": "to be honest",
+          "meaning": "para ser sincero",
+          "example": "To be honest, I'm tired."
+        },
+        {
+          "term": "in my opinion",
+          "meaning": "na minha opinião",
+          "example": "In my opinion, we need more tests."
+        },
+        {
+          "term": "kind of",
+          "meaning": "meio que",
+          "example": "It's kind of slow."
+        },
+        {
+          "term": "sort of",
+          "meaning": "meio que",
+          "example": "It's sort of confusing."
+        },
+        {
+          "term": "a bit",
+          "meaning": "um pouco",
+          "example": "The layout is a bit crowded."
+        },
+        {
+          "term": "a little",
+          "meaning": "um pouco",
+          "example": "It's a little complicated."
+        },
+        {
+          "term": "I'd guess",
+          "meaning": "eu chutaria",
+          "example": "I'd guess it's the cache."
+        },
+        {
+          "term": "I feel like",
+          "meaning": "eu sinto que",
+          "example": "I feel like the design is too busy."
+        },
+        {
+          "term": "I wonder",
+          "meaning": "eu me pergunto",
+          "example": "I wonder if the API is down."
+        },
+        {
+          "term": "it appears",
+          "meaning": "parece",
+          "example": "It appears the network is slow."
+        },
+        {
+          "term": "I'd say",
+          "meaning": "eu diria",
+          "example": "I'd say it's almost done."
+        },
+        {
+          "term": "for me",
+          "meaning": "para mim",
+          "example": "For me, the layout is fine."
+        },
+        {
+          "term": "only",
+          "meaning": "apenas",
+          "example": "It's only a small change."
+        },
+        {
+          "term": "sounds good",
+          "meaning": "parece bom",
+          "example": "Sounds good, let's do it."
+        },
+        {
+          "term": "makes sense",
+          "meaning": "faz sentido",
+          "example": "That makes sense to me."
+        }
+      ]
+    },
+    {
+      "slug": "hedge-polite-requests",
+      "title": "Pedir com educação",
+      "position": 2,
+      "words": [
+        {
+          "term": "would you mind",
+          "meaning": "você se importaria de",
+          "example": "Would you mind checking my change?"
+        },
+        {
+          "term": "do you think",
+          "meaning": "você acha que",
+          "example": "Do you think we can finish today?"
+        },
+        {
+          "term": "I wonder if",
+          "meaning": "eu me pergunto se",
+          "example": "I wonder if you can help me."
+        },
+        {
+          "term": "would it be possible",
+          "meaning": "seria possível",
+          "example": "Would it be possible to move the call?"
+        },
+        {
+          "term": "if it's okay",
+          "meaning": "se estiver tudo bem",
+          "example": "I'll send it tomorrow, if it's okay."
+        },
+        {
+          "term": "if you have time",
+          "meaning": "se você tiver tempo",
+          "example": "Could you look at it if you have time?"
+        },
+        {
+          "term": "when you get a chance",
+          "meaning": "quando você puder",
+          "example": "Could you look at it when you get a chance?"
+        },
+        {
+          "term": "could you please",
+          "meaning": "você poderia, por favor",
+          "example": "Could you please send me the link?"
+        },
+        {
+          "term": "would you be able to",
+          "meaning": "você conseguiria",
+          "example": "Would you be able to test it?"
+        },
+        {
+          "term": "sorry to bother you",
+          "meaning": "desculpe incomodar",
+          "example": "Sorry to bother you, but I need access."
+        },
+        {
+          "term": "thanks in advance",
+          "meaning": "obrigado antecipadamente",
+          "example": "Thanks in advance for the help."
+        },
+        {
+          "term": "I was wondering",
+          "meaning": "eu estava pensando",
+          "example": "I was wondering if we can meet today."
+        },
+        {
+          "term": "is it okay if",
+          "meaning": "tudo bem se",
+          "example": "Is it okay if I join late?"
+        },
+        {
+          "term": "would it be okay",
+          "meaning": "tudo bem se",
+          "example": "Would it be okay to reschedule?"
+        },
+        {
+          "term": "I'd appreciate",
+          "meaning": "eu agradeceria",
+          "example": "I'd appreciate your feedback on this."
+        },
+        {
+          "term": "excuse me",
+          "meaning": "com licença",
+          "example": "Excuse me, can I ask a question?"
+        },
+        {
+          "term": "I hope you don't mind",
+          "meaning": "espero que não se importe",
+          "example": "I hope you don't mind me asking."
+        },
+        {
+          "term": "if possible",
+          "meaning": "se for possível",
+          "example": "Could you send it today, if possible?"
+        },
+        {
+          "term": "would you be willing to",
+          "meaning": "você estaria disposto a",
+          "example": "Would you be willing to pair with me?"
+        },
+        {
+          "term": "I'd be happy to",
+          "meaning": "eu ficaria feliz em",
+          "example": "I'd be happy to help if you need it."
+        },
+        {
+          "term": "thank you for your patience",
+          "meaning": "obrigado pela paciência",
+          "example": "Thank you for your patience."
+        }
+      ]
+    },
+    {
+      "slug": "hedge-polite-disagreement",
+      "title": "Discordar com educação",
+      "position": 3,
+      "words": [
+        {
+          "term": "I see your point",
+          "meaning": "entendo seu ponto",
+          "example": "I see your point, but it's risky."
+        },
+        {
+          "term": "I'm afraid",
+          "meaning": "infelizmente",
+          "example": "I'm afraid I disagree."
+        },
+        {
+          "term": "I'd rather",
+          "meaning": "eu preferiria",
+          "example": "I'd rather keep the old version."
+        },
+        {
+          "term": "I understand, but",
+          "meaning": "eu entendo, mas",
+          "example": "I understand, but the deadline is tight."
+        },
+        {
+          "term": "that's a good point",
+          "meaning": "é um bom ponto",
+          "example": "That's a good point, but it's expensive."
+        },
+        {
+          "term": "I'm not convinced",
+          "meaning": "não estou convencido",
+          "example": "I'm not convinced it's the right way."
+        },
+        {
+          "term": "I don't agree",
+          "meaning": "não concordo",
+          "example": "I don't agree with the change."
+        },
+        {
+          "term": "on the other hand",
+          "meaning": "por outro lado",
+          "example": "On the other hand, it's faster."
+        },
+        {
+          "term": "that's true, however",
+          "meaning": "é verdade, porém",
+          "example": "That's true, however it adds risk."
+        },
+        {
+          "term": "I see what you mean",
+          "meaning": "entendo o que você quer dizer",
+          "example": "I see what you mean, but it's not clear."
+        },
+        {
+          "term": "we could also",
+          "meaning": "também poderíamos",
+          "example": "We could also try a different approach."
+        },
+        {
+          "term": "let's consider",
+          "meaning": "vamos considerar",
+          "example": "Let's consider the other option."
+        },
+        {
+          "term": "with respect",
+          "meaning": "com todo respeito",
+          "example": "With respect, I think it's too risky."
+        },
+        {
+          "term": "not quite",
+          "meaning": "não exatamente",
+          "example": "That's not quite what I meant."
+        },
+        {
+          "term": "I agree, except",
+          "meaning": "concordo, exceto",
+          "example": "I agree, except for the naming."
+        },
+        {
+          "term": "I'd suggest",
+          "meaning": "eu sugeriria",
+          "example": "I'd suggest a smaller change first."
+        },
+        {
+          "term": "it's worth considering",
+          "meaning": "vale a pena considerar",
+          "example": "It's worth considering a cache."
+        },
+        {
+          "term": "I hear you",
+          "meaning": "eu te entendo",
+          "example": "I hear you, but we're out of time."
+        },
+        {
+          "term": "to some extent",
+          "meaning": "até certo ponto",
+          "example": "I agree, to some extent."
+        },
+        {
+          "term": "I might disagree",
+          "meaning": "talvez eu discorde",
+          "example": "I might disagree with that point."
+        },
+        {
+          "term": "I'd like to push back",
+          "meaning": "eu gostaria de contestar",
+          "example": "I'd like to push back on the timeline."
+        },
+        {
+          "term": "I take your point",
+          "meaning": "eu entendo seu argumento",
+          "example": "I take your point, but the tests are missing."
+        },
+        {
+          "term": "I'd see it differently",
+          "meaning": "eu veria diferente",
+          "example": "I'd see it differently for mobile."
+        },
+        {
+          "term": "not necessarily",
+          "meaning": "não necessariamente",
+          "example": "That's not necessarily true."
+        }
+      ]
+    }
+  ]
+}

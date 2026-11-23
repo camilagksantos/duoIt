@@ -1,0 +1,451 @@
+{
+  "module": {
+    "title": "Gerúndio e infinitivo",
+    "position": 10
+  },
+  "submodules": [
+    {
+      "slug": "gi-gerund-verbs",
+      "title": "Verbos seguidos de gerúndio",
+      "position": 1,
+      "words": [
+        {
+          "term": "avoid",
+          "meaning": "evitar",
+          "example": "I avoid merging on Fridays."
+        },
+        {
+          "term": "consider",
+          "meaning": "considerar",
+          "example": "We're considering using a cache."
+        },
+        {
+          "term": "suggest",
+          "meaning": "sugerir",
+          "example": "I suggest adding a test."
+        },
+        {
+          "term": "recommend",
+          "meaning": "recomendar",
+          "example": "I recommend writing the docs first."
+        },
+        {
+          "term": "enjoy",
+          "meaning": "gostar de",
+          "example": "I enjoy working on the frontend."
+        },
+        {
+          "term": "mind",
+          "meaning": "importar-se com",
+          "example": "Do you mind waiting a minute?"
+        },
+        {
+          "term": "practice",
+          "meaning": "praticar",
+          "example": "I practice coding every night."
+        },
+        {
+          "term": "deny",
+          "meaning": "negar",
+          "example": "He denied breaking the build."
+        },
+        {
+          "term": "admit",
+          "meaning": "admitir",
+          "example": "I admit making a mistake."
+        },
+        {
+          "term": "imagine",
+          "meaning": "imaginar",
+          "example": "I can't imagine working without tests."
+        },
+        {
+          "term": "risk",
+          "meaning": "arriscar",
+          "example": "We risk losing data if we delay."
+        },
+        {
+          "term": "quit",
+          "meaning": "parar (um hábito)",
+          "example": "I quit working on Sundays."
+        },
+        {
+          "term": "delay",
+          "meaning": "atrasar",
+          "example": "The bug delayed the release."
+        },
+        {
+          "term": "miss",
+          "meaning": "perder (algo)",
+          "example": "I missed the call yesterday."
+        },
+        {
+          "term": "dislike",
+          "meaning": "não gostar de",
+          "example": "I dislike debugging in production."
+        },
+        {
+          "term": "appreciate",
+          "meaning": "agradecer por",
+          "example": "I appreciate you helping me."
+        },
+        {
+          "term": "keep on",
+          "meaning": "continuar",
+          "example": "Keep on testing the login."
+        },
+        {
+          "term": "give up",
+          "meaning": "desistir de",
+          "example": "I gave up writing that script."
+        },
+        {
+          "term": "finish",
+          "meaning": "terminar",
+          "example": "I finished writing the tests."
+        },
+        {
+          "term": "postpone",
+          "meaning": "adiar",
+          "example": "We postponed making the decision."
+        },
+        {
+          "term": "enjoy coding",
+          "meaning": "gostar de programar",
+          "example": "I enjoy coding in the morning."
+        },
+        {
+          "term": "suggest adding",
+          "meaning": "sugerir adicionar",
+          "example": "I suggest adding a cache."
+        }
+      ]
+    },
+    {
+      "slug": "gi-infinitive-verbs",
+      "title": "Verbos seguidos de infinitivo",
+      "position": 2,
+      "words": [
+        {
+          "term": "want to",
+          "meaning": "querer",
+          "example": "I want to refactor this function."
+        },
+        {
+          "term": "hope to",
+          "meaning": "esperar (algo que quer)",
+          "example": "I hope to finish today."
+        },
+        {
+          "term": "ask to",
+          "meaning": "pedir para",
+          "example": "I asked to join the call."
+        },
+        {
+          "term": "expect to",
+          "meaning": "esperar (que vá acontecer)",
+          "example": "We expect to release on Friday."
+        },
+        {
+          "term": "tend to",
+          "meaning": "tender a",
+          "example": "I tend to forget the tests."
+        },
+        {
+          "term": "promise to",
+          "meaning": "prometer",
+          "example": "I promise to fix it today."
+        },
+        {
+          "term": "refuse to",
+          "meaning": "recusar-se a",
+          "example": "I refuse to deploy on Friday."
+        },
+        {
+          "term": "offer to",
+          "meaning": "oferecer-se para",
+          "example": "I offered to help with the docs."
+        },
+        {
+          "term": "manage to",
+          "meaning": "conseguir",
+          "example": "We managed to fix the bug."
+        },
+        {
+          "term": "afford to",
+          "meaning": "ter condições de",
+          "example": "We can't afford to lose the client."
+        },
+        {
+          "term": "pretend to",
+          "meaning": "fingir",
+          "example": "He pretended to understand the issue."
+        },
+        {
+          "term": "fail to",
+          "meaning": "deixar de, não conseguir",
+          "example": "The test failed to run."
+        },
+        {
+          "term": "aim to",
+          "meaning": "ter como objetivo",
+          "example": "We aim to ship in June."
+        },
+        {
+          "term": "choose to",
+          "meaning": "escolher",
+          "example": "I chose to write a script."
+        },
+        {
+          "term": "wait to",
+          "meaning": "esperar para",
+          "example": "I'll wait to deploy until Monday."
+        },
+        {
+          "term": "learn to",
+          "meaning": "aprender a",
+          "example": "I'm learning to write better tests."
+        },
+        {
+          "term": "seem to",
+          "meaning": "parecer",
+          "example": "It seems to work now."
+        },
+        {
+          "term": "agree to",
+          "meaning": "concordar em",
+          "example": "We agreed to test it first."
+        },
+        {
+          "term": "decide to",
+          "meaning": "decidir",
+          "example": "We decided to rewrite the module."
+        },
+        {
+          "term": "plan to",
+          "meaning": "planejar",
+          "example": "I plan to finish the docs tomorrow."
+        },
+        {
+          "term": "need to finish",
+          "meaning": "precisar terminar",
+          "example": "I need to finish the report."
+        }
+      ]
+    },
+    {
+      "slug": "gi-both-forms",
+      "title": "Verbos com as duas formas",
+      "position": 3,
+      "words": [
+        {
+          "term": "like",
+          "meaning": "gostar de",
+          "example": "I like working in small teams."
+        },
+        {
+          "term": "love",
+          "meaning": "adorar",
+          "example": "I love writing clean code."
+        },
+        {
+          "term": "hate",
+          "meaning": "odiar",
+          "example": "I hate long meetings."
+        },
+        {
+          "term": "prefer",
+          "meaning": "preferir",
+          "example": "I prefer writing tests first."
+        },
+        {
+          "term": "can't stand",
+          "meaning": "não suportar",
+          "example": "I can't stand flaky tests."
+        },
+        {
+          "term": "try",
+          "meaning": "tentar",
+          "example": "I'll try to fix it today."
+        },
+        {
+          "term": "remember",
+          "meaning": "lembrar",
+          "example": "I remember writing that function."
+        },
+        {
+          "term": "forget",
+          "meaning": "esquecer",
+          "example": "I forgot to save the file."
+        },
+        {
+          "term": "begin",
+          "meaning": "começar",
+          "example": "I began coding at nine."
+        },
+        {
+          "term": "get started",
+          "meaning": "começar",
+          "example": "I got started at nine."
+        },
+        {
+          "term": "carry on",
+          "meaning": "continuar",
+          "example": "They carried on testing the API."
+        },
+        {
+          "term": "intend",
+          "meaning": "pretender",
+          "example": "I intend to finish today."
+        },
+        {
+          "term": "like to",
+          "meaning": "gostar de (sentido geral)",
+          "example": "I like to plan my week."
+        },
+        {
+          "term": "love to",
+          "meaning": "adorar (sentido geral)",
+          "example": "I love to help the team."
+        },
+        {
+          "term": "hate to",
+          "meaning": "odiar (sentido geral)",
+          "example": "I hate to delay the release."
+        },
+        {
+          "term": "prefer to",
+          "meaning": "preferir (sentido geral)",
+          "example": "I prefer to work early."
+        },
+        {
+          "term": "cease",
+          "meaning": "cessar",
+          "example": "They ceased to support the old API."
+        },
+        {
+          "term": "go on",
+          "meaning": "continuar",
+          "example": "I went on with the explanation."
+        },
+        {
+          "term": "bother to",
+          "meaning": "se dar ao trabalho de",
+          "example": "I didn't bother to check the logs."
+        },
+        {
+          "term": "hesitate to",
+          "meaning": "hesitar em",
+          "example": "I hesitate to deploy on Friday."
+        }
+      ]
+    },
+    {
+      "slug": "gi-responsibility",
+      "title": "Expressões de responsabilidade e relação",
+      "position": 4,
+      "words": [
+        {
+          "term": "in charge of",
+          "meaning": "responsável por",
+          "example": "I'm in charge of the login."
+        },
+        {
+          "term": "responsible for",
+          "meaning": "responsável por",
+          "example": "She's responsible for the API."
+        },
+        {
+          "term": "good at",
+          "meaning": "bom em",
+          "example": "I'm good at debugging."
+        },
+        {
+          "term": "bad at",
+          "meaning": "ruim em",
+          "example": "I'm bad at estimating."
+        },
+        {
+          "term": "interested in",
+          "meaning": "interessado em",
+          "example": "I'm interested in cloud systems."
+        },
+        {
+          "term": "afraid of",
+          "meaning": "com medo de",
+          "example": "I'm afraid of breaking the build."
+        },
+        {
+          "term": "used to",
+          "meaning": "costumava",
+          "example": "I used to work in a bank."
+        },
+        {
+          "term": "looking forward to",
+          "meaning": "ansioso para",
+          "example": "I'm looking forward to the demo."
+        },
+        {
+          "term": "depend on",
+          "meaning": "depender de",
+          "example": "The release depends on the tests."
+        },
+        {
+          "term": "rely on",
+          "meaning": "contar com",
+          "example": "I rely on the team for reviews."
+        },
+        {
+          "term": "care about",
+          "meaning": "se importar com",
+          "example": "I care about clean code."
+        },
+        {
+          "term": "aware of",
+          "meaning": "ciente de",
+          "example": "I'm aware of the issue."
+        },
+        {
+          "term": "capable of",
+          "meaning": "capaz de",
+          "example": "She's capable of leading the team."
+        },
+        {
+          "term": "succeed in",
+          "meaning": "conseguir (algo)",
+          "example": "We succeeded in fixing the issue."
+        },
+        {
+          "term": "insist on",
+          "meaning": "insistir em",
+          "example": "He insists on writing tests first."
+        },
+        {
+          "term": "accustomed to",
+          "meaning": "acostumado a",
+          "example": "I'm accustomed to working remotely."
+        },
+        {
+          "term": "committed to",
+          "meaning": "comprometido com",
+          "example": "We're committed to the deadline."
+        },
+        {
+          "term": "focused on",
+          "meaning": "focado em",
+          "example": "I'm focused on the API this week."
+        },
+        {
+          "term": "accountable for",
+          "meaning": "responsável (por resultados)",
+          "example": "I'm accountable for the release."
+        },
+        {
+          "term": "keen on",
+          "meaning": "entusiasmado com",
+          "example": "I'm keen on learning Rust."
+        }
+      ]
+    }
+  ]
+}

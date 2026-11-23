@@ -1,0 +1,461 @@
+{
+  "module": {
+    "title": "Voz passiva",
+    "position": 12
+  },
+  "submodules": [
+    {
+      "slug": "pass-code-tests",
+      "title": "Particípios de código e testes",
+      "position": 1,
+      "words": [
+        {
+          "term": "compiled",
+          "meaning": "compilado",
+          "example": "The code was compiled without errors."
+        },
+        {
+          "term": "packaged",
+          "meaning": "empacotado",
+          "example": "The app is packaged as a jar."
+        },
+        {
+          "term": "indexed",
+          "meaning": "indexado",
+          "example": "The table is indexed by date."
+        },
+        {
+          "term": "cached",
+          "meaning": "armazenado em cache",
+          "example": "The response is cached for five minutes."
+        },
+        {
+          "term": "migrated",
+          "meaning": "migrado",
+          "example": "The database was migrated last night."
+        },
+        {
+          "term": "encrypted",
+          "meaning": "criptografado",
+          "example": "The password is encrypted."
+        },
+        {
+          "term": "generated",
+          "meaning": "gerado",
+          "example": "The report is generated every hour."
+        },
+        {
+          "term": "logged",
+          "meaning": "registrado no log",
+          "example": "The request was logged."
+        },
+        {
+          "term": "stored",
+          "meaning": "armazenado",
+          "example": "The files are stored in the cloud."
+        },
+        {
+          "term": "scaled",
+          "meaning": "escalado",
+          "example": "The servers were scaled at noon."
+        },
+        {
+          "term": "backed up",
+          "meaning": "copiado como backup",
+          "example": "The data was backed up yesterday."
+        },
+        {
+          "term": "reviewed",
+          "meaning": "revisado",
+          "example": "The code is reviewed by two people."
+        },
+        {
+          "term": "tested",
+          "meaning": "testado",
+          "example": "The feature was tested on mobile."
+        },
+        {
+          "term": "configured",
+          "meaning": "configurado",
+          "example": "The server is configured for production."
+        },
+        {
+          "term": "parsed",
+          "meaning": "processado (lido e interpretado)",
+          "example": "The file is parsed on upload."
+        },
+        {
+          "term": "minified",
+          "meaning": "minificado",
+          "example": "The script is minified before deploy."
+        },
+        {
+          "term": "bundled",
+          "meaning": "empacotado com outros arquivos",
+          "example": "The code is bundled into one file."
+        },
+        {
+          "term": "hosted",
+          "meaning": "hospedado",
+          "example": "The site is hosted on a cloud server."
+        },
+        {
+          "term": "routed",
+          "meaning": "direcionado",
+          "example": "The request is routed to the API."
+        },
+        {
+          "term": "queued",
+          "meaning": "colocado na fila",
+          "example": "The job is queued for later."
+        },
+        {
+          "term": "restored",
+          "meaning": "restaurado",
+          "example": "The backup was restored in minutes."
+        },
+        {
+          "term": "exported",
+          "meaning": "exportado",
+          "example": "The report was exported to Excel."
+        },
+        {
+          "term": "imported",
+          "meaning": "importado",
+          "example": "The data was imported from a CSV."
+        },
+        {
+          "term": "rendered",
+          "meaning": "renderizado",
+          "example": "The page is rendered on the server."
+        },
+        {
+          "term": "retrieved",
+          "meaning": "recuperado",
+          "example": "The data is retrieved from the cache."
+        }
+      ]
+    },
+    {
+      "slug": "pass-bugs",
+      "title": "Particípios de bugs e incidentes",
+      "position": 2,
+      "words": [
+        {
+          "term": "reported",
+          "meaning": "relatado",
+          "example": "The bug was reported by a user."
+        },
+        {
+          "term": "resolved",
+          "meaning": "resolvido",
+          "example": "The issue was resolved in an hour."
+        },
+        {
+          "term": "triggered",
+          "meaning": "disparado",
+          "example": "The alert was triggered at midnight."
+        },
+        {
+          "term": "caused",
+          "meaning": "causado",
+          "example": "The outage was caused by a config error."
+        },
+        {
+          "term": "escalated",
+          "meaning": "escalado (para outra equipe)",
+          "example": "The incident was escalated to the lead."
+        },
+        {
+          "term": "flagged",
+          "meaning": "sinalizado",
+          "example": "The error was flagged by the monitor."
+        },
+        {
+          "term": "dismissed",
+          "meaning": "descartado",
+          "example": "The warning was dismissed as noise."
+        },
+        {
+          "term": "patched",
+          "meaning": "corrigido às pressas",
+          "example": "The vulnerability was patched on Monday."
+        },
+        {
+          "term": "addressed",
+          "meaning": "tratado",
+          "example": "The concern was addressed in the review."
+        },
+        {
+          "term": "contained",
+          "meaning": "contido",
+          "example": "The incident was contained quickly."
+        },
+        {
+          "term": "ignored",
+          "meaning": "ignorado",
+          "example": "The warning was ignored for weeks."
+        },
+        {
+          "term": "rejected",
+          "meaning": "rejeitado",
+          "example": "The change was rejected by the server."
+        },
+        {
+          "term": "retried",
+          "meaning": "tentado de novo",
+          "example": "The request was retried twice."
+        },
+        {
+          "term": "throttled",
+          "meaning": "limitado (em velocidade)",
+          "example": "The API is throttled after 100 calls."
+        },
+        {
+          "term": "reverted",
+          "meaning": "revertido",
+          "example": "The change was reverted after the incident."
+        },
+        {
+          "term": "blamed",
+          "meaning": "atribuído como culpa",
+          "example": "The outage was blamed on the cache."
+        },
+        {
+          "term": "overlooked",
+          "meaning": "deixado passar",
+          "example": "The warning was overlooked by mistake."
+        },
+        {
+          "term": "mitigated",
+          "meaning": "mitigado",
+          "example": "The risk was mitigated with a rollback."
+        },
+        {
+          "term": "invalidated",
+          "meaning": "invalidado",
+          "example": "The cache was invalidated after the change."
+        },
+        {
+          "term": "isolated",
+          "meaning": "isolado",
+          "example": "The service was isolated from the network."
+        }
+      ]
+    },
+    {
+      "slug": "pass-process",
+      "title": "Particípios de processo",
+      "position": 3,
+      "words": [
+        {
+          "term": "approved",
+          "meaning": "aprovado",
+          "example": "The design was approved by the client."
+        },
+        {
+          "term": "scheduled",
+          "meaning": "agendado",
+          "example": "The demo was scheduled for Monday."
+        },
+        {
+          "term": "assigned",
+          "meaning": "atribuído",
+          "example": "The task was assigned to Ana."
+        },
+        {
+          "term": "funded",
+          "meaning": "financiado",
+          "example": "The project was funded for six months."
+        },
+        {
+          "term": "budgeted",
+          "meaning": "orçado",
+          "example": "The work was budgeted at 40 hours."
+        },
+        {
+          "term": "delayed",
+          "meaning": "atrasado",
+          "example": "The release was delayed by a week."
+        },
+        {
+          "term": "authorized",
+          "meaning": "autorizado",
+          "example": "The access was authorized by the lead."
+        },
+        {
+          "term": "hired",
+          "meaning": "contratado",
+          "example": "Two devs were hired last month."
+        },
+        {
+          "term": "promoted",
+          "meaning": "promovido",
+          "example": "She was promoted to senior."
+        },
+        {
+          "term": "onboarded",
+          "meaning": "integrado (novo membro)",
+          "example": "The new dev was onboarded in a day."
+        },
+        {
+          "term": "contracted",
+          "meaning": "contratado (serviço)",
+          "example": "The vendor was contracted for the migration."
+        },
+        {
+          "term": "paid",
+          "meaning": "pago",
+          "example": "The invoice was paid on Friday."
+        },
+        {
+          "term": "invoiced",
+          "meaning": "faturado",
+          "example": "The hours were invoiced monthly."
+        },
+        {
+          "term": "renewed",
+          "meaning": "renovado",
+          "example": "The license was renewed."
+        },
+        {
+          "term": "extended",
+          "meaning": "estendido, prorrogado",
+          "example": "The deadline was extended to Friday."
+        },
+        {
+          "term": "appointed",
+          "meaning": "nomeado",
+          "example": "A new lead was appointed."
+        },
+        {
+          "term": "elected",
+          "meaning": "eleito",
+          "example": "The team elected a new scrum master."
+        },
+        {
+          "term": "reassigned",
+          "meaning": "reatribuído",
+          "example": "The task was reassigned to another dev."
+        },
+        {
+          "term": "defunded",
+          "meaning": "sem financiamento",
+          "example": "The project was defunded in May."
+        },
+        {
+          "term": "sanctioned",
+          "meaning": "aprovado oficialmente",
+          "example": "The plan was sanctioned by the board."
+        }
+      ]
+    },
+    {
+      "slug": "pass-documentation",
+      "title": "Particípios de documentação",
+      "position": 4,
+      "words": [
+        {
+          "term": "documented",
+          "meaning": "documentado",
+          "example": "The API is documented in the wiki."
+        },
+        {
+          "term": "described",
+          "meaning": "descrito",
+          "example": "The process is described in the docs."
+        },
+        {
+          "term": "illustrated",
+          "meaning": "ilustrado",
+          "example": "The flow is illustrated with diagrams."
+        },
+        {
+          "term": "translated",
+          "meaning": "traduzido",
+          "example": "The guide was translated to Portuguese."
+        },
+        {
+          "term": "published",
+          "meaning": "publicado",
+          "example": "The docs were published last week."
+        },
+        {
+          "term": "tagged",
+          "meaning": "marcado (com uma tag)",
+          "example": "The version was tagged as 1.0."
+        },
+        {
+          "term": "versioned",
+          "meaning": "versionado",
+          "example": "The API is versioned by date."
+        },
+        {
+          "term": "linked",
+          "meaning": "linkado",
+          "example": "The page is linked from the home."
+        },
+        {
+          "term": "formatted",
+          "meaning": "formatado",
+          "example": "The text is formatted in Markdown."
+        },
+        {
+          "term": "edited",
+          "meaning": "editado",
+          "example": "The article was edited by the team."
+        },
+        {
+          "term": "proofread",
+          "meaning": "revisado (ortografia)",
+          "example": "The text was proofread before the release."
+        },
+        {
+          "term": "archived",
+          "meaning": "arquivado",
+          "example": "The old docs were archived."
+        },
+        {
+          "term": "branded",
+          "meaning": "com a identidade visual",
+          "example": "The docs are branded with our colors."
+        },
+        {
+          "term": "captioned",
+          "meaning": "legendado",
+          "example": "The videos are captioned in English."
+        },
+        {
+          "term": "annotated",
+          "meaning": "anotado",
+          "example": "The code is annotated with comments."
+        },
+        {
+          "term": "revised",
+          "meaning": "revisado",
+          "example": "The guide was revised for version 2."
+        },
+        {
+          "term": "categorized",
+          "meaning": "categorizado",
+          "example": "The articles are categorized by topic."
+        },
+        {
+          "term": "printed",
+          "meaning": "impresso",
+          "example": "The guide was printed for the event."
+        },
+        {
+          "term": "bookmarked",
+          "meaning": "salvo nos favoritos",
+          "example": "The page was bookmarked by the team."
+        },
+        {
+          "term": "localized",
+          "meaning": "localizado",
+          "example": "The app is localized into Portuguese."
+        }
+      ]
+    }
+  ]
+}

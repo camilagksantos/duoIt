@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: duoit-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: duoit
+      POSTGRES_USER: duoit
+      POSTGRES_PASSWORD: duoit
+    ports:
+      - "5432:5432"
+    volumes:
+      - duoit-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U duoit -d duoit"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  duoit-pgdata:

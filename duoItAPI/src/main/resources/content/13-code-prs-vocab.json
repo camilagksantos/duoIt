@@ -1,0 +1,429 @@
+{
+  "module": {
+    "title": "Vocabulário de código e PRs",
+    "position": 13
+  },
+  "submodules": [
+    {
+      "slug": "code-nouns",
+      "title": "Substantivos de código",
+      "position": 1,
+      "words": [
+        {
+          "term": "function",
+          "meaning": "função",
+          "example": "This function returns a list."
+        },
+        {
+          "term": "variable",
+          "meaning": "variável",
+          "example": "Rename this variable to userId."
+        },
+        {
+          "term": "parameter",
+          "meaning": "parâmetro",
+          "example": "The parameter is optional."
+        },
+        {
+          "term": "dependency",
+          "meaning": "dependência",
+          "example": "The dependency is outdated."
+        },
+        {
+          "term": "return value",
+          "meaning": "valor de retorno",
+          "example": "The return value is null."
+        },
+        {
+          "term": "class",
+          "meaning": "classe",
+          "example": "The class handles the login."
+        },
+        {
+          "term": "method",
+          "meaning": "método",
+          "example": "This method saves the data."
+        },
+        {
+          "term": "module",
+          "meaning": "módulo",
+          "example": "The module is independent."
+        },
+        {
+          "term": "library",
+          "meaning": "biblioteca",
+          "example": "We use a library for dates."
+        },
+        {
+          "term": "package",
+          "meaning": "pacote",
+          "example": "The package is on npm."
+        },
+        {
+          "term": "framework",
+          "meaning": "framework",
+          "example": "Angular is our framework."
+        },
+        {
+          "term": "component",
+          "meaning": "componente",
+          "example": "The header is a component."
+        },
+        {
+          "term": "interface",
+          "meaning": "interface",
+          "example": "The interface defines the contract."
+        },
+        {
+          "term": "constant",
+          "meaning": "constante",
+          "example": "The constant is in a separate file."
+        },
+        {
+          "term": "loop",
+          "meaning": "laço (repetição)",
+          "example": "The loop runs five times."
+        },
+        {
+          "term": "condition",
+          "meaning": "condição",
+          "example": "The condition is always true."
+        },
+        {
+          "term": "exception",
+          "meaning": "exceção",
+          "example": "The exception was not handled."
+        },
+        {
+          "term": "array",
+          "meaning": "array, lista",
+          "example": "The array is empty."
+        },
+        {
+          "term": "object",
+          "meaning": "objeto",
+          "example": "The object has three fields."
+        },
+        {
+          "term": "string",
+          "meaning": "texto (string)",
+          "example": "The string is too long."
+        },
+        {
+          "term": "API call",
+          "meaning": "chamada de API",
+          "example": "The API call takes two seconds."
+        },
+        {
+          "term": "query",
+          "meaning": "consulta",
+          "example": "The query is slow."
+        },
+        {
+          "term": "schema",
+          "meaning": "esquema",
+          "example": "The schema has three tables."
+        },
+        {
+          "term": "migration",
+          "meaning": "migração (do banco)",
+          "example": "The migration adds a column."
+        },
+        {
+          "term": "script",
+          "meaning": "script",
+          "example": "The script runs every night."
+        },
+        {
+          "term": "config file",
+          "meaning": "arquivo de configuração",
+          "example": "The config file is in the root."
+        },
+        {
+          "term": "environment variable",
+          "meaning": "variável de ambiente",
+          "example": "The key is an environment variable."
+        },
+        {
+          "term": "build tool",
+          "meaning": "ferramenta de build",
+          "example": "Maven is our build tool."
+        },
+        {
+          "term": "compiler",
+          "meaning": "compilador",
+          "example": "The compiler shows a warning."
+        },
+        {
+          "term": "linter",
+          "meaning": "verificador de estilo",
+          "example": "The linter found three errors."
+        },
+        {
+          "term": "cache",
+          "meaning": "cache",
+          "example": "The cache stores the results."
+        },
+        {
+          "term": "endpoint",
+          "meaning": "endpoint",
+          "example": "The endpoint returns JSON."
+        },
+        {
+          "term": "payload",
+          "meaning": "corpo da requisição",
+          "example": "The payload is too big."
+        }
+      ]
+    },
+    {
+      "slug": "code-pr-issue-nouns",
+      "title": "Substantivos de PR e issues",
+      "position": 2,
+      "words": [
+        {
+          "term": "pull request",
+          "meaning": "pedido de integração de código",
+          "example": "The pull request is ready for review."
+        },
+        {
+          "term": "PR",
+          "meaning": "pedido de integração (abreviação)",
+          "example": "The PR has three files."
+        },
+        {
+          "term": "branch",
+          "meaning": "ramificação do código",
+          "example": "The branch is up to date."
+        },
+        {
+          "term": "feature branch",
+          "meaning": "ramificação de uma funcionalidade",
+          "example": "The feature branch is ready."
+        },
+        {
+          "term": "hotfix",
+          "meaning": "correção urgente",
+          "example": "We need a hotfix for production."
+        },
+        {
+          "term": "main branch",
+          "meaning": "ramificação principal",
+          "example": "The main branch is protected."
+        },
+        {
+          "term": "commit",
+          "meaning": "salvamento de alterações no git",
+          "example": "The commit message is clear."
+        },
+        {
+          "term": "ticket",
+          "meaning": "tarefa registrada no sistema",
+          "example": "The ticket is in progress."
+        },
+        {
+          "term": "issue",
+          "meaning": "problema registrado",
+          "example": "The issue is open."
+        },
+        {
+          "term": "bug report",
+          "meaning": "relato de bug",
+          "example": "The bug report has the steps."
+        },
+        {
+          "term": "changelog",
+          "meaning": "registro de mudanças",
+          "example": "The changelog lists the fixes."
+        },
+        {
+          "term": "tag",
+          "meaning": "marcação de versão",
+          "example": "The tag is 1.2.0."
+        },
+        {
+          "term": "fork",
+          "meaning": "cópia do repositório",
+          "example": "I work on a fork of the project."
+        },
+        {
+          "term": "diff",
+          "meaning": "diferença entre versões",
+          "example": "The diff is small."
+        },
+        {
+          "term": "patch",
+          "meaning": "correção (aplicada)",
+          "example": "The patch fixes the crash."
+        },
+        {
+          "term": "reviewer",
+          "meaning": "revisor",
+          "example": "The reviewer approved the change."
+        },
+        {
+          "term": "assignee",
+          "meaning": "responsável (pela tarefa)",
+          "example": "The assignee is Ana."
+        },
+        {
+          "term": "label",
+          "meaning": "etiqueta",
+          "example": "The PR has the bug label."
+        },
+        {
+          "term": "draft PR",
+          "meaning": "PR em rascunho",
+          "example": "This is a draft PR."
+        },
+        {
+          "term": "PR description",
+          "meaning": "descrição do PR",
+          "example": "The PR description explains the change."
+        },
+        {
+          "term": "commit message",
+          "meaning": "mensagem do commit",
+          "example": "The commit message is in English."
+        },
+        {
+          "term": "repository",
+          "meaning": "repositório",
+          "example": "The repository is on GitHub."
+        },
+        {
+          "term": "release branch",
+          "meaning": "ramificação de versão",
+          "example": "The release branch is ready."
+        }
+      ]
+    },
+    {
+      "slug": "code-review-terms",
+      "title": "Termos de revisão",
+      "position": 3,
+      "words": [
+        {
+          "term": "nit",
+          "meaning": "detalhe pequeno",
+          "example": "Just a nit: the name could be clearer."
+        },
+        {
+          "term": "nitpick",
+          "meaning": "detalhe irrelevante",
+          "example": "That's a nitpick, not a blocker."
+        },
+        {
+          "term": "suggestion",
+          "meaning": "sugestão",
+          "example": "I left a suggestion on line 10."
+        },
+        {
+          "term": "LGTM",
+          "meaning": "parece bom (looks good to me)",
+          "example": "LGTM, thanks for the fix."
+        },
+        {
+          "term": "looks good to me",
+          "meaning": "parece bom",
+          "example": "Looks good to me."
+        },
+        {
+          "term": "blocking",
+          "meaning": "que impede a aprovação",
+          "example": "This comment is blocking."
+        },
+        {
+          "term": "not blocking",
+          "meaning": "que não impede",
+          "example": "This is not blocking."
+        },
+        {
+          "term": "inline comment",
+          "meaning": "comentário na linha",
+          "example": "I left an inline comment."
+        },
+        {
+          "term": "change request",
+          "meaning": "pedido de mudança",
+          "example": "I'm sending a change request."
+        },
+        {
+          "term": "approval",
+          "meaning": "aprovação",
+          "example": "The PR needs one approval."
+        },
+        {
+          "term": "test coverage",
+          "meaning": "cobertura de testes",
+          "example": "The test coverage dropped."
+        },
+        {
+          "term": "failing check",
+          "meaning": "verificação que falhou",
+          "example": "The failing check is the lint."
+        },
+        {
+          "term": "green build",
+          "meaning": "build aprovado",
+          "example": "The build is green now."
+        },
+        {
+          "term": "edge case",
+          "meaning": "caso limite",
+          "example": "This is an edge case we missed."
+        },
+        {
+          "term": "regression",
+          "meaning": "regressão (um problema novo)",
+          "example": "The change caused a regression."
+        },
+        {
+          "term": "code smell",
+          "meaning": "sinal de código ruim",
+          "example": "This method is a code smell."
+        },
+        {
+          "term": "tech debt",
+          "meaning": "dívida técnica",
+          "example": "This adds tech debt."
+        },
+        {
+          "term": "typo",
+          "meaning": "erro de digitação",
+          "example": "There's a typo in the docs."
+        },
+        {
+          "term": "naming",
+          "meaning": "nomenclatura",
+          "example": "The naming is confusing."
+        },
+        {
+          "term": "readability",
+          "meaning": "legibilidade",
+          "example": "The readability is poor."
+        },
+        {
+          "term": "follow-up task",
+          "meaning": "tarefa para depois",
+          "example": "I'll open a follow-up task."
+        },
+        {
+          "term": "nice catch",
+          "meaning": "bem pego",
+          "example": "Nice catch on the null check."
+        },
+        {
+          "term": "minor",
+          "meaning": "pequeno",
+          "example": "It's a minor change."
+        },
+        {
+          "term": "major",
+          "meaning": "grande",
+          "example": "It's a major refactor."
+        }
+      ]
+    }
+  ]
+}

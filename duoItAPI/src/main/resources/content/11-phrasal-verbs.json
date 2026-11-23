@@ -1,0 +1,436 @@
+{
+  "module": {
+    "title": "Phrasal verbs de TI",
+    "position": 11
+  },
+  "submodules": [
+    {
+      "slug": "pv-set-up-running",
+      "title": "Colocar em funcionamento",
+      "position": 1,
+      "words": [
+        {
+          "term": "set up",
+          "meaning": "configurar",
+          "example": "I set up the local environment yesterday."
+        },
+        {
+          "term": "roll out",
+          "meaning": "lançar gradualmente",
+          "example": "We rolled out the feature to 10% of users."
+        },
+        {
+          "term": "spin up",
+          "meaning": "subir (um servidor ou ambiente)",
+          "example": "I spun up a test server."
+        },
+        {
+          "term": "boot up",
+          "meaning": "ligar (uma máquina)",
+          "example": "My laptop boots up slowly."
+        },
+        {
+          "term": "switch on",
+          "meaning": "ligar",
+          "example": "I switched on the test environment."
+        },
+        {
+          "term": "plug in",
+          "meaning": "conectar na tomada",
+          "example": "I plugged in the new monitor."
+        },
+        {
+          "term": "speed up",
+          "meaning": "acelerar",
+          "example": "The cache sped up the page."
+        },
+        {
+          "term": "scale up",
+          "meaning": "escalar para cima",
+          "example": "We scaled up the servers at noon."
+        },
+        {
+          "term": "fire up",
+          "meaning": "iniciar",
+          "example": "I fired up the dev server."
+        },
+        {
+          "term": "turn on",
+          "meaning": "ligar",
+          "example": "I turned on the feature flag."
+        },
+        {
+          "term": "set up a server",
+          "meaning": "configurar um servidor",
+          "example": "I set up a server for the demo."
+        },
+        {
+          "term": "roll out a fix",
+          "meaning": "lançar uma correção",
+          "example": "We rolled out the fix on Monday."
+        },
+        {
+          "term": "spin up a container",
+          "meaning": "subir um container",
+          "example": "I spun up a container for the tests."
+        },
+        {
+          "term": "speed up the build",
+          "meaning": "acelerar o build",
+          "example": "We sped up the build with a cache."
+        },
+        {
+          "term": "set up the database",
+          "meaning": "configurar o banco",
+          "example": "I set up the database last week."
+        },
+        {
+          "term": "power on",
+          "meaning": "ligar",
+          "example": "The server powers on in a minute."
+        },
+        {
+          "term": "shut down",
+          "meaning": "desligar",
+          "example": "I shut down the test server at night."
+        },
+        {
+          "term": "log on",
+          "meaning": "entrar (no sistema)",
+          "example": "I log on to the VPN first."
+        },
+        {
+          "term": "start up",
+          "meaning": "iniciar",
+          "example": "The app starts up in a few seconds."
+        },
+        {
+          "term": "set off",
+          "meaning": "disparar",
+          "example": "The alarm set off at noon."
+        }
+      ]
+    },
+    {
+      "slug": "pv-wrap-up-delivery",
+      "title": "Concluir e entregar",
+      "position": 2,
+      "words": [
+        {
+          "term": "wrap up",
+          "meaning": "concluir",
+          "example": "I wrapped up the report at noon."
+        },
+        {
+          "term": "hand off",
+          "meaning": "passar o trabalho",
+          "example": "I handed off the task to Ana."
+        },
+        {
+          "term": "sign off",
+          "meaning": "aprovar formalmente",
+          "example": "The client signed off the design."
+        },
+        {
+          "term": "clean up",
+          "meaning": "limpar",
+          "example": "I cleaned up the old code."
+        },
+        {
+          "term": "tidy up",
+          "meaning": "arrumar, organizar",
+          "example": "I tidied up the docs."
+        },
+        {
+          "term": "finish off",
+          "meaning": "terminar",
+          "example": "I finished off the tests yesterday."
+        },
+        {
+          "term": "pack up",
+          "meaning": "arrumar as coisas e sair",
+          "example": "I packed up at six."
+        },
+        {
+          "term": "close out",
+          "meaning": "encerrar",
+          "example": "We closed out the sprint on Friday."
+        },
+        {
+          "term": "wrap up the sprint",
+          "meaning": "encerrar a sprint",
+          "example": "We wrapped up the sprint early."
+        },
+        {
+          "term": "sign off on",
+          "meaning": "aprovar",
+          "example": "The lead signed off on the release."
+        },
+        {
+          "term": "clean up the branch",
+          "meaning": "limpar a branch",
+          "example": "I cleaned up the branch before the release."
+        },
+        {
+          "term": "hand off the work",
+          "meaning": "passar o trabalho",
+          "example": "I handed off the work to the new dev."
+        },
+        {
+          "term": "wrap up the day",
+          "meaning": "encerrar o dia",
+          "example": "I wrap up the day at six."
+        },
+        {
+          "term": "clear out",
+          "meaning": "esvaziar",
+          "example": "I cleared out my old branches."
+        },
+        {
+          "term": "close off",
+          "meaning": "fechar",
+          "example": "We closed off the old endpoint."
+        },
+        {
+          "term": "hand back",
+          "meaning": "devolver",
+          "example": "I handed back the review."
+        },
+        {
+          "term": "sign up",
+          "meaning": "inscrever-se",
+          "example": "I signed up for the training."
+        },
+        {
+          "term": "tie up",
+          "meaning": "resolver pendências",
+          "example": "I tied up the loose ends."
+        },
+        {
+          "term": "finish up",
+          "meaning": "finalizar",
+          "example": "I'm finishing up the docs."
+        },
+        {
+          "term": "put away",
+          "meaning": "guardar",
+          "example": "I put away the old files."
+        }
+      ]
+    },
+    {
+      "slug": "pv-investigate",
+      "title": "Investigar e entender",
+      "position": 3,
+      "words": [
+        {
+          "term": "figure out",
+          "meaning": "descobrir",
+          "example": "I figured out the cause of the bug."
+        },
+        {
+          "term": "look into",
+          "meaning": "investigar",
+          "example": "I looked into the timeout issue."
+        },
+        {
+          "term": "dig into",
+          "meaning": "aprofundar-se em",
+          "example": "I dug into the logs this morning."
+        },
+        {
+          "term": "track down",
+          "meaning": "localizar",
+          "example": "We tracked down the memory leak."
+        },
+        {
+          "term": "work out",
+          "meaning": "descobrir, resolver",
+          "example": "I worked out the solution yesterday."
+        },
+        {
+          "term": "check out",
+          "meaning": "dar uma olhada",
+          "example": "I checked out the new docs."
+        },
+        {
+          "term": "sort out",
+          "meaning": "resolver",
+          "example": "We sorted out the access problem."
+        },
+        {
+          "term": "narrow down",
+          "meaning": "reduzir o escopo",
+          "example": "We narrowed down the cause."
+        },
+        {
+          "term": "figure out the cause",
+          "meaning": "descobrir a causa",
+          "example": "I figured out the cause of the outage."
+        },
+        {
+          "term": "look into the issue",
+          "meaning": "investigar o problema",
+          "example": "I looked into the issue this afternoon."
+        },
+        {
+          "term": "dig into the code",
+          "meaning": "estudar o código",
+          "example": "I dug into the code last week."
+        },
+        {
+          "term": "track down the bug",
+          "meaning": "localizar o bug",
+          "example": "We tracked down the bug in an hour."
+        },
+        {
+          "term": "sort out the setup",
+          "meaning": "resolver a configuração",
+          "example": "I sorted out the setup yesterday."
+        },
+        {
+          "term": "look up",
+          "meaning": "pesquisar",
+          "example": "I looked up the error code."
+        },
+        {
+          "term": "dig up",
+          "meaning": "descobrir (algo escondido)",
+          "example": "We dug up an old script."
+        },
+        {
+          "term": "root out",
+          "meaning": "eliminar pela raiz",
+          "example": "We rooted out the memory leak."
+        },
+        {
+          "term": "zero in on",
+          "meaning": "focar em",
+          "example": "I zeroed in on the cache."
+        },
+        {
+          "term": "check on",
+          "meaning": "verificar como está",
+          "example": "I checked on the deploy."
+        },
+        {
+          "term": "pin down",
+          "meaning": "identificar com precisão",
+          "example": "We pinned down the cause."
+        },
+        {
+          "term": "hunt down",
+          "meaning": "caçar",
+          "example": "I hunted down the leak."
+        }
+      ]
+    },
+    {
+      "slug": "pv-coordinate",
+      "title": "Coordenar e acompanhar",
+      "position": 4,
+      "words": [
+        {
+          "term": "sync up",
+          "meaning": "alinhar",
+          "example": "We synced up on the plan this morning."
+        },
+        {
+          "term": "follow up",
+          "meaning": "dar seguimento",
+          "example": "I followed up with the client yesterday."
+        },
+        {
+          "term": "catch up",
+          "meaning": "colocar em dia",
+          "example": "I caught up with the team at lunch."
+        },
+        {
+          "term": "pick up",
+          "meaning": "pegar (uma tarefa)",
+          "example": "I picked up the bug from the board."
+        },
+        {
+          "term": "check in",
+          "meaning": "fazer um rápido contato",
+          "example": "I checked in with the team this morning."
+        },
+        {
+          "term": "touch base",
+          "meaning": "alinhar rapidamente",
+          "example": "I touched base with the PM last week."
+        },
+        {
+          "term": "hop on",
+          "meaning": "entrar em (uma chamada)",
+          "example": "I hopped on a call with the client."
+        },
+        {
+          "term": "drop by",
+          "meaning": "passar em",
+          "example": "I dropped by your desk yesterday."
+        },
+        {
+          "term": "reach out",
+          "meaning": "entrar em contato",
+          "example": "I reached out to the client."
+        },
+        {
+          "term": "follow up on",
+          "meaning": "dar seguimento a",
+          "example": "I followed up on the request."
+        },
+        {
+          "term": "catch up on",
+          "meaning": "colocar em dia com",
+          "example": "I caught up on the emails this morning."
+        },
+        {
+          "term": "pick up the work",
+          "meaning": "pegar o trabalho",
+          "example": "I picked up the work from Ana."
+        },
+        {
+          "term": "check in on",
+          "meaning": "checar",
+          "example": "I checked in on the team."
+        },
+        {
+          "term": "loop in",
+          "meaning": "incluir alguém",
+          "example": "I looped in the lead."
+        },
+        {
+          "term": "pass along",
+          "meaning": "repassar",
+          "example": "I passed along the message."
+        },
+        {
+          "term": "run by",
+          "meaning": "apresentar para aprovação",
+          "example": "I ran the plan by the lead."
+        },
+        {
+          "term": "line up",
+          "meaning": "agendar",
+          "example": "We lined up the review for Friday."
+        },
+        {
+          "term": "catch on",
+          "meaning": "entender",
+          "example": "The team caught on quickly."
+        },
+        {
+          "term": "follow through",
+          "meaning": "cumprir",
+          "example": "I followed through on my promise."
+        },
+        {
+          "term": "sit down with",
+          "meaning": "sentar com",
+          "example": "I sat down with the client."
+        }
+      ]
+    }
+  ]
+}

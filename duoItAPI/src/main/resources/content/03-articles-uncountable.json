@@ -1,0 +1,297 @@
+{
+  "module": {
+    "title": "Artigos e substantivos incontáveis",
+    "position": 3
+  },
+  "submodules": [
+    {
+      "slug": "art-it-terms",
+      "title": "Artigos com termos de TI",
+      "position": 1,
+      "words": [
+        {
+          "term": "a bug",
+          "meaning": "um bug",
+          "example": "I saw a bug in the login page."
+        },
+        {
+          "term": "a feature",
+          "meaning": "uma funcionalidade",
+          "example": "We added a feature last week."
+        },
+        {
+          "term": "a task",
+          "meaning": "uma tarefa",
+          "example": "I have a task for today."
+        },
+        {
+          "term": "an issue",
+          "meaning": "um problema",
+          "example": "There is an issue in the cache."
+        },
+        {
+          "term": "an error",
+          "meaning": "um erro",
+          "example": "There is an error in the logs."
+        },
+        {
+          "term": "an API",
+          "meaning": "uma API",
+          "example": "We use an API for payments."
+        },
+        {
+          "term": "a server",
+          "meaning": "um servidor",
+          "example": "The server is down."
+        },
+        {
+          "term": "an endpoint",
+          "meaning": "um endpoint",
+          "example": "The endpoint returns a list."
+        },
+        {
+          "term": "a meeting",
+          "meaning": "uma reunião",
+          "example": "I have a meeting at ten."
+        },
+        {
+          "term": "a demo",
+          "meaning": "uma demonstração",
+          "example": "The demo is at noon."
+        },
+        {
+          "term": "a release",
+          "meaning": "uma versão para publicar",
+          "example": "The release is ready."
+        },
+        {
+          "term": "a repository",
+          "meaning": "um repositório",
+          "example": "The repository is on GitHub."
+        },
+        {
+          "term": "a password",
+          "meaning": "uma senha",
+          "example": "The password is in the vault."
+        },
+        {
+          "term": "a database",
+          "meaning": "um banco de dados",
+          "example": "The database is slow."
+        },
+        {
+          "term": "a laptop",
+          "meaning": "um notebook",
+          "example": "I use a laptop at work."
+        },
+        {
+          "term": "a document",
+          "meaning": "um documento",
+          "example": "This is a document for the team."
+        },
+        {
+          "term": "an email",
+          "meaning": "um e-mail",
+          "example": "I read an email this morning."
+        },
+        {
+          "term": "an hour",
+          "meaning": "uma hora",
+          "example": "It takes an hour."
+        },
+        {
+          "term": "a day off",
+          "meaning": "um dia de folga",
+          "example": "I have a day off on Friday."
+        },
+        {
+          "term": "an office",
+          "meaning": "um escritório",
+          "example": "We work in an office in town."
+        },
+        {
+          "term": "the team",
+          "meaning": "o time",
+          "example": "The team meets at nine."
+        },
+        {
+          "term": "the client",
+          "meaning": "o cliente",
+          "example": "The client is happy with the result."
+        },
+        {
+          "term": "the deploy",
+          "meaning": "o deploy",
+          "example": "The deploy is at six."
+        },
+        {
+          "term": "the project",
+          "meaning": "o projeto",
+          "example": "The project is on track."
+        },
+        {
+          "term": "the docs",
+          "meaning": "a documentação",
+          "example": "The docs are up to date."
+        },
+        {
+          "term": "the first day",
+          "meaning": "o primeiro dia",
+          "example": "Today is the first day on the project."
+        },
+        {
+          "term": "the last step",
+          "meaning": "o último passo",
+          "example": "This is the last step."
+        },
+        {
+          "term": "the wiki",
+          "meaning": "a wiki",
+          "example": "The wiki has the answers."
+        },
+        {
+          "term": "the help desk",
+          "meaning": "o suporte técnico",
+          "example": "I call the help desk when I'm stuck."
+        },
+        {
+          "term": "the test suite",
+          "meaning": "a suíte de testes",
+          "example": "The test suite takes ten minutes."
+        },
+        {
+          "term": "the logs",
+          "meaning": "os logs",
+          "example": "The logs show the error."
+        },
+        {
+          "term": "the screen",
+          "meaning": "a tela",
+          "example": "The screen is too small."
+        }
+      ]
+    },
+    {
+      "slug": "art-uncountable-it",
+      "title": "Substantivos incontáveis de TI",
+      "position": 2,
+      "words": [
+        {
+          "term": "feedback",
+          "meaning": "feedback, retorno",
+          "example": "Thanks for the feedback."
+        },
+        {
+          "term": "code",
+          "meaning": "código (em geral)",
+          "example": "I write code every day."
+        },
+        {
+          "term": "information",
+          "meaning": "informação",
+          "example": "I need more information."
+        },
+        {
+          "term": "documentation",
+          "meaning": "documentação (em geral)",
+          "example": "The documentation is outdated."
+        },
+        {
+          "term": "software",
+          "meaning": "software",
+          "example": "We build software for banks."
+        },
+        {
+          "term": "hardware",
+          "meaning": "hardware",
+          "example": "The hardware is old."
+        },
+        {
+          "term": "data",
+          "meaning": "dados",
+          "example": "The data is safe."
+        },
+        {
+          "term": "traffic",
+          "meaning": "tráfego (de acessos)",
+          "example": "The traffic is high today."
+        },
+        {
+          "term": "equipment",
+          "meaning": "equipamento",
+          "example": "The equipment is in the lab."
+        },
+        {
+          "term": "research",
+          "meaning": "pesquisa",
+          "example": "The research took two weeks."
+        },
+        {
+          "term": "access",
+          "meaning": "acesso",
+          "example": "I need access to the database."
+        },
+        {
+          "term": "advice",
+          "meaning": "conselho",
+          "example": "Thanks for the advice."
+        },
+        {
+          "term": "news",
+          "meaning": "notícia",
+          "example": "Good news: the tests are green."
+        },
+        {
+          "term": "storage",
+          "meaning": "armazenamento",
+          "example": "The storage is almost full."
+        },
+        {
+          "term": "memory",
+          "meaning": "memória (RAM)",
+          "example": "The app uses too much memory."
+        },
+        {
+          "term": "infrastructure",
+          "meaning": "infraestrutura",
+          "example": "The infrastructure runs in the cloud."
+        },
+        {
+          "term": "knowledge",
+          "meaning": "conhecimento",
+          "example": "Our knowledge of the system is limited."
+        },
+        {
+          "term": "security",
+          "meaning": "segurança",
+          "example": "Security is a priority."
+        },
+        {
+          "term": "testing",
+          "meaning": "teste (como atividade)",
+          "example": "Testing takes a lot of time."
+        },
+        {
+          "term": "content",
+          "meaning": "conteúdo",
+          "example": "The content is in English."
+        },
+        {
+          "term": "bandwidth",
+          "meaning": "largura de banda",
+          "example": "The bandwidth is low today."
+        },
+        {
+          "term": "help",
+          "meaning": "ajuda",
+          "example": "Thanks for the help."
+        },
+        {
+          "term": "overtime",
+          "meaning": "hora extra",
+          "example": "We don't do overtime."
+        }
+      ]
+    }
+  ]
+}

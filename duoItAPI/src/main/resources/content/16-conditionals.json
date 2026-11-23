@@ -1,0 +1,384 @@
+{
+  "module": {
+    "title": "Condicionais",
+    "position": 16
+  },
+  "submodules": [
+    {
+      "slug": "cond-zero",
+      "title": "Condicional zero (fatos e processos)",
+      "position": 1,
+      "words": [
+        {
+          "term": "if",
+          "meaning": "se",
+          "example": "If the build fails, the team gets an alert."
+        },
+        {
+          "term": "whenever",
+          "meaning": "sempre que",
+          "example": "Whenever I deploy, I check the logs."
+        },
+        {
+          "term": "unless",
+          "meaning": "a menos que",
+          "example": "Unless the tests pass, we don't release."
+        },
+        {
+          "term": "as long as",
+          "meaning": "desde que",
+          "example": "As long as the tests pass, the build is green."
+        },
+        {
+          "term": "if it's green",
+          "meaning": "se estiver verde",
+          "example": "If it's green, we can merge."
+        },
+        {
+          "term": "if the server is down",
+          "meaning": "se o servidor cair",
+          "example": "If the server is down, the site stops."
+        },
+        {
+          "term": "if I forget",
+          "meaning": "se eu esquecer",
+          "example": "If I forget to commit, the work is lost."
+        },
+        {
+          "term": "if you need help",
+          "meaning": "se você precisar de ajuda",
+          "example": "If you need help, ping the team."
+        },
+        {
+          "term": "if the test fails",
+          "meaning": "se o teste falhar",
+          "example": "If the test fails, the build stops."
+        },
+        {
+          "term": "if the data is wrong",
+          "meaning": "se os dados estiverem errados",
+          "example": "If the data is wrong, the report breaks."
+        },
+        {
+          "term": "whenever there's a bug",
+          "meaning": "sempre que houver um bug",
+          "example": "Whenever there's a bug, we write a test."
+        },
+        {
+          "term": "if the API is slow",
+          "meaning": "se a API estiver lenta",
+          "example": "If the API is slow, the page loads slowly."
+        },
+        {
+          "term": "if we deploy on Friday",
+          "meaning": "se publicarmos na sexta",
+          "example": "If we deploy on Friday, the team works late."
+        },
+        {
+          "term": "if I don't know",
+          "meaning": "se eu não sei",
+          "example": "If I don't know, I ask."
+        },
+        {
+          "term": "unless we test",
+          "meaning": "a menos que testemos",
+          "example": "Unless we test it, we won't know."
+        },
+        {
+          "term": "when the cache is full",
+          "meaning": "quando o cache está cheio",
+          "example": "When the cache is full, it slows down."
+        },
+        {
+          "term": "if the lint fails",
+          "meaning": "se o lint falhar",
+          "example": "If the lint fails, the commit is blocked."
+        },
+        {
+          "term": "whenever the team meets",
+          "meaning": "sempre que o time se reúne",
+          "example": "Whenever the team meets, we plan the sprint."
+        },
+        {
+          "term": "if the config changes",
+          "meaning": "se a configuração mudar",
+          "example": "If the config changes, we restart the server."
+        },
+        {
+          "term": "when I'm stuck",
+          "meaning": "quando eu travo",
+          "example": "When I'm stuck, I search the docs."
+        },
+        {
+          "term": "if the logs show errors",
+          "meaning": "se os logs mostrarem erros",
+          "example": "If the logs show errors, I investigate."
+        },
+        {
+          "term": "when you finish",
+          "meaning": "quando você terminar",
+          "example": "When you finish, send me the link."
+        },
+        {
+          "term": "if the build is slow",
+          "meaning": "se o build estiver lento",
+          "example": "If the build is slow, we use a cache."
+        }
+      ]
+    },
+    {
+      "slug": "cond-first",
+      "title": "Condicional primeiro (riscos e planos)",
+      "position": 2,
+      "words": [
+        {
+          "term": "fails",
+          "meaning": "falhar",
+          "example": "If the build fails, I'll roll back."
+        },
+        {
+          "term": "breaks",
+          "meaning": "quebrar",
+          "example": "If the change breaks the login, we revert it."
+        },
+        {
+          "term": "times out",
+          "meaning": "estourar o tempo limite",
+          "example": "If the request times out, I'll retry it."
+        },
+        {
+          "term": "gets stuck",
+          "meaning": "travar",
+          "example": "If the deploy gets stuck, I'll call the lead."
+        },
+        {
+          "term": "stops",
+          "meaning": "parar",
+          "example": "If the job stops, the data will be incomplete."
+        },
+        {
+          "term": "crashes",
+          "meaning": "travar (o app cai)",
+          "example": "If the app crashes, the logs will show why."
+        },
+        {
+          "term": "if it fails",
+          "meaning": "se falhar",
+          "example": "If it fails, I'll look at the logs."
+        },
+        {
+          "term": "if it breaks",
+          "meaning": "se quebrar",
+          "example": "If it breaks, we'll roll back."
+        },
+        {
+          "term": "if we miss the deadline",
+          "meaning": "se perdermos o prazo",
+          "example": "If we miss the deadline, the client will complain."
+        },
+        {
+          "term": "if I finish early",
+          "meaning": "se eu terminar cedo",
+          "example": "If I finish early, I'll help with the docs."
+        },
+        {
+          "term": "if they agree",
+          "meaning": "se eles concordarem",
+          "example": "If they agree, we'll ship on Monday."
+        },
+        {
+          "term": "if the client calls",
+          "meaning": "se o cliente ligar",
+          "example": "If the client calls, I'll answer."
+        },
+        {
+          "term": "if there's a problem",
+          "meaning": "se houver um problema",
+          "example": "If there's a problem, I'll let you know."
+        },
+        {
+          "term": "if the review is late",
+          "meaning": "se a revisão atrasar",
+          "example": "If the review is late, we'll delay the merge."
+        },
+        {
+          "term": "if it's urgent",
+          "meaning": "se for urgente",
+          "example": "If it's urgent, I'll drop everything."
+        },
+        {
+          "term": "if the test passes",
+          "meaning": "se o teste passar",
+          "example": "If the test passes, I'll open the PR."
+        },
+        {
+          "term": "if we get the data",
+          "meaning": "se recebermos os dados",
+          "example": "If we get the data, we'll test it today."
+        },
+        {
+          "term": "if the server restarts",
+          "meaning": "se o servidor reiniciar",
+          "example": "If the server restarts, the cache clears."
+        },
+        {
+          "term": "if you call me",
+          "meaning": "se você me ligar",
+          "example": "If you call me, I'll pick up."
+        },
+        {
+          "term": "if I'm late",
+          "meaning": "se eu me atrasar",
+          "example": "If I'm late, start without me."
+        },
+        {
+          "term": "if it works",
+          "meaning": "se funcionar",
+          "example": "If it works, we'll ship it."
+        },
+        {
+          "term": "if the cache is stale",
+          "meaning": "se o cache estiver velho",
+          "example": "If the cache is stale, the page is wrong."
+        },
+        {
+          "term": "if they reply",
+          "meaning": "se eles responderem",
+          "example": "If they reply, we'll move forward."
+        },
+        {
+          "term": "if we need more time",
+          "meaning": "se precisarmos de mais tempo",
+          "example": "If we need more time, we'll ask the client."
+        }
+      ]
+    },
+    {
+      "slug": "cond-second",
+      "title": "Condicional segundo (hipóteses)",
+      "position": 3,
+      "words": [
+        {
+          "term": "would",
+          "meaning": "iria, faria (hipótese)",
+          "example": "I would refactor this if I had time."
+        },
+        {
+          "term": "were",
+          "meaning": "fosse (hipótese)",
+          "example": "If I were the lead, I would simplify the stack."
+        },
+        {
+          "term": "improve",
+          "meaning": "melhorar",
+          "example": "If we had more tests, we would improve quality."
+        },
+        {
+          "term": "if I had time",
+          "meaning": "se eu tivesse tempo",
+          "example": "If I had time, I would write the docs."
+        },
+        {
+          "term": "if I were you",
+          "meaning": "se eu fosse você",
+          "example": "If I were you, I would ask the lead."
+        },
+        {
+          "term": "if we had more people",
+          "meaning": "se tivéssemos mais gente",
+          "example": "If we had more people, we'd ship faster."
+        },
+        {
+          "term": "if it were possible",
+          "meaning": "se fosse possível",
+          "example": "If it were possible, I would work remotely."
+        },
+        {
+          "term": "I would",
+          "meaning": "eu faria",
+          "example": "I would start with the tests."
+        },
+        {
+          "term": "we would",
+          "meaning": "nós faríamos",
+          "example": "We would migrate to a new database."
+        },
+        {
+          "term": "they would",
+          "meaning": "eles fariam",
+          "example": "They would ask for a demo."
+        },
+        {
+          "term": "it would be better",
+          "meaning": "seria melhor",
+          "example": "It would be better to wait."
+        },
+        {
+          "term": "would you",
+          "meaning": "você faria",
+          "example": "Would you change the design?"
+        },
+        {
+          "term": "if we could",
+          "meaning": "se pudéssemos",
+          "example": "If we could, we'd rebuild the app."
+        },
+        {
+          "term": "if the team were bigger",
+          "meaning": "se o time fosse maior",
+          "example": "If the team were bigger, we'd split the work."
+        },
+        {
+          "term": "I wouldn't",
+          "meaning": "eu não faria",
+          "example": "I wouldn't deploy on Friday."
+        },
+        {
+          "term": "if it were easier",
+          "meaning": "se fosse mais fácil",
+          "example": "If it were easier, we'd automate the tests."
+        },
+        {
+          "term": "if we had a budget",
+          "meaning": "se tivéssemos orçamento",
+          "example": "If we had a budget, we would hire a designer."
+        },
+        {
+          "term": "they wouldn't",
+          "meaning": "eles não fariam",
+          "example": "They wouldn't accept that deadline."
+        },
+        {
+          "term": "if I knew",
+          "meaning": "se eu soubesse",
+          "example": "If I knew the answer, I would tell you."
+        },
+        {
+          "term": "we'd improve",
+          "meaning": "nós melhoraríamos",
+          "example": "We'd improve the speed with a cache."
+        },
+        {
+          "term": "it wouldn't work",
+          "meaning": "não funcionaria",
+          "example": "It wouldn't work with the old API."
+        },
+        {
+          "term": "if you were here",
+          "meaning": "se você estivesse aqui",
+          "example": "If you were here, we'd finish faster."
+        },
+        {
+          "term": "I'd prefer",
+          "meaning": "eu preferiria",
+          "example": "I'd prefer a smaller change."
+        },
+        {
+          "term": "if we used a queue",
+          "meaning": "se usássemos uma fila",
+          "example": "If we used a queue, the app would be faster."
+        }
+      ]
+    }
+  ]
+}

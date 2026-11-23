@@ -1,0 +1,429 @@
+{
+  "module": {
+    "title": "Perguntas, negativas e auxiliares",
+    "position": 2
+  },
+  "submodules": [
+    {
+      "slug": "q-clarification",
+      "title": "Perguntas de esclarecimento",
+      "position": 1,
+      "words": [
+        {
+          "term": "what",
+          "meaning": "o que",
+          "example": "What does this function do?"
+        },
+        {
+          "term": "how",
+          "meaning": "como",
+          "example": "How does the login work?"
+        },
+        {
+          "term": "why",
+          "meaning": "por que",
+          "example": "Why did the build fail?"
+        },
+        {
+          "term": "how many",
+          "meaning": "quantos",
+          "example": "How many tests failed?"
+        },
+        {
+          "term": "which",
+          "meaning": "qual (entre opções)",
+          "example": "Which branch should I use?"
+        },
+        {
+          "term": "where",
+          "meaning": "onde",
+          "example": "Where is the config file?"
+        },
+        {
+          "term": "when",
+          "meaning": "quando",
+          "example": "When is the release?"
+        },
+        {
+          "term": "who",
+          "meaning": "quem",
+          "example": "Who owns this service?"
+        },
+        {
+          "term": "what time",
+          "meaning": "que horas",
+          "example": "What time is the stand-up?"
+        },
+        {
+          "term": "how long",
+          "meaning": "quanto tempo",
+          "example": "How long does the deploy take?"
+        },
+        {
+          "term": "what kind of",
+          "meaning": "que tipo de",
+          "example": "What kind of error is it?"
+        },
+        {
+          "term": "what about",
+          "meaning": "e quanto a",
+          "example": "What about the mobile version?"
+        },
+        {
+          "term": "what do you mean",
+          "meaning": "o que você quer dizer",
+          "example": "What do you mean by \"done\"?"
+        },
+        {
+          "term": "what happened",
+          "meaning": "o que aconteceu",
+          "example": "What happened after the release?"
+        },
+        {
+          "term": "how often",
+          "meaning": "com que frequência",
+          "example": "How often do you update the docs?"
+        },
+        {
+          "term": "what's next",
+          "meaning": "qual é o próximo passo",
+          "example": "What's next on the board?"
+        },
+        {
+          "term": "what's wrong",
+          "meaning": "qual é o problema",
+          "example": "What's wrong with the server?"
+        },
+        {
+          "term": "which one",
+          "meaning": "qual deles",
+          "example": "Which one is the bug?"
+        },
+        {
+          "term": "what for",
+          "meaning": "para que",
+          "example": "What is this field for?"
+        },
+        {
+          "term": "how much",
+          "meaning": "quanto (em quantidade)",
+          "example": "How much time do we have?"
+        },
+        {
+          "term": "where is",
+          "meaning": "onde fica",
+          "example": "Where is the documentation?"
+        },
+        {
+          "term": "what's the status",
+          "meaning": "qual é o status",
+          "example": "What's the status of the task?"
+        },
+        {
+          "term": "how do you",
+          "meaning": "como você",
+          "example": "How do you test the API?"
+        },
+        {
+          "term": "what's the plan",
+          "meaning": "qual é o plano",
+          "example": "What's the plan for today?"
+        },
+        {
+          "term": "why not",
+          "meaning": "por que não",
+          "example": "Why not use a cache?"
+        },
+        {
+          "term": "when did",
+          "meaning": "quando",
+          "example": "When did you push the change?"
+        },
+        {
+          "term": "how did",
+          "meaning": "como foi",
+          "example": "How did the meeting go?"
+        },
+        {
+          "term": "what did you do",
+          "meaning": "o que você fez",
+          "example": "What did you do yesterday?"
+        },
+        {
+          "term": "who wrote",
+          "meaning": "quem escreveu",
+          "example": "Who wrote this code?"
+        }
+      ]
+    },
+    {
+      "slug": "q-status-negatives",
+      "title": "Negativas de status",
+      "position": 2,
+      "words": [
+        {
+          "term": "didn't",
+          "meaning": "não (no passado)",
+          "example": "I didn't break the build."
+        },
+        {
+          "term": "isn't",
+          "meaning": "não está, não é",
+          "example": "This isn't the right branch."
+        },
+        {
+          "term": "aren't",
+          "meaning": "não estão, não são",
+          "example": "The tests aren't passing."
+        },
+        {
+          "term": "doesn't",
+          "meaning": "não faz",
+          "example": "The script doesn't work on Windows."
+        },
+        {
+          "term": "don't",
+          "meaning": "não (no presente)",
+          "example": "I don't like long meetings."
+        },
+        {
+          "term": "wasn't",
+          "meaning": "não estava",
+          "example": "The server wasn't down."
+        },
+        {
+          "term": "weren't",
+          "meaning": "não estavam",
+          "example": "The logs weren't clear."
+        },
+        {
+          "term": "didn't work",
+          "meaning": "não funcionou",
+          "example": "The fix didn't work."
+        },
+        {
+          "term": "not yet",
+          "meaning": "ainda não",
+          "example": "The build is not yet ready."
+        },
+        {
+          "term": "never",
+          "meaning": "nunca",
+          "example": "I never merge on Fridays."
+        },
+        {
+          "term": "nothing",
+          "meaning": "nada",
+          "example": "Nothing changed in the config."
+        },
+        {
+          "term": "no one",
+          "meaning": "ninguém",
+          "example": "No one knows the answer."
+        },
+        {
+          "term": "none",
+          "meaning": "nenhum",
+          "example": "None of the tests failed."
+        },
+        {
+          "term": "not anymore",
+          "meaning": "não mais",
+          "example": "We don't use that tool anymore."
+        },
+        {
+          "term": "not at all",
+          "meaning": "de jeito nenhum",
+          "example": "It's not at all urgent."
+        },
+        {
+          "term": "not sure",
+          "meaning": "não tenho certeza",
+          "example": "I'm not sure about the answer."
+        },
+        {
+          "term": "not really",
+          "meaning": "não muito",
+          "example": "I don't really like the new layout."
+        },
+        {
+          "term": "no problem",
+          "meaning": "sem problema",
+          "example": "No problem, I'll fix it."
+        },
+        {
+          "term": "don't have",
+          "meaning": "não tenho",
+          "example": "I don't have access to the server."
+        },
+        {
+          "term": "doesn't matter",
+          "meaning": "não importa",
+          "example": "It doesn't matter which branch you use."
+        },
+        {
+          "term": "isn't working",
+          "meaning": "não está funcionando",
+          "example": "The login isn't working."
+        },
+        {
+          "term": "wasn't able to",
+          "meaning": "não consegui",
+          "example": "I wasn't able to reproduce the bug."
+        },
+        {
+          "term": "not included",
+          "meaning": "não incluído",
+          "example": "The tests aren't included in this task."
+        },
+        {
+          "term": "not enough",
+          "meaning": "não o suficiente",
+          "example": "We don't have enough time."
+        },
+        {
+          "term": "nobody",
+          "meaning": "ninguém",
+          "example": "Nobody reviewed the change."
+        },
+        {
+          "term": "none of them",
+          "meaning": "nenhum deles",
+          "example": "None of them works."
+        },
+        {
+          "term": "no way",
+          "meaning": "de jeito nenhum",
+          "example": "No way, that's wrong."
+        }
+      ]
+    },
+    {
+      "slug": "q-verification",
+      "title": "Verificação",
+      "position": 3,
+      "words": [
+        {
+          "term": "did you check",
+          "meaning": "você verificou",
+          "example": "Did you check the logs?"
+        },
+        {
+          "term": "did you confirm",
+          "meaning": "você confirmou",
+          "example": "Did you confirm the meeting?"
+        },
+        {
+          "term": "did it pass",
+          "meaning": "passou (num teste)",
+          "example": "Did the tests pass?"
+        },
+        {
+          "term": "did it fail",
+          "meaning": "falhou",
+          "example": "Did the build fail?"
+        },
+        {
+          "term": "test",
+          "meaning": "testar",
+          "example": "Did you test the login?"
+        },
+        {
+          "term": "verify",
+          "meaning": "verificar",
+          "example": "Did you verify the data?"
+        },
+        {
+          "term": "compare",
+          "meaning": "comparar",
+          "example": "Did you compare the two versions?"
+        },
+        {
+          "term": "double-check",
+          "meaning": "conferir de novo",
+          "example": "Did you double-check the numbers?"
+        },
+        {
+          "term": "look at",
+          "meaning": "olhar para",
+          "example": "Did you look at the error message?"
+        },
+        {
+          "term": "go over",
+          "meaning": "revisar rapidamente",
+          "example": "Did you go over the checklist?"
+        },
+        {
+          "term": "make sure",
+          "meaning": "garantir",
+          "example": "Did you make sure the backup ran?"
+        },
+        {
+          "term": "ensure",
+          "meaning": "garantir",
+          "example": "Did you ensure the data is saved?"
+        },
+        {
+          "term": "inspect",
+          "meaning": "inspecionar",
+          "example": "Did you inspect the code?"
+        },
+        {
+          "term": "validate",
+          "meaning": "validar",
+          "example": "Did you validate the input?"
+        },
+        {
+          "term": "measure",
+          "meaning": "medir",
+          "example": "Did you measure the response time?"
+        },
+        {
+          "term": "cross-check",
+          "meaning": "conferir (um valor com outro)",
+          "example": "Did you cross-check the totals?"
+        },
+        {
+          "term": "spot",
+          "meaning": "notar (um erro)",
+          "example": "Did you spot the error?"
+        },
+        {
+          "term": "notice",
+          "meaning": "perceber",
+          "example": "Did you notice the warning?"
+        },
+        {
+          "term": "rerun",
+          "meaning": "executar de novo",
+          "example": "Did you rerun the tests?"
+        },
+        {
+          "term": "check status",
+          "meaning": "verificar o status",
+          "example": "Did you check the status?"
+        },
+        {
+          "term": "confirm receipt",
+          "meaning": "confirmar o recebimento",
+          "example": "Did you confirm receipt of the file?"
+        },
+        {
+          "term": "examine",
+          "meaning": "examinar",
+          "example": "Did you examine the new code?"
+        },
+        {
+          "term": "confirm the date",
+          "meaning": "confirmar a data",
+          "example": "Did you confirm the date with the client?"
+        },
+        {
+          "term": "confirm the fix",
+          "meaning": "confirmar a correção",
+          "example": "Did you confirm the fix in production?"
+        }
+      ]
+    }
+  ]
+}

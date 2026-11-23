@@ -1,0 +1,457 @@
+{
+  "module": {
+    "title": "Revisão das estruturas básicas",
+    "position": 1
+  },
+  "submodules": [
+    {
+      "slug": "basic-work-routine",
+      "title": "Rotina de trabalho",
+      "position": 1,
+      "words": [
+        {
+          "term": "work on",
+          "meaning": "trabalhar em (uma tarefa ou código)",
+          "example": "I'm working on the login page."
+        },
+        {
+          "term": "start",
+          "meaning": "começar (o expediente ou uma tarefa)",
+          "example": "I start work at nine."
+        },
+        {
+          "term": "continue",
+          "meaning": "continuar (uma tarefa)",
+          "example": "I'll continue the refactor tomorrow."
+        },
+        {
+          "term": "keep",
+          "meaning": "manter (organizado, atualizado)",
+          "example": "I keep my tasks organized."
+        },
+        {
+          "term": "stop",
+          "meaning": "parar (de trabalhar)",
+          "example": "I stopped working at six yesterday."
+        },
+        {
+          "term": "attend",
+          "meaning": "participar de (uma reunião)",
+          "example": "I attend the daily meeting every morning."
+        },
+        {
+          "term": "read",
+          "meaning": "ler (documentação ou requisitos)",
+          "example": "I read the requirements before I code."
+        },
+        {
+          "term": "plan",
+          "meaning": "planejar (o dia ou a sprint)",
+          "example": "I plan my day before the first meeting."
+        },
+        {
+          "term": "organize",
+          "meaning": "organizar (o quadro ou as tarefas)",
+          "example": "I organize the board every Monday."
+        },
+        {
+          "term": "join",
+          "meaning": "entrar em (uma chamada ou reunião)",
+          "example": "I'll join the call at nine."
+        },
+        {
+          "term": "share",
+          "meaning": "compartilhar (a tela ou um link)",
+          "example": "I share my screen during the demo."
+        },
+        {
+          "term": "meet",
+          "meaning": "reunir-se com (uma pessoa ou cliente)",
+          "example": "We meet the client on Monday."
+        },
+        {
+          "term": "handle",
+          "meaning": "cuidar de (solicitações ou incidentes)",
+          "example": "I handle the support requests."
+        },
+        {
+          "term": "lead",
+          "meaning": "liderar (uma equipe)",
+          "example": "She leads the frontend team."
+        },
+        {
+          "term": "support",
+          "meaning": "dar suporte a (uma equipe ou sistema)",
+          "example": "I support the mobile team."
+        },
+        {
+          "term": "prepare",
+          "meaning": "preparar (uma apresentação ou entrega)",
+          "example": "I prepare the demo for Friday."
+        },
+        {
+          "term": "report",
+          "meaning": "relatar (andamento ou problemas)",
+          "example": "I report my progress every day."
+        },
+        {
+          "term": "focus on",
+          "meaning": "focar em (uma tarefa)",
+          "example": "I focus on one task at a time."
+        },
+        {
+          "term": "move a task",
+          "meaning": "mover uma tarefa (no quadro)",
+          "example": "I moved the task to Done yesterday."
+        },
+        {
+          "term": "pick a task",
+          "meaning": "escolher uma tarefa",
+          "example": "I pick a task from the board every morning."
+        },
+        {
+          "term": "estimate a task",
+          "meaning": "estimar uma tarefa",
+          "example": "I estimate each task in hours."
+        },
+        {
+          "term": "track progress",
+          "meaning": "acompanhar o progresso",
+          "example": "I track progress on the board every day."
+        },
+        {
+          "term": "review requirements",
+          "meaning": "revisar requisitos",
+          "example": "I review the requirements with the product owner."
+        },
+        {
+          "term": "submit a task",
+          "meaning": "enviar uma tarefa (para aprovação)",
+          "example": "I submit the task before the deadline."
+        },
+        {
+          "term": "fix an issue",
+          "meaning": "corrigir um problema",
+          "example": "I fix an issue before lunch."
+        },
+        {
+          "term": "run the application",
+          "meaning": "executar a aplicação",
+          "example": "I run the application on my machine."
+        },
+        {
+          "term": "close",
+          "meaning": "fechar (uma issue ou tarefa)",
+          "example": "I closed the old issues yesterday."
+        },
+        {
+          "term": "open",
+          "meaning": "abrir (um projeto ou uma aplicação)",
+          "example": "I open the project every morning."
+        },
+        {
+          "term": "wait",
+          "meaning": "esperar (um retorno ou uma resposta)",
+          "example": "I'm waiting for feedback."
+        },
+        {
+          "term": "learn",
+          "meaning": "aprender (uma tecnologia ou um conceito)",
+          "example": "I learned a lot this week."
+        },
+        {
+          "term": "solve",
+          "meaning": "resolver (um problema técnico)",
+          "example": "I solved the problem with the cache."
+        },
+        {
+          "term": "hand over",
+          "meaning": "passar (uma tarefa para outra pessoa)",
+          "example": "I hand over the task to my teammate."
+        },
+        {
+          "term": "debug",
+          "meaning": "depurar (encontrar e corrigir um erro no código)",
+          "example": "I debug the code after lunch."
+        },
+        {
+          "term": "save",
+          "meaning": "salvar (o trabalho ou um arquivo)",
+          "example": "I save my work every hour."
+        },
+        {
+          "term": "upload",
+          "meaning": "enviar um arquivo (para uma plataforma)",
+          "example": "I upload the screenshots to the wiki."
+        },
+        {
+          "term": "download",
+          "meaning": "baixar (uma versão ou um arquivo)",
+          "example": "I download the new version of the app."
+        },
+        {
+          "term": "install",
+          "meaning": "instalar (uma ferramenta ou dependência)",
+          "example": "I installed the new tool on Monday."
+        },
+        {
+          "term": "log in",
+          "meaning": "fazer login (em um sistema)",
+          "example": "I log in to the system every morning."
+        },
+        {
+          "term": "sign",
+          "meaning": "assinar (um contrato ou documento)",
+          "example": "I sign the contract on Friday."
+        },
+        {
+          "term": "deploy",
+          "meaning": "publicar em produção",
+          "example": "We deploy the app on Fridays."
+        },
+        {
+          "term": "assign a task",
+          "meaning": "atribuir uma tarefa",
+          "example": "I assign a task to each developer on Monday."
+        },
+        {
+          "term": "take",
+          "meaning": "tirar (uma pausa)",
+          "example": "I take a break at noon."
+        },
+        {
+          "term": "make",
+          "meaning": "fazer, criar (um plano ou uma decisão)",
+          "example": "I make a plan at the start of the week."
+        },
+        {
+          "term": "search",
+          "meaning": "pesquisar (na documentação)",
+          "example": "I search the docs first."
+        },
+        {
+          "term": "call",
+          "meaning": "ligar para (um cliente ou colega)",
+          "example": "I call the client on Friday."
+        },
+        {
+          "term": "write",
+          "meaning": "escrever (anotações ou código)",
+          "example": "I write notes during the meeting."
+        },
+        {
+          "term": "bring",
+          "meaning": "trazer (um equipamento ou material)",
+          "example": "I bring my laptop to the office."
+        }
+      ]
+    },
+    {
+      "slug": "basic-time-deadlines",
+      "title": "Tempo e prazos",
+      "position": 2,
+      "words": [
+        {
+          "term": "today",
+          "meaning": "hoje",
+          "example": "I'm busy today."
+        },
+        {
+          "term": "yesterday",
+          "meaning": "ontem",
+          "example": "I wrote the tests yesterday."
+        },
+        {
+          "term": "tomorrow",
+          "meaning": "amanhã",
+          "example": "I'll meet the team tomorrow."
+        },
+        {
+          "term": "deadline",
+          "meaning": "prazo final (de uma entrega)",
+          "example": "The deadline is next Friday."
+        },
+        {
+          "term": "due date",
+          "meaning": "data de entrega (de uma tarefa)",
+          "example": "What's the due date for this task?"
+        },
+        {
+          "term": "this week",
+          "meaning": "esta semana",
+          "example": "I'm working on the API this week."
+        },
+        {
+          "term": "next week",
+          "meaning": "semana que vem",
+          "example": "We release the app next week."
+        },
+        {
+          "term": "last week",
+          "meaning": "semana passada",
+          "example": "I started the project last week."
+        },
+        {
+          "term": "this morning",
+          "meaning": "hoje cedo",
+          "example": "I had a meeting this morning."
+        },
+        {
+          "term": "this afternoon",
+          "meaning": "hoje à tarde",
+          "example": "I'll call you this afternoon."
+        },
+        {
+          "term": "tonight",
+          "meaning": "hoje à noite",
+          "example": "I'll study English tonight."
+        },
+        {
+          "term": "on Monday",
+          "meaning": "na segunda-feira",
+          "example": "The meeting is on Monday."
+        },
+        {
+          "term": "at nine",
+          "meaning": "às nove",
+          "example": "The stand-up is at nine."
+        },
+        {
+          "term": "in two days",
+          "meaning": "em dois dias",
+          "example": "The release is in two days."
+        },
+        {
+          "term": "two hours ago",
+          "meaning": "duas horas atrás",
+          "example": "I sent the file two hours ago."
+        },
+        {
+          "term": "soon",
+          "meaning": "em breve (um recurso ou entrega)",
+          "example": "The new version will be ready soon."
+        },
+        {
+          "term": "later",
+          "meaning": "mais tarde",
+          "example": "I'll check the chat later."
+        },
+        {
+          "term": "early",
+          "meaning": "cedo (no dia ou na semana)",
+          "example": "I start early on Mondays."
+        },
+        {
+          "term": "late",
+          "meaning": "atrasado (para um compromisso)",
+          "example": "I'm late for the call."
+        },
+        {
+          "term": "on time",
+          "meaning": "no prazo",
+          "example": "We delivered the feature on time."
+        },
+        {
+          "term": "overdue",
+          "meaning": "atrasado (uma tarefa com prazo vencido)",
+          "example": "This task is overdue."
+        },
+        {
+          "term": "urgent",
+          "meaning": "urgente",
+          "example": "This is an urgent request."
+        },
+        {
+          "term": "ASAP",
+          "meaning": "o quanto antes",
+          "example": "I'll send it ASAP."
+        },
+        {
+          "term": "every day",
+          "meaning": "todo dia",
+          "example": "I study every day."
+        },
+        {
+          "term": "once a week",
+          "meaning": "uma vez por semana",
+          "example": "We have a team lunch once a week."
+        },
+        {
+          "term": "twice a day",
+          "meaning": "duas vezes por dia",
+          "example": "I check the news twice a day."
+        },
+        {
+          "term": "last month",
+          "meaning": "mês passado",
+          "example": "We launched the app last month."
+        },
+        {
+          "term": "next month",
+          "meaning": "mês que vem",
+          "example": "I'll start a new course next month."
+        },
+        {
+          "term": "recently",
+          "meaning": "recentemente",
+          "example": "I recently changed my routine."
+        },
+        {
+          "term": "still",
+          "meaning": "ainda (em andamento)",
+          "example": "I'm still working on it."
+        },
+        {
+          "term": "ahead of schedule",
+          "meaning": "adiantado (em relação ao cronograma)",
+          "example": "We're ahead of schedule."
+        },
+        {
+          "term": "behind schedule",
+          "meaning": "atrasado (em relação ao cronograma)",
+          "example": "The project is behind schedule."
+        },
+        {
+          "term": "on hold",
+          "meaning": "pausado (uma tarefa ou projeto)",
+          "example": "The task is on hold."
+        },
+        {
+          "term": "time zone",
+          "meaning": "fuso horário",
+          "example": "Our client is in a different time zone."
+        },
+        {
+          "term": "weekend",
+          "meaning": "fim de semana",
+          "example": "I don't work on the weekend."
+        },
+        {
+          "term": "after lunch",
+          "meaning": "depois do almoço",
+          "example": "The demo is after lunch."
+        },
+        {
+          "term": "before lunch",
+          "meaning": "antes do almoço",
+          "example": "I answer emails before lunch."
+        },
+        {
+          "term": "in the morning",
+          "meaning": "de manhã",
+          "example": "I check my agenda in the morning."
+        },
+        {
+          "term": "at night",
+          "meaning": "à noite",
+          "example": "I study at night."
+        },
+        {
+          "term": "for two hours",
+          "meaning": "por duas horas",
+          "example": "I worked for two hours."
+        }
+      ]
+    }
+  ]
+}

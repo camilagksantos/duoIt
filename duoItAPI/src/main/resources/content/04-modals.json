@@ -1,0 +1,344 @@
+{
+  "module": {
+    "title": "Modais de sugestão e obrigação",
+    "position": 4
+  },
+  "submodules": [
+    {
+      "slug": "modal-suggestions",
+      "title": "Sugestões",
+      "position": 1,
+      "words": [
+        {
+          "term": "should",
+          "meaning": "deveria",
+          "example": "You should add a test."
+        },
+        {
+          "term": "could",
+          "meaning": "poderia",
+          "example": "We could simplify this part."
+        },
+        {
+          "term": "shouldn't",
+          "meaning": "não deveria",
+          "example": "You shouldn't push to main."
+        },
+        {
+          "term": "should I",
+          "meaning": "devo",
+          "example": "Should I update the docs?"
+        },
+        {
+          "term": "should we",
+          "meaning": "devemos",
+          "example": "Should we add a comment?"
+        },
+        {
+          "term": "could we",
+          "meaning": "poderíamos",
+          "example": "Could we move the meeting?"
+        },
+        {
+          "term": "could you",
+          "meaning": "você poderia",
+          "example": "Could you check my change?"
+        },
+        {
+          "term": "let's",
+          "meaning": "vamos",
+          "example": "Let's review the PR together."
+        },
+        {
+          "term": "let's not",
+          "meaning": "vamos não",
+          "example": "Let's not deploy today."
+        },
+        {
+          "term": "shall we",
+          "meaning": "vamos?",
+          "example": "Shall we start?"
+        },
+        {
+          "term": "why don't we",
+          "meaning": "por que não",
+          "example": "Why don't we try another cache?"
+        },
+        {
+          "term": "what if",
+          "meaning": "e se",
+          "example": "What if we use a queue?"
+        },
+        {
+          "term": "how about",
+          "meaning": "que tal",
+          "example": "How about a short break?"
+        },
+        {
+          "term": "how should I",
+          "meaning": "como devo",
+          "example": "How should I name this variable?"
+        },
+        {
+          "term": "you should",
+          "meaning": "você deveria",
+          "example": "You should write a test first."
+        },
+        {
+          "term": "you could",
+          "meaning": "você poderia",
+          "example": "You could check the docs first."
+        },
+        {
+          "term": "we should",
+          "meaning": "deveríamos",
+          "example": "We should talk to the client."
+        },
+        {
+          "term": "we shouldn't",
+          "meaning": "não deveríamos",
+          "example": "We shouldn't skip the tests."
+        },
+        {
+          "term": "we could",
+          "meaning": "nós poderíamos",
+          "example": "We could use a script."
+        },
+        {
+          "term": "they should",
+          "meaning": "eles deveriam",
+          "example": "They should answer the email."
+        },
+        {
+          "term": "I could",
+          "meaning": "eu poderia",
+          "example": "I could help you after lunch."
+        },
+        {
+          "term": "should be",
+          "meaning": "deveria estar",
+          "example": "It should be ready today."
+        }
+      ]
+    },
+    {
+      "slug": "modal-obligation",
+      "title": "Obrigação e necessidade",
+      "position": 2,
+      "words": [
+        {
+          "term": "must",
+          "meaning": "precisar (obrigação forte)",
+          "example": "You must log in first."
+        },
+        {
+          "term": "have to",
+          "meaning": "ter que",
+          "example": "I have to finish this today."
+        },
+        {
+          "term": "need to",
+          "meaning": "precisar",
+          "example": "We need to fix the bug."
+        },
+        {
+          "term": "needs to",
+          "meaning": "precisar (com ele ou ela)",
+          "example": "The app needs to restart."
+        },
+        {
+          "term": "has to",
+          "meaning": "ter que (com ele ou ela)",
+          "example": "She has to approve it."
+        },
+        {
+          "term": "don't have to",
+          "meaning": "não precisar",
+          "example": "You don't have to attend."
+        },
+        {
+          "term": "don't need to",
+          "meaning": "não precisar",
+          "example": "You don't need to reply today."
+        },
+        {
+          "term": "needn't",
+          "meaning": "não precisa",
+          "example": "You needn't reply today."
+        },
+        {
+          "term": "mustn't",
+          "meaning": "não pode",
+          "example": "You mustn't share the password."
+        },
+        {
+          "term": "must not",
+          "meaning": "não deve (proibição)",
+          "example": "You must not commit secrets."
+        },
+        {
+          "term": "must be",
+          "meaning": "deve ser",
+          "example": "It must be ready by Friday."
+        },
+        {
+          "term": "are required to",
+          "meaning": "são obrigados a",
+          "example": "We are required to test everything."
+        },
+        {
+          "term": "supposed to",
+          "meaning": "deveria (combinado)",
+          "example": "I'm supposed to call the client."
+        },
+        {
+          "term": "ought to",
+          "meaning": "deveria (mais forte)",
+          "example": "We ought to document this."
+        },
+        {
+          "term": "is not allowed to",
+          "meaning": "não é permitido",
+          "example": "We're not allowed to deploy on Friday."
+        },
+        {
+          "term": "it's necessary to",
+          "meaning": "é necessário",
+          "example": "It's necessary to back up the data."
+        },
+        {
+          "term": "it's essential to",
+          "meaning": "é essencial",
+          "example": "It's essential to test the login."
+        },
+        {
+          "term": "you need",
+          "meaning": "você precisa",
+          "example": "You need a VPN to connect."
+        },
+        {
+          "term": "they need to",
+          "meaning": "eles precisam",
+          "example": "They need to restart the server."
+        },
+        {
+          "term": "I need",
+          "meaning": "eu preciso",
+          "example": "I need more time."
+        }
+      ]
+    },
+    {
+      "slug": "modal-possibility",
+      "title": "Possibilidade",
+      "position": 3,
+      "words": [
+        {
+          "term": "might",
+          "meaning": "talvez",
+          "example": "It might break the build."
+        },
+        {
+          "term": "might not",
+          "meaning": "talvez não",
+          "example": "It might not work on Windows."
+        },
+        {
+          "term": "may",
+          "meaning": "pode ser (talvez)",
+          "example": "The meeting may move to Thursday."
+        },
+        {
+          "term": "may not",
+          "meaning": "pode não",
+          "example": "The fix may not be enough."
+        },
+        {
+          "term": "might be",
+          "meaning": "pode ser",
+          "example": "It might be a cache issue."
+        },
+        {
+          "term": "may be",
+          "meaning": "pode ser",
+          "example": "It may be a timeout."
+        },
+        {
+          "term": "could be",
+          "meaning": "pode ser",
+          "example": "It could be a cache issue."
+        },
+        {
+          "term": "can't be",
+          "meaning": "não pode ser",
+          "example": "It can't be the database."
+        },
+        {
+          "term": "maybe",
+          "meaning": "talvez",
+          "example": "Maybe the server is slow."
+        },
+        {
+          "term": "possibly",
+          "meaning": "possivelmente",
+          "example": "The bug is possibly in the API."
+        },
+        {
+          "term": "perhaps",
+          "meaning": "talvez",
+          "example": "Perhaps we need more tests."
+        },
+        {
+          "term": "probably",
+          "meaning": "provavelmente",
+          "example": "It will probably be ready by Friday."
+        },
+        {
+          "term": "it's possible",
+          "meaning": "é possível",
+          "example": "It's possible the API is slow."
+        },
+        {
+          "term": "there might be",
+          "meaning": "pode haver",
+          "example": "There might be a bug in the login."
+        },
+        {
+          "term": "there may be",
+          "meaning": "pode haver",
+          "example": "There may be delays."
+        },
+        {
+          "term": "unlikely",
+          "meaning": "improvável",
+          "example": "It's unlikely to fail."
+        },
+        {
+          "term": "likely",
+          "meaning": "provável",
+          "example": "It's likely to take two days."
+        },
+        {
+          "term": "chance",
+          "meaning": "chance",
+          "example": "There's a chance the deploy fails."
+        },
+        {
+          "term": "could happen",
+          "meaning": "pode acontecer",
+          "example": "It could happen again."
+        },
+        {
+          "term": "may or may not",
+          "meaning": "pode ou não",
+          "example": "It may or may not work."
+        },
+        {
+          "term": "seems to",
+          "meaning": "parece que",
+          "example": "It seems to be a cache issue."
+        }
+      ]
+    }
+  ]
+}

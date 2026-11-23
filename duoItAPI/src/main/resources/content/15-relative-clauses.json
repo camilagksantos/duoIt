@@ -1,0 +1,334 @@
+{
+  "module": {
+    "title": "Orações relativas",
+    "position": 15
+  },
+  "submodules": [
+    {
+      "slug": "rel-pronouns-people",
+      "title": "Pronomes relativos de pessoa",
+      "position": 1,
+      "words": [
+        {
+          "term": "those who",
+          "meaning": "aqueles que",
+          "example": "Those who merge late stay late."
+        },
+        {
+          "term": "the developer who",
+          "meaning": "o desenvolvedor que",
+          "example": "The developer who fixed the bug is on leave."
+        },
+        {
+          "term": "the person who",
+          "meaning": "a pessoa que",
+          "example": "The person who reviews the PR is Ana."
+        },
+        {
+          "term": "the engineer who",
+          "meaning": "o engenheiro que",
+          "example": "The engineer who built the API is here."
+        },
+        {
+          "term": "the designer who",
+          "meaning": "o designer que",
+          "example": "The designer who made the layout is new."
+        },
+        {
+          "term": "the client who",
+          "meaning": "o cliente que",
+          "example": "The client who asked for the demo is happy."
+        },
+        {
+          "term": "the tester who",
+          "meaning": "o testador que",
+          "example": "The tester who found the bug works with us."
+        },
+        {
+          "term": "the manager who",
+          "meaning": "o gerente que",
+          "example": "The manager who approved the budget is out."
+        },
+        {
+          "term": "the lead who",
+          "meaning": "o líder que",
+          "example": "The lead who planned the sprint left the team."
+        },
+        {
+          "term": "the team member who",
+          "meaning": "o membro do time que",
+          "example": "The team member who handles support is busy."
+        },
+        {
+          "term": "whom",
+          "meaning": "a quem (formal)",
+          "example": "The person whom we need is in a meeting."
+        },
+        {
+          "term": "the user whom",
+          "meaning": "o usuário que (formal)",
+          "example": "The user whom we contacted replied quickly."
+        },
+        {
+          "term": "whose",
+          "meaning": "cujo, cuja",
+          "example": "The developer whose laptop broke works from home."
+        },
+        {
+          "term": "the one whose",
+          "meaning": "aquele cujo",
+          "example": "The one whose PR was merged is me."
+        },
+        {
+          "term": "the team whose",
+          "meaning": "o time cujo",
+          "example": "The team whose tests failed is backend."
+        },
+        {
+          "term": "the person to whom",
+          "meaning": "a pessoa a quem",
+          "example": "The person to whom I sent the report is the lead."
+        },
+        {
+          "term": "the colleague who",
+          "meaning": "o colega que",
+          "example": "The colleague who helped me is in Portugal."
+        },
+        {
+          "term": "the customer who",
+          "meaning": "o cliente que",
+          "example": "The customer who reported the crash is happy now."
+        },
+        {
+          "term": "the developers who",
+          "meaning": "os desenvolvedores que",
+          "example": "The developers who joined this month are learning fast."
+        },
+        {
+          "term": "the people who",
+          "meaning": "as pessoas que",
+          "example": "The people who attend the stand-up are the team."
+        }
+      ]
+    },
+    {
+      "slug": "rel-defining-things",
+      "title": "Relativas que definem coisas",
+      "position": 2,
+      "words": [
+        {
+          "term": "that",
+          "meaning": "que (para coisas)",
+          "example": "This is the function that validates the input."
+        },
+        {
+          "term": "whichever",
+          "meaning": "qualquer que",
+          "example": "Whichever branch you choose is fine."
+        },
+        {
+          "term": "the function that",
+          "meaning": "a função que",
+          "example": "The function that validates the input is slow."
+        },
+        {
+          "term": "the module that",
+          "meaning": "o módulo que",
+          "example": "The module that handles login is new."
+        },
+        {
+          "term": "the bug that",
+          "meaning": "o bug que",
+          "example": "The bug that crashed the app is fixed."
+        },
+        {
+          "term": "the file that",
+          "meaning": "o arquivo que",
+          "example": "The file that holds the config is in root."
+        },
+        {
+          "term": "the server which",
+          "meaning": "o servidor que",
+          "example": "The server which runs the API is down."
+        },
+        {
+          "term": "the query which",
+          "meaning": "a consulta que",
+          "example": "The query which fetches users is slow."
+        },
+        {
+          "term": "the button that",
+          "meaning": "o botão que",
+          "example": "The button that sends the form is broken."
+        },
+        {
+          "term": "the feature that",
+          "meaning": "a funcionalidade que",
+          "example": "The feature that we shipped is popular."
+        },
+        {
+          "term": "the error that",
+          "meaning": "o erro que",
+          "example": "The error that appears on login is new."
+        },
+        {
+          "term": "the report that",
+          "meaning": "o relatório que",
+          "example": "The report that I sent is outdated."
+        },
+        {
+          "term": "the test that",
+          "meaning": "o teste que",
+          "example": "The test that failed is flaky."
+        },
+        {
+          "term": "the library that",
+          "meaning": "a biblioteca que",
+          "example": "The library that we use is well known."
+        },
+        {
+          "term": "the tool which",
+          "meaning": "a ferramenta que",
+          "example": "The tool which we use for tests is free."
+        },
+        {
+          "term": "the change that",
+          "meaning": "a mudança que",
+          "example": "The change that broke the build was small."
+        },
+        {
+          "term": "the document which",
+          "meaning": "o documento que",
+          "example": "The document which explains the flow is old."
+        },
+        {
+          "term": "the code that",
+          "meaning": "o código que",
+          "example": "The code that runs at night is slow."
+        },
+        {
+          "term": "the table that",
+          "meaning": "a tabela que",
+          "example": "The table that stores logs is huge."
+        },
+        {
+          "term": "the thing that",
+          "meaning": "a coisa que",
+          "example": "That's the thing that worries me."
+        },
+        {
+          "term": "the part which",
+          "meaning": "a parte que",
+          "example": "The part which needs work is the search."
+        }
+      ]
+    },
+    {
+      "slug": "rel-place-time",
+      "title": "Relativas de lugar e tempo",
+      "position": 3,
+      "words": [
+        {
+          "term": "wherever",
+          "meaning": "onde quer que",
+          "example": "Wherever the team works, the tools are the same."
+        },
+        {
+          "term": "the place where",
+          "meaning": "o lugar onde",
+          "example": "The room where we meet has a big screen."
+        },
+        {
+          "term": "the page where",
+          "meaning": "a página onde",
+          "example": "The page where users log in is slow."
+        },
+        {
+          "term": "the place where I work",
+          "meaning": "o lugar onde eu trabalho",
+          "example": "This is the place where I work."
+        },
+        {
+          "term": "the environment where",
+          "meaning": "o ambiente onde",
+          "example": "The environment where the bug happens is staging."
+        },
+        {
+          "term": "the server where",
+          "meaning": "o servidor onde",
+          "example": "The server where the data lives is in Brazil."
+        },
+        {
+          "term": "in which",
+          "meaning": "em que",
+          "example": "This is the month in which we launch."
+        },
+        {
+          "term": "the day when",
+          "meaning": "o dia em que",
+          "example": "The day when we deployed was tense."
+        },
+        {
+          "term": "the time when",
+          "meaning": "o momento em que",
+          "example": "The time when the demo failed was awkward."
+        },
+        {
+          "term": "the week when",
+          "meaning": "a semana em que",
+          "example": "The week when we shipped was long."
+        },
+        {
+          "term": "the moment when",
+          "meaning": "o momento em que",
+          "example": "The moment when the build passed was great."
+        },
+        {
+          "term": "the sprint when",
+          "meaning": "a sprint em que",
+          "example": "The sprint when we added payments was hard."
+        },
+        {
+          "term": "the month when",
+          "meaning": "o mês em que",
+          "example": "The month when we hired was busy."
+        },
+        {
+          "term": "the year when",
+          "meaning": "o ano em que",
+          "example": "The year when we started was hard."
+        },
+        {
+          "term": "the place where we",
+          "meaning": "o lugar onde nós",
+          "example": "The place where we deploy is locked."
+        },
+        {
+          "term": "the moment when we",
+          "meaning": "o momento em que nós",
+          "example": "The moment when we merged, everything broke."
+        },
+        {
+          "term": "the meeting where",
+          "meaning": "a reunião em que",
+          "example": "The meeting where we decided it was short."
+        },
+        {
+          "term": "the document where",
+          "meaning": "o documento onde",
+          "example": "The document where we keep the notes is in the wiki."
+        },
+        {
+          "term": "the tool where",
+          "meaning": "a ferramenta onde",
+          "example": "The tool where I track tasks is the board."
+        },
+        {
+          "term": "the way in which",
+          "meaning": "o jeito como",
+          "example": "This is the way in which we test."
+        }
+      ]
+    }
+  ]
+}
