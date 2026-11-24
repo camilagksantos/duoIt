@@ -35,4 +35,10 @@ public class ReviewSessionService {
 		session.addAll(cards.findNew(CardState.NEW).stream().limit(newLeft).toList());
 		return session.stream().map(card -> CardView.from(card, now)).toList();
 	}
+
+	/** Revisão geral: todos os cards marcados, sem filtrar por data nem pelo limite diário. */
+	@Transactional(readOnly = true)
+	public List<CardView> allViews(Instant now) {
+		return cards.findAllCards().stream().map(card -> CardView.from(card, now)).toList();
+	}
 }

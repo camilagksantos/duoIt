@@ -35,12 +35,18 @@ public class StudyController {
 		return sessions.sessionViews(Instant.now(), LocalDate.now(), submodule);
 	}
 
+	/** Avaliação do exercício do grupo. Conta para o progresso do curso. */
 	@PostMapping("/cards/{id}/answer")
-	public ResponseEntity<Void> answer(@PathVariable Long id, @Valid @RequestBody AnswerRequest request) {
-		boolean found = cardService.answer(id, request.rating(), Instant.now(), LocalDate.now());
-		return found ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
+	public ResponseEntity<AnswerResponse> answer(@PathVariable Long id, @Valid @RequestBody AnswerRequest request) {
+		return cardService.answer(id, request.rating(), Instant.now(), LocalDate.now(), true)
+				.map(next -> ResponseEntity.ok(new AnswerResponse(next)))
+				.orElseGet(() -> ResponseEntity.notFound().build());
 	}
 
 	public record AnswerRequest(@NotNull Rating rating) {
+	}
+
+	/** Próximo vencimento do card depois da avaliação. */
+	public record AnswerResponse(Instant nextDueAt) {
 	}
 }

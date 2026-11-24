@@ -1,6 +1,8 @@
 package com.duoit.api.repository;
 
-/** Projeção: por grupo, total de cards marcados e quantos já foram avaliados pelo menos uma vez. */
+import java.time.Instant;
+
+/** Projeção: por grupo, total de cards marcados, quantos já foram avaliados, quantos acertaram e a data de conclusão dos Termos. */
 public interface SubmoduleProgressRow {
 
 	String getSlug();
@@ -8,4 +10,8 @@ public interface SubmoduleProgressRow {
 	long getTotal();
 
 	Long getAnswered();
+
+	Long getCorrect();
+
+	Instant getCompletedAt();
 }

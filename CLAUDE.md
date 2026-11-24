@@ -14,7 +14,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Estrutura
 
-Não é um repositório git. Três pastas na raiz:
+Repositório Git com três áreas principais na raiz:
 
 - `duoItFront/`: Angular 22, standalone, Angular Material. Porta 4200.
 - `duoItAPI/`: Spring Boot 4.1.2, Java 26, Maven, PostgreSQL. Porta 8080.
@@ -26,7 +26,7 @@ O conteúdo é um plano de estudo de inglês técnico. A hierarquia é módulo �
 
 - Front: `features/study/study-home` apresenta o exercício selecionado e encaminha para o componente do tipo. Não escolhe o exercício; isso já é feito no menu.
 - Regras de um tipo de exercício ficam na pasta desse tipo. Não criar serviços ou interfaces genéricos antes de existir um segundo tipo.
-- Back: `study/` tem a sessão e a resposta de cards. Não adicionar lógica específica de cards em `study/`; ela deve ir para um pacote próprio do tipo quando a separação for feita.
+- Back: `review/` atende o Cards Review; `terms/` lista e conclui os termos; `study/CardService` centraliza o agendamento e diferencia avaliações que contam para o curso das que só atualizam o Review. A sessão `/api/study/session` permanece para o exercício de cards futuro.
 
 ## Comandos
 
@@ -49,11 +49,11 @@ Front-end (dentro de `duoItFront/`):
 - A API libera CORS só para `http://localhost:4200` (`config/WebConfig.java`).
 - O id do submódulo no front é o mesmo `slug` do submódulo no banco. Se um for alterado, o outro também precisa.
 - O agendamento FSRS fica em `scheduling/` (`Fsrs.java` e `FsrsScheduler.java`), uma função pura, sem acesso ao banco. Toda avaliação passa por `study/CardService`.
-- A liberação dos exercícios é calculada no front (`core/services/progress.service.ts`), com base em `GET /api/progress`.
+- O progresso é obtido de `GET /api/progress`. Enquanto nenhum tipo de exercício está implementado, concluir os Termos conclui o grupo e libera o próximo. Quando houver um exercício, a regra planejada passa a usar 80% de acertos. As respostas de `/api/review/` nunca contam para esse progresso.
 - O conteúdo das palavras fica em `duoItAPI/src/main/resources/content/*.json` (um arquivo por módulo, 18 no total, 1.370 palavras). `config/ContentSeeder.java` sincroniza esses arquivos com o banco a cada início da API. Cria o que é novo e atualiza significado, exemplo e título quando mudam. Não apaga palavras nem cards, então o progresso fica preservado. Os rascunhos para revisão ficam em `docsProject/content-*.md`, e a conversão para JSON é feita a partir deles.
 - A estrutura de módulos, grupos e exercícios para o menu fica em `core/data/learning-plan.data.ts` (front). Precisa bater com os slugs do back.
 
 ## Pendências conhecidas
 
-- Os outros 3 tipos de exercício ainda não existem. Hoje cada grupo tem só o Cards.
+- O exercício de cards do grupo ainda está como placeholder. Os outros tipos e as histórias também não foram implementados.
 - Os nomes de exibição dos grupos ainda não foram decididos.

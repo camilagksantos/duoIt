@@ -12,6 +12,11 @@ export interface CardView {
   intervals: Record<Rating, number>;
 }
 
+/** Resposta da avaliação: quando o card vence de novo. */
+export interface AnswerResponse {
+  nextDueAt: string;
+}
+
 /** Termo de um grupo. Os termos são para estudo até o grupo ser concluído. */
 export interface TermView {
   id: number;

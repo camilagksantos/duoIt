@@ -27,7 +27,7 @@ export const MODULE_ICONS: Record<string, string> = {
 // O id do submódulo é o mesmo slug usado pela API.
 
 const cardsExercise = (submoduleId: string): Exercise[] => [
-  { id: `${submoduleId}-cards`, title: 'Cards' },
+  { id: `${submoduleId}-cards`, title: 'Exercício 1' },
 ];
 
 const submodule = (id: string, title: string): Submodule => ({

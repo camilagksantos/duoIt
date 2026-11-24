@@ -60,6 +60,12 @@ public class Card {
 	/** Dia da primeira avaliação. Usado para o limite de novos cards por dia. */
 	private LocalDate introducedOn;
 
+	/** Primeira avaliação feita no exercício do grupo. Só ela conta para o progresso do curso. */
+	private Instant exerciseAnsweredAt;
+
+	/** Se a primeira avaliação do exercício foi acerto (Bom ou Fácil). Nulo em cards sem avaliação de exercício. */
+	private Boolean exerciseCorrect;
+
 	protected Card() {
 	}
 
@@ -83,6 +89,14 @@ public class Card {
 		this.dueAt = m.dueAt();
 		if (today != null && this.introducedOn == null) {
 			this.introducedOn = today;
+		}
+	}
+
+	/** Registra a primeira avaliação do exercício. Avaliações seguintes não mudam o resultado. */
+	public void markExerciseAnswered(Instant now, boolean correct) {
+		if (this.exerciseAnsweredAt == null) {
+			this.exerciseAnsweredAt = now;
+			this.exerciseCorrect = correct;
 		}
 	}
 

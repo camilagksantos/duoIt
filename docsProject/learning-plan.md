@@ -214,21 +214,18 @@ Exemplo: "I'll open a PR and add a test."
 Estrutura de três níveis:
 
 - **Módulo:** estrutura gramatical (seção 5), na ordem da seção 7.
-- **Grupo de palavras:** cada submódulo da seção 5 é um grupo de palavras, com a meta indicada. Cada grupo tem seus próprios exercícios.
-- **Exercícios:** cada grupo tem até 4 tipos. O primeiro é **Cards** (flashcards com repetição espaçada, FSRS). Os outros 3 tipos entram depois.
+- **Grupo de palavras:** cada submódulo da seção 5 é um grupo de palavras, com a meta indicada.
+- **Termos do Grupo:** o aluno estuda as palavras do grupo, sem avaliação. Concluir os termos inclui todas as palavras do grupo no Cards Review.
+- **Exercícios do grupo:** cada grupo tem até 4 tipos de exercício. O primeiro tipo é o exercício de cards, ainda a implementar. Os outros 3 entram depois.
+- **Cards Review:** treino independente das palavras de grupos concluídos, de todos os grupos.
 
 Regras de liberação:
 
-1. O primeiro grupo com palavras começa liberado. Grupos sem palavras aparecem como "Em breve" e não travam a sequência.
-2. Dentro de um grupo, os exercícios liberam em sequência. O tipo 2 só abre depois que o Cards for concluído. O tipo 3 só abre depois do tipo 2, e assim por diante.
-3. Concluir o Cards significa responder todos os cards do grupo pelo menos uma vez.
-4. Um exercício concluído continua disponível para revisão. Concluir o Cards não bloqueia o Cards.
-5. O grupo seguinte libera quando todos os exercícios do grupo atual forem concluídos.
-6. Tipos de exercício ainda não disponíveis não bloqueiam a sequência. Enquanto um tipo não existir, a liberação segue só pelos tipos existentes.
+1. O primeiro grupo começa liberado. Cada grupo seguinte só abre depois que o anterior na ordem de estudo for concluído.
+2. Concluir os Termos do Grupo é o primeiro passo do grupo. Não pode ser desfeito.
+3. Dentro de um grupo, os exercícios liberam em sequência. O tipo seguinte só abre depois que o anterior for concluído.
+4. O grupo seguinte libera quando todos os exercícios do grupo atual forem concluídos.
+5. Tipos de exercício ainda não disponíveis não bloqueiam a sequência.
+6. Critérios de conclusão de cada exercício, o aproveitamento mínimo e a etapa de história serão definidos quando esses exercícios forem implementados.
 
-Concluído e dominado são coisas diferentes:
-
-- **Concluído:** todos os cards do grupo foram respondidos pelo menos uma vez. Mostra que o grupo foi visto.
-- **Dominado:** todos os cards do grupo têm intervalo de 21 dias ou mais. Mostra que a palavra foi aprendida.
-
-A liberação do grupo seguinte depende de concluir. O domínio aparece no progresso.
+O Cards Review não altera a progressão do curso. Suas respostas atualizam o agendamento das palavras, mas não contam para a conclusão de exercícios nem para a liberação de grupos.

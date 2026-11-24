@@ -39,15 +39,27 @@ public interface CardRepository extends JpaRepository<Card, Long> {
 			""")
 	List<Card> findNew(@Param("newState") CardState newState);
 
+	/** Todos os cards marcados, sem filtro de data, na ordem das palavras. */
+	@Query("""
+			select c from Card c
+			join fetch c.word w
+			join fetch w.submodule s
+			join fetch s.module
+			order by w.id
+			""")
+	List<Card> findAllCards();
+
 	long countByIntroducedOn(LocalDate day);
 
 	@Query("""
 			select s.slug as slug, count(c) as total,
-			       sum(case when c.introducedOn is not null then 1 else 0 end) as answered
+			       sum(case when c.exerciseAnsweredAt is not null then 1 else 0 end) as answered,
+			       sum(case when c.exerciseCorrect = true then 1 else 0 end) as correct,
+			       s.completedAt as completedAt
 			from Card c
 			join c.word w
 			join w.submodule s
-			group by s.slug
+			group by s.slug, s.completedAt
 			""")
 	List<SubmoduleProgressRow> progressBySubmodule();
 }

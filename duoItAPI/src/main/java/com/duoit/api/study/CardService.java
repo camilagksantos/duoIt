@@ -27,15 +27,22 @@ public class CardService {
 		this.cards = cards;
 	}
 
-	/** Registra a avaliação e recalcula o agendamento. Retorna false se o card não existir. */
+	/**
+	 * Registra a avaliação e recalcula o agendamento. Retorna o próximo vencimento, ou vazio se o card não existir.
+	 * {@code countsForProgress} é verdadeiro só para avaliações feitas no exercício do grupo.
+	 */
 	@Transactional
-	public boolean answer(Long cardId, Rating rating, Instant now, LocalDate today) {
+	public Optional<Instant> answer(Long cardId, Rating rating, Instant now, LocalDate today, boolean countsForProgress) {
 		Optional<Card> card = cards.findById(cardId);
 		if (card.isEmpty()) {
-			return false;
+			return Optional.empty();
 		}
 		FsrsScheduler.Memory next = FsrsScheduler.review(card.get().memory(), rating, now);
 		card.get().applyMemory(next, today);
-		return true;
+		if (countsForProgress) {
+			boolean correct = rating == Rating.GOOD || rating == Rating.EASY;
+			card.get().markExerciseAnswered(now, correct);
+		}
+		return Optional.of(next.dueAt());
 	}
 }

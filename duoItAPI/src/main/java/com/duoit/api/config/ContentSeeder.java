@@ -31,7 +31,7 @@ import tools.jackson.databind.ObjectMapper;
  * - Módulo, grupo e palavra novos são criados.
  * - Título, posição, significado e exemplo são atualizados quando mudam no JSON.
  * - Palavras que saíram do JSON não são apagadas. Os cards delas, e o progresso, continuam no banco.
- * - Cards não são tocados aqui: eles são criados depois, pelo CardProvisioner.
+ * - Cards não são criados aqui: eles nascem quando o grupo é concluído (TermsService).
  */
 @Component
 public class ContentSeeder implements ApplicationRunner {

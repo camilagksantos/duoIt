@@ -5,16 +5,22 @@ import { LEARNING_PLAN } from '../data/learning-plan.data';
 export interface SubmoduleProgress {
   slug: string;
   total: number;
-  /** Avaliados pelo menos uma vez. */
+  /** Primeira avaliação do exercício feita. */
   answered: number;
+  /** Primeira avaliação do exercício foi acerto. */
+  correct: number;
+  /** Termos do grupo concluídos. */
+  completed: boolean;
+  /** Pelo menos 80% de acertos. Calculado no back. */
+  concluded: boolean;
 }
 
 export type ExerciseStatus = 'done' | 'open' | 'locked' | 'soon' | 'unavailable';
 
 /**
- * Libera os exercícios em ordem de estudo. O primeiro submódulo com conteúdo começa aberto.
- * O próximo só abre quando todos os cards do atual forem respondidos pelo menos uma vez.
- * Submódulos sem cards não têm conteúdo ainda e não bloqueiam a sequência.
+ * Libera os grupos em ordem de estudo. O primeiro grupo começa aberto.
+ * A conclusão de cada grupo (80% de acertos) é calculada no back e chega em `concluded`.
+ * Grupo sem palavras marcadas não está concluído, então bloqueia a sequência.
  */
 @Injectable({ providedIn: 'root' })
 export class ProgressService {
@@ -27,20 +33,13 @@ export class ProgressService {
   readonly loaded = signal(false);
   readonly failed = signal(false);
 
+  /** Grupos abertos: todos os anteriores na ordem de estudo estão concluídos. */
   private readonly unlocked = computed(() => {
-    const map = this.bySlug();
     const open = new Set<string>();
-    let blocked = false;
     for (const id of this.studyOrder) {
-      const p = map.get(id);
-      if (!p || p.total === 0) {
-        continue;
-      }
-      if (!blocked) {
-        open.add(id);
-      }
-      if (p.answered < p.total) {
-        blocked = true;
+      open.add(id);
+      if (!this.isGroupConcluded(id)) {
+        break;
       }
     }
     return open;
@@ -76,6 +75,28 @@ export class ProgressService {
     });
   }
 
+  /** Os Termos do Grupo estão liberados: todos os grupos anteriores na ordem de estudo foram concluídos. */
+  isTermsUnlocked(submoduleId: string): boolean {
+    if (!this.loaded()) {
+      return false;
+    }
+    const index = this.studyOrder.indexOf(submoduleId);
+    if (index < 0) {
+      return false;
+    }
+    return this.studyOrder.slice(0, index).every((id) => this.isGroupConcluded(id));
+  }
+
+  /** Grupo concluído: pelo menos 80% de acertos, conforme o back. */
+  isGroupConcluded(submoduleId: string): boolean {
+    return this.bySlug().get(submoduleId)?.concluded ?? false;
+  }
+
+  /** Os Termos do Grupo foram concluídos. */
+  isCompleted(submoduleId: string): boolean {
+    return this.bySlug().get(submoduleId)?.completed ?? false;
+  }
+
   status(submoduleId: string): ExerciseStatus {
     if (!this.loaded()) {
       return 'unavailable';
@@ -87,6 +108,6 @@ export class ProgressService {
     if (!this.unlocked().has(submoduleId)) {
       return 'locked';
     }
-    return p.answered >= p.total ? 'done' : 'open';
+    return p.concluded ? 'done' : 'open';
   }
 }

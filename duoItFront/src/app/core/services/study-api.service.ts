@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CardView, Rating } from '../models/study.model';
+import { AnswerResponse, CardView, Rating } from '../models/study.model';
 
 @Injectable({ providedIn: 'root' })
 export class StudyApiService {
@@ -14,12 +14,23 @@ export class StudyApiService {
     return this.http.get<CardView[]>(`${this.baseUrl}/study/session`, { params });
   }
 
-  /** Cards vencidos de todos os grupos, para o Cards Review. */
+  /** Revisão diária do Cards Review: vencidos pelo agendamento e novos do dia. */
   getReviewSession(): Observable<CardView[]> {
     return this.http.get<CardView[]>(`${this.baseUrl}/review/session`);
   }
 
-  answer(cardId: number, rating: Rating): Observable<void> {
-    return this.http.post<void>(`${this.baseUrl}/study/cards/${cardId}/answer`, { rating });
+  /** Revisão geral do Cards Review: todas as palavras marcadas, sem filtro de data. */
+  getReviewAll(): Observable<CardView[]> {
+    return this.http.get<CardView[]>(`${this.baseUrl}/review/all`);
+  }
+
+  /** Avaliação do exercício do grupo. Conta para o progresso do curso. */
+  answer(cardId: number, rating: Rating): Observable<AnswerResponse> {
+    return this.http.post<AnswerResponse>(`${this.baseUrl}/study/cards/${cardId}/answer`, { rating });
+  }
+
+  /** Avaliação no Cards Review. Atualiza o agendamento, mas não conta para o progresso do curso. */
+  answerReview(cardId: number, rating: Rating): Observable<AnswerResponse> {
+    return this.http.post<AnswerResponse>(`${this.baseUrl}/review/cards/${cardId}/answer`, { rating });
   }
 }

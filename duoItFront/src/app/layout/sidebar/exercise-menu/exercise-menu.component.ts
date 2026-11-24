@@ -18,7 +18,13 @@ const HINTS: Record<ExerciseStatus, string> = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NavItemComponent],
   template: `
-    <app-nav-item label="Termos" (activate)="openTerms()" />
+    <app-nav-item
+      label="Termos"
+      [disabled]="!termsUnlocked()"
+      [hint]="termsHint()"
+      [hintTone]="termsDone() ? 'success' : 'default'"
+      (activate)="openTerms()"
+    />
     @for (exercise of submodule().exercises; track exercise.id) {
       <app-nav-item
         [label]="exercise.title"
@@ -51,6 +57,21 @@ export class ExerciseMenuComponent {
 
   protected hintFor(_exercise: Exercise): string {
     return HINTS[this.progress.status(this.submodule().id)];
+  }
+
+  protected termsDone(): boolean {
+    return this.progress.isCompleted(this.submodule().id);
+  }
+
+  protected termsUnlocked(): boolean {
+    return this.progress.isTermsUnlocked(this.submodule().id);
+  }
+
+  protected termsHint(): string {
+    if (this.termsDone()) {
+      return 'Concluído';
+    }
+    return this.termsUnlocked() ? '' : 'Bloqueado';
   }
 
   /** Termos do Grupo: sempre disponível, não depende da liberação. */

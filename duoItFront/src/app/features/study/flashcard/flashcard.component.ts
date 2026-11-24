@@ -41,7 +41,16 @@ const RATING_OPTIONS: RatingOption[] = [
     } @else {
       <div class="ratings">
         @for (option of ratingOptions; track option.rating) {
-          <button mat-stroked-button type="button" class="rating" (click)="rated.emit(option.rating)">
+          <button
+            mat-stroked-button
+            type="button"
+            class="rating"
+            [class.rating-again]="option.rating === 'AGAIN'"
+            [class.rating-hard]="option.rating === 'HARD'"
+            [class.rating-good]="option.rating === 'GOOD'"
+            [class.rating-easy]="option.rating === 'EASY'"
+            (click)="rated.emit(option.rating)"
+          >
             <span class="rating-box">
               <span class="rating-label">{{ option.label }}</span>
               <span class="rating-interval">{{ interval(option.rating) }}</span>
@@ -54,6 +63,7 @@ const RATING_OPTIONS: RatingOption[] = [
   styles: `
     .flashcard {
       max-width: 640px;
+      min-height: 260px;
       padding: 24px;
       margin-bottom: 24px;
       border-radius: var(--radius-card);
@@ -89,6 +99,9 @@ const RATING_OPTIONS: RatingOption[] = [
 
     .term {
       margin: 0 0 16px;
+      font-size: clamp(30px, 5vw, 42px);
+      line-height: 1.15;
+      overflow-wrap: anywhere;
     }
 
     .meaning {
@@ -103,14 +116,58 @@ const RATING_OPTIONS: RatingOption[] = [
 
     .ratings {
       display: flex;
+      max-width: 640px;
       gap: 12px;
       flex-wrap: wrap;
     }
 
     .rating {
-      min-width: 120px;
+      flex: 1 1 120px;
+      min-width: 0;
       height: auto;
       padding: 10px 16px;
+      border-width: 1px;
+      transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+    }
+
+    .rating:hover {
+      transform: translateY(-2px);
+    }
+
+    .rating-again {
+      --mdc-outlined-button-outline-color: rgba(229, 34, 50, 0.55);
+      --mdc-outlined-button-label-text-color: #ff8b94;
+    }
+
+    .rating-again:hover {
+      background: rgba(229, 34, 50, 0.12);
+    }
+
+    .rating-hard {
+      --mdc-outlined-button-outline-color: rgba(255, 210, 46, 0.48);
+      --mdc-outlined-button-label-text-color: #ffe17e;
+    }
+
+    .rating-hard:hover {
+      background: rgba(255, 210, 46, 0.1);
+    }
+
+    .rating-good {
+      --mdc-outlined-button-outline-color: rgba(22, 119, 255, 0.5);
+      --mdc-outlined-button-label-text-color: #92bcff;
+    }
+
+    .rating-good:hover {
+      background: rgba(22, 119, 255, 0.12);
+    }
+
+    .rating-easy {
+      --mdc-outlined-button-outline-color: rgba(77, 205, 145, 0.48);
+      --mdc-outlined-button-label-text-color: #84e3b1;
+    }
+
+    .rating-easy:hover {
+      background: rgba(77, 205, 145, 0.1);
     }
 
     .rating-box {
@@ -122,7 +179,25 @@ const RATING_OPTIONS: RatingOption[] = [
 
     .rating-interval {
       font-size: 12px;
-      color: var(--mat-sys-on-surface-variant);
+      color: inherit;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 560px) {
+      .flashcard {
+        min-height: 220px;
+        padding: 20px;
+      }
+
+      .ratings {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .rating {
+        padding: 9px 6px;
+      }
     }
   `,
 })

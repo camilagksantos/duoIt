@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject } from '@angular/core';
+import { ProgressService } from '../../core/services/progress.service';
 import { SidebarService } from '../../core/services/sidebar.service';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -60,4 +61,14 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 export class AppLayoutComponent {
   // Fechada por padrão. Abre sobre o conteúdo (sem empurrar a tela) e fecha quando o mouse sai dela.
   protected readonly sidebar = inject(SidebarService);
+  private readonly progress = inject(ProgressService);
+
+  constructor() {
+    // Ao abrir o menu, recarrega o progresso para não mostrar estado antigo.
+    effect(() => {
+      if (this.sidebar.open()) {
+        this.progress.load();
+      }
+    });
+  }
 }

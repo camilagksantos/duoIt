@@ -26,8 +26,10 @@ Projeto pessoal, de uso exclusivo de um usuário. Sem deploy e sem login.
 
 - Navegação: barra de abas abaixo da toolbar com "Dashboard" (`/`, conteúdo provisório) e "Cards Review" (`/treino`). O exercício Cards abre em `/estudo`, pelo menu lateral. Termos do Grupo abre em `/termos/:slug`, também pelo menu lateral.
 - Menu em três níveis: módulo (estrutura gramatical) → grupo de palavras (submódulo) → exercícios do grupo. Todos os níveis aparecem; só os exercícios liberados podem ser abertos.
-- Liberação em ordem de estudo, conforme a seção 8 do `learning-plan.md`: o primeiro grupo com palavras começa liberado. Dentro do grupo, o tipo seguinte só abre depois do anterior. O grupo seguinte abre quando todos os exercícios do atual forem concluídos.
-- Exercício Cards: a frente mostra o termo em inglês. "Mostrar resposta" revela o significado em português e a frase de exemplo. Depois, o usuário avalia com quatro botões, Errei, Difícil, Médio e Fácil, cada um com o tempo até a próxima revisão (minutos, horas ou dias).
+- Liberação em ordem de estudo, conforme a seção 8 do `learning-plan.md`: o primeiro grupo começa liberado. Enquanto os exercícios não existem, concluir Termos conclui o grupo e libera o próximo. Com exercícios implementados, a progressão usa os critérios definidos para eles. O Cards Review não participa dessa progressão.
+- Exercício 1 (cards do grupo): tela vazia, em construção. Será implementado depois da conclusão dos Termos do Grupo e do Cards Review.
+- Cards Review (`/treino`): tem os modos "Revisão do dia" (vencidos e novos disponíveis segundo o FSRS) e "Revisão geral" (todos os termos marcados, sem filtro de data). Na revisão do dia, um card errado volta quando o passo FSRS vence. As respostas atualizam o agendamento, mas não contam para o progresso do curso.
+- Componente `FlashcardComponent`: frente com o termo, "Mostrar resposta" e as quatro avaliações com o tempo até a próxima revisão.
 - O exercício de digitação (resposta escrita com validação) é outro tipo, previsto para depois. Não faz parte do Cards.
 - Exercício concluído continua disponível para revisão.
 - Concluído (todos os cards avaliados pelo menos uma vez) aparece como dica no menu. O dashboard mostra os cards avaliados. Não há mais o conceito de dominado.
@@ -48,15 +50,17 @@ Fora de escopo por enquanto: autenticação, áudio, pronúncia, deploy.
 
 Consome a API em `http://localhost:8080/api`:
 
-- `GET /api/progress`: total de cards e cards respondidos por grupo. Usado para liberar os exercícios.
-- `GET /api/study/session?submodule={id}`: cards da sessão do grupo.
-- `POST /api/study/cards/{id}/answer`: envia a avaliação do card.
+- `GET /api/progress`: termos incluídos no Review, avaliações/acertos do exercício do grupo, conclusão dos Termos e conclusão para progressão. Enquanto não há tipos de exercício implementados, a conclusão para progressão acompanha a conclusão dos Termos. As respostas do Review não entram no progresso.
+- `GET /api/terms?submodule={slug}` e `POST /api/terms/complete?submodule={slug}`: lista e conclui os termos do grupo; a conclusão inclui as palavras no Review.
+- `GET /api/review/session`: sessão diária; `GET /api/review/all`: revisão geral.
+- `POST /api/review/cards/{id}/answer`: avalia no Review e atualiza somente o agendamento.
+- `GET /api/study/session?submodule={id}` e `POST /api/study/cards/{id}/answer`: sessão e avaliação do futuro exercício de cards do grupo. A tela desse exercício ainda está em construção.
 
 O id do grupo no front é o mesmo `slug` do banco.
 
 ## 6. Pendências
 
-- Versão do Angular e do Angular Material no projeto (a definir ao criar o projeto).
-- Estrutura de pastas e rotas: definida (ver seção 4, Navegação). Rotas: `/` (Dashboard), `/treino` (Cards Review), `/termos/:slug` (Termos do Grupo) e `/estudo` (Cards).
-- Layout: definido no padrão de referência (cabeçalho, menu lateral, dashboard e tema escuro).
+- Critérios de aproveitamento e conclusão dos novos exercícios e histórias.
+- Exercício de cards do grupo, demais exercícios e histórias.
+- Implementar o primeiro exercício e aplicar o critério planejado de 80% de acertos; depois, estender a regra conforme novos exercícios e histórias forem adicionados.
 - Navegação por teclado: os submenus abrem com o foco (Tab), além do mouse.
